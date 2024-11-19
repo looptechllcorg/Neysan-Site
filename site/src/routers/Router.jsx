@@ -1,4 +1,5 @@
 import ClientRoot from "../pages/client/ClientRoot";
+import Contact from "../pages/client/contact/Contact";
 import Home from "../pages/client/home/Home";
 
 
@@ -12,10 +13,10 @@ export const ROUTES = [
                 index: true,
                 element: <Home />
             },
-            // {
-            //     path: "login",
-            //     element: <ClientLogin />
-            // }
+            {
+                path: "contact",
+                element: <Contact />
+            }
 
 
         ]
