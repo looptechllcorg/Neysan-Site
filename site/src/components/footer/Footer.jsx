@@ -6,6 +6,9 @@ import FaceIcons from '../../assets/icons/FaceIcons';
 import XIcon from '../../assets/icons/XIcon';
 import YoutubeIcon from '../../assets/icons/YoutubeIcon';
 import InstaIcon from '../../assets/icons/InstaIcon';
+import LocationIcon from '../../assets/icons/LocationIcon';
+import TelephoneIcon from '../../assets/icons/TelephoneIcon';
+import MessageIcon from '../../assets/icons/MessageIcon';
 const Footer = () => {
   return (
     <footer>
@@ -50,11 +53,11 @@ const Footer = () => {
             <div className="footerContactUs">
            <h4>CONTACT US</h4>
               <ul>
-                <li>Yasamal və Əhmədli filialları</li>
+                <li><LocationIcon/> Yasamal və Əhmədli filialları</li>
                 <li></li>
                 <br /><br />
-                <li>+994 50 339 13 93</li>
-                <li>Neysan@example.com</li>
+                <li><TelephoneIcon/> +994 50 339 13 93</li>
+                <li><MessageIcon/> Neysan@example.com</li>
                 
               </ul>
             </div>
