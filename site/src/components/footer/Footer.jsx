@@ -10,18 +10,19 @@ const Footer = () => {
   return (
     <footer>
       <div className="overlay"></div>
-      <div className="container">
+   <div className="footerHead">
+   <div className="container ">
         <div className="row justify-content-center align-items-center">
-          <div className="col-2">
+  
             <div className="footerLogo">
             <NavLink to="/" className="logo">
               <img src={neysanLogo} alt="" />
             </NavLink>
             <ul>
-              <li>Lorem ipsum dolor sit.1</li>
-              <li>Lorem ipsum dolor sit.2</li>
-              <li>Lorem ipsum dolor sit.3</li>
-              <li>Lorem ipsum dolor sit.4</li>
+              <li>umumi textumumi textumumi textumumi1</li>
+              <li>umumi textumumi textumumi textumumi2</li>
+              <li>umumi textumumi textumumi textumumi3</li>
+              <li>umumi textumumi textumumi textumumi4</li>
             </ul>
             <div className="socialLogos">
               <FaceIcons/>
@@ -29,7 +30,7 @@ const Footer = () => {
               <YoutubeIcon/>
               <InstaIcon/>
             </div>
-            </div>
+          
            
           </div>
           <div className="col-2">
@@ -45,22 +46,32 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-3">
             <div className="footerContactUs">
            <h4>CONTACT US</h4>
               <ul>
-                <li>Our Company</li>
-                <li>Product</li>
-                <li>History</li>
-                <li>Media</li>
-                <li>Point of Sale</li>
-                <li>Useful</li>
+                <li>Yasamal və Əhmədli filialları</li>
+                <li></li>
+                <br /><br />
+                <li>+994 50 339 13 93</li>
+                <li>Neysan@example.com</li>
+                
               </ul>
             </div>
           </div>
     
           
         </div>
+      </div>
+   </div>
+      <div className="footerBottom">
+       <div className="container">
+        <div className="row">
+          <div className="col-3">
+            <p className="copyright">Copyright © 2024</p>
+          </div>
+        </div>
+       </div>
       </div>
     </footer>
   )

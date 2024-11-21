@@ -1,6 +1,6 @@
 footer{
     background-color: #912711;
-    padding: 100px 0 10px;
+    
     position: relative;
     // .overlay{
     //     position: absolute;
@@ -14,24 +14,84 @@ footer{
     //     opacity: 40%;
        
     // }
-    .footerLogo{
-        .logo{
-            img{
-                width: 178px;
-                height: 150px;
-                object-fit: cover;
+    .footerHead{
+        padding: 120px 0 70px;
+        .footerLogo{
+            width: 25%;
+            .logo{
+                img{
+                    width: 178px;
+                    height: 150px;
+                    object-fit: cover;
+                }
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    margin:0 0 7px ;
+                    color: #fff;
+                    opacity: 70%;
+                }
+            }
+            .socialLogos{
+                margin-top: 20px;
+                
+                display: flex;
+                justify-content: space-between;
             }
         }
-        ul{
-            margin: 0;
-            padding: 0;
-            li{
+        .footerAboutUs{
+            height: 100%;
+            h4{
                 color: #fff;
-                opacity: 60%;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 2%;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                li{
+                    margin:0 0 7px ;
+                    color: #fff;
+                    opacity: 70%;
+                }
+            }
+        }
+        .footerContactUs{
+            h4{
+                color: #fff;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 2%;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                li{
+                    margin:0 0 17px ;
+                    color: #fff;
+                    opacity: 70%;
+                }
             }
         }
     }
-    .footerAboutUs{
-
+    .footerBottom{
+        border-top: 1px solid #262626;
+        padding: 15px 0;
+        .copyright{
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffffb7;
+            line-height: 26px;
+            margin: 0;
+        }
     }
 }
