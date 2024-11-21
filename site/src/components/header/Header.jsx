@@ -16,9 +16,12 @@ const Header = () => {
     <div className="container">
         <div className="row justify-content-around">
             <div className="col-3">
-              <div className="logo">
+            <NavLink to="/" >
+            <div className="logo">
                 <img src={neysanLogo} alt="" />
               </div>
+            </NavLink>
+              
             </div>
             <div className="col-9">
               <div className="nav_items justify-content-around row align-items-center">
