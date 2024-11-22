@@ -9,9 +9,9 @@ const MarketLogo = () => {
                     <div className="row">
                   
                           {marketLogoList.map((logo, index) => (
-                            <div className="col-3 g-5 ">
+                            <div key={index} className="col-3 g-5 ">
                               <div className="marketLogo">
-                                <img key={index} src={logo} />
+                                <img  src={logo} />
                               </div>
                               
                             </div>
