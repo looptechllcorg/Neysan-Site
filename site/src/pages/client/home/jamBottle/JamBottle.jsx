@@ -6,7 +6,7 @@ const JamBottle = () => {
 
   
     const scrollShowHiddenBottle = () => {
-        if (window.scrollY > window.innerHeight * 0.5) {
+        if (window.scrollY > window.innerHeight * 3.5) {
             setShowHiddenBottle(false);
         } else {
             setShowHiddenBottle(true);

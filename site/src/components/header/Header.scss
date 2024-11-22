@@ -1,13 +1,20 @@
 .desktopNavbar{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     @media (max-width:950px) {
         display: none;
     }
-    padding-top: 15px;
+    // padding-top: 15px;
     .logo{
-        width: 100%;
-        height: 180px;
+        width: 62%;
+        height: 100px;
+        border: 1px solid black;
         img{
-            object-fit: contain;
+            object-fit: cover;
             width: 100%;
             height: 100%;
         }
@@ -82,6 +89,13 @@
             }
         }
     }
+}
+.navbaractive{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .7s ease-in-out;
 }
 .mobileNavbar{
     @media (min-width:950px) {

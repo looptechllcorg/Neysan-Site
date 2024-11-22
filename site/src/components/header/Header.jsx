@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./Header.scss"
 import neysanLogo from "../../assets/image/Neysanlogo.png";
 import SearchIcon from "../../assets/icons/SearchIcon";
@@ -8,11 +8,45 @@ import CloseIcon from '../../assets/icons/CloseIcon';
 // import ArrowBottomIcon from '../../assets/icons/ArrowBottomIcon';
 const Header = () => {
   const [navActive,setnavActive] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolledFar, setIsScrolledFar] = useState(false);
+  const navbarRef = useRef(null);
+  const searchRef = useRef(null);
+  const cartRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      // İlk 25px için kontrol
+      if (scrollTop > 25) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+
+      // 250px sonrası için kontrol
+      if (scrollTop > 200) {
+        setIsScrolledFar(true);
+      } else {
+        setIsScrolledFar(false);
+      }
+    };
+
+    // Scroll olayını dinleme
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
     
     
-  <header className='desktopNavbar'>
+  <header className={`desktopNavbar ${isScrolledFar ? "navbaractive" : ""}`}
+        style={{
+          transform: isScrolled && !isScrolledFar ? "translateY(-200px)" : "translateY(0px)",
+        }}>
     <div className="container">
         <div className="row justify-content-around">
             <div className="col-3">
