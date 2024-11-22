@@ -1,11 +1,12 @@
 import React from 'react'
+import "./MarketLogos.scss"
 import { marketLogoList } from "../../../../MyDatas/MyDatas"
 const MarketLogo = () => {
   return (
     <section>
             <div className="homePointOfSale">
                   <div className="container">
-                      <h3 className="homehomePointOfSaleTitle">POİNT OF SALE</h3>
+                      <h3 className="homePointOfSaleTitle">POİNT OF SALE</h3>
                     <div className="row">
                   
                           {marketLogoList.map((logo, index) => (

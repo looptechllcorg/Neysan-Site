@@ -22,9 +22,9 @@ export const ROUTES = [
         ]
     },
     {
-        future: {
-          v7_relativeSplatPath: true,
-        },
+        // future: {
+        //   v7_relativeSplatPath: true,
+        // },
       }
     // {
     //     path: "*",

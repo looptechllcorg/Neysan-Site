@@ -1,18 +1,34 @@
 .homePointOfSale {
   background-color: white;
-  background-image: url("../../assets/images/patternOne.png"),
-    url("../../assets/images/patternTwo.png");
-  background-repeat: no-repeat;
-  background-position: top 45px left 0, bottom 0 right 0;
-  margin-top: -3rem;
-  .homehomePointOfSaleTitle {
+  padding: 50px 0;
+  .homePointOfSaleTitle {
     color: #c6530f;
     text-align: center;
     font-weight: 500;
-    font-size: 96px;
+    font-size: 66px;
     line-height: 24px;
     text-align: center;
     font-weight: 400;
+    position: relative;
+    margin-bottom: 50px;
+    &::after{
+      position: absolute;
+      height: 5px;
+      width: 150px;
+      background-color: #c6530f;
+      content: "";
+      top: 4px;
+      left: 10%;
+    }
+    &::before{
+      position: absolute;
+      height: 5px;
+      width: 150px;
+      background-color: #c6530f;
+      content: "";
+      top: 4px;
+      right: 10%;
+    }
   }
   .marketLogo {
     img {

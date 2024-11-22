@@ -10,9 +10,7 @@ const Header = () => {
   const [navActive,setnavActive] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrolledFar, setIsScrolledFar] = useState(false);
-  const navbarRef = useRef(null);
-  const searchRef = useRef(null);
-  const cartRef = useRef(null);
+;
 
   useEffect(() => {
     const handleScroll = () => {

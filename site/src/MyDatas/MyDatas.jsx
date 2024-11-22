@@ -58,3 +58,24 @@ export const homeSliderData =[
     },
 ]
 
+import videoSliderImgOne from "../assets/image/BgMedia1.png"
+import videoSliderImgTwo from "../assets/image/homeVideoSliderBgImg.png"
+
+export const homeVideoSliderSection = [
+    {
+        id: 1,
+        bgImg: videoSliderImgOne,
+        videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
+    },
+    {
+        id: 2,
+        bgImg: videoSliderImgTwo,
+        videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
+    },
+    {
+        id: 3,
+        bgImg: videoSliderImgOne,
+        videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
+    },
+];
+
