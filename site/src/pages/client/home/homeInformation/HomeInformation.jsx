@@ -36,7 +36,7 @@ const HomeInformation = ({cloudType , textPosition ,infoHeadText , infoText}) =>
     <section id='homeInformation' >
         <div className="container">
             <div className="row" style={getTextPositionStyle()}>
-            <div className="informationBox" >
+            <div className="informationBox col-sm-4" >
             <h3>{infoHeadText}</h3>
             <p>{infoText}</p>
              </div>

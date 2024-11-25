@@ -70,7 +70,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/product"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#777777"
               })}
@@ -79,7 +79,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/media"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#777777"
               })}
@@ -176,7 +176,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/product"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}
@@ -185,7 +185,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/media"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}

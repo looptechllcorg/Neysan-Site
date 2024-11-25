@@ -1,0 +1,61 @@
+#HomeToFour{
+    position: relative;
+.homePatternOne{
+    position: absolute;
+    width: 170px;
+    top: 95vh;
+    right: 30vh;
+    animation: moveUpDown 6s infinite;
+}
+.homePatternTwo{
+    position: absolute;
+    width: 90px;
+    top: 130vh; 
+    left: 20vh;
+    animation: moveDownUp 6s infinite;
+}
+.homePatternThree{
+    position: absolute;
+    top: 190vh;
+    left: 22vh;
+    width: 220px;
+    animation: moveDownUp 6s infinite;
+}
+.homePatternFour{
+    position: absolute;
+    top: 220vh;
+    right: 25vh;
+    width: 80px;
+    animation: moveUpDown 6s infinite;
+}
+.homePatternFive{
+    position: absolute;
+    top: 285vh;
+    right: 23vh;
+    width: 170px;
+    animation: moveUpDown 6s infinite;
+}
+   }
+
+   @keyframes moveUpDown {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-30px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
+@keyframes moveDownUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }

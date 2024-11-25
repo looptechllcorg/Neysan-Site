@@ -67,15 +67,15 @@ export const homeVideoSliderSection = [
         bgImg: videoSliderImgOne,
         videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
     },
-    {
-        id: 2,
-        bgImg: videoSliderImgTwo,
-        videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
-    },
-    {
-        id: 3,
-        bgImg: videoSliderImgOne,
-        videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
-    },
+    // {
+    //     id: 2,
+    //     bgImg: videoSliderImgTwo,
+    //     videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
+    // },
+    // {
+    //     id: 3,
+    //     bgImg: videoSliderImgOne,
+    //     videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
+    // },
 ];
 

@@ -24,11 +24,21 @@ const HomeSlider = () => {
     <section id='homeSlider'>
         <div className='sliderBox' style={{ width: '100vw', height: '100vh' }}>
       <Swiper
-        spaceBetween={150}
-        slidesPerView={2.2}
+        // spaceBetween={150}
+        // slidesPerView={2.2}
         centeredSlides={true}
         loop={true}  
-        
+        breakpoints={{
+          769: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 2.2,
+            spaceBetween: 150,
+          },
+        }}
         navigation={{
             prevEl: '.swiper-button-prev', 
             nextEl: '.swiper-button-next', 
