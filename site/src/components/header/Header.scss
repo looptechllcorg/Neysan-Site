@@ -33,8 +33,14 @@
 
             li{
                 list-style: none;
+                position: relative;
                 .active{
                     color: #FFB212;
+                }
+                &:hover{
+                    .hoverList{
+                        height: auto;
+                    }
                 }
                 a{
                     text-decoration: none;
@@ -45,6 +51,15 @@
                     &:hover{
                         color: #FFB212 !important;
                     }
+                }
+                .hoverList{
+                    margin: 0 0 0 12px;
+                    padding: 0;
+                    transition: .4s ease-in-out;
+position: absolute;
+
+height: 0;
+overflow: hidden;
                 }
             }
         }

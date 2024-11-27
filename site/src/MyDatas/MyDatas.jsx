@@ -207,3 +207,30 @@ export const PhotoGallery = [
         imgSrc:Photo6
     },
 ]
+
+// Videos Pages
+
+import Video1 from "../assets/image/Photos/Video1.png"
+import Video2 from "../assets/image/Photos/Video2.png"
+import Video3 from "../assets/image/Photos/Video3.png"
+
+export const VideoGallery =[
+    {
+        id:1,
+        bgImgSrc:Video1,
+        title:"Video 1",
+        videoSrc:"https://www.youtube.com/watch?v=zblxJ1fZCdY"
+    },
+    {
+        id:2,
+        bgImgSrc:Video2,
+        title:"Video 1",
+        videoSrc:"https://www.youtube.com/watch?v=zblxJ1fZCdY"
+    },
+    {
+        id:3,
+        bgImgSrc:Video3,
+        title:"Video 1",
+        videoSrc:"https://www.youtube.com/watch?v=zblxJ1fZCdY"
+    },
+]

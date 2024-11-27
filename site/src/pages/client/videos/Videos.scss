@@ -1,0 +1,96 @@
+#photos{
+    padding: 140px 0  ;
+    .sectionHeader{
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 9.5%;
+            color: #FAA432;
+
+        }
+        h2{
+            text-align: center;
+            font-size: 45px;
+            color: #49382E;
+            line-height: 64px;
+            font-weight: 500;
+            // max-width: 700px;
+        }
+    }
+    .videoImg{
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .icon{
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .imageSize-700{
+        height: 600px;
+    }
+    .imageSize-345{
+        height: 295px;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        border-color: transparent;
+        .modal-content {
+            position: relative;
+            background-color: transparent;
+            // background: rgba(255, 255, 255, 0.253);
+            padding: 20px;
+            // border-radius: 10px;
+            width: 90%;
+            height: 90%;
+            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            img {
+                max-width: 100%;
+                max-height: 80vh;
+                border-radius: 5px;
+                object-fit: contain;
+              }
+              .close-modal {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: red;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 16px;
+              }
+        
+        }
+      }
+      
+     
+      
+
+      
+      
+      
+}

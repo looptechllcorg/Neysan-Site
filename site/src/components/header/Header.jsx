@@ -78,14 +78,16 @@ const Header = () => {
               Products
             </NavLink></li>
                 <li>
-                <NavLink
-              to="/media"
-              style={({ isActive }) => ({
-                color: isActive ? "#FFB212" : "#777777"
-              })}
-            >
-              Media
-            </NavLink></li>
+                <a href="">Media</a>
+                <ul className='hoverList'>
+                  <li>
+                    <NavLink to="/photos">Photo</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/videos">Video</NavLink>
+                  </li>
+                </ul>
+                </li>
                 <li>
                 <NavLink
               to="/contact"
