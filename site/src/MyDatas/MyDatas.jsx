@@ -94,6 +94,7 @@ export const productsData = [
     {
         id:1,
         bgColor:"#BB1B23",
+
         image:productTomat,
         productName:"Pomidor Qurusu Zeytun yaginda",
         productWeight:"320qr",
@@ -166,3 +167,43 @@ export const productsData = [
     },
 ]
 export const categories = ["All", "Fruit", "Vegetable"];
+
+// Photos Page
+import Photo1 from "../assets/image/Photos/Photo1.png"
+import Photo2 from "../assets/image/Photos/Photo2.png"
+import Photo3 from "../assets/image/Photos/Photo3.png"
+import Photo4 from "../assets/image/Photos/Photo4.png"
+import Photo5 from "../assets/image/Photos/Photo5.png"
+import Photo6 from "../assets/image/Photos/Photo6.png"
+export const PhotoGallery = [
+    {
+        id:1,
+        title:"Photo 1",
+        imgSrc:Photo1
+    },
+    {
+        id:2,
+        title:"Photo 2",
+        imgSrc:Photo2
+    },
+    {
+        id:3,
+        title:"Photo3",
+        imgSrc:Photo3
+    },
+    {
+        id:4,
+        title:"Photo 4",
+        imgSrc:Photo4
+    },
+    {
+        id:5,
+        title:"Photo 5",
+        imgSrc:Photo5
+    },
+    {
+        id:6,
+        title:"Photo 6",
+        imgSrc:Photo6
+    },
+]
