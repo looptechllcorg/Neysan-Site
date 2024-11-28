@@ -28,8 +28,8 @@ const HomeMedia = () => {
             clickable: true,
           }}
           navigation={{
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-Button-prev",
+            nextEl: ".swiper-Button-next",
           }}
           modules={[EffectFade, Navigation, Autoplay]}
           className="videoSlider"
@@ -53,8 +53,8 @@ const HomeMedia = () => {
 })}
 
           {homeVideoSliderSection.length>1 ? <>
-          <div className="swiper-button-next"></div>
-            <div className="swiper-button-prev"></div></>  :<></> }
+          <div className="swiper-Button-next"></div>
+            <div className="swiper-Button-prev"></div></>  :<></> }
         </Swiper>
       </div>
     </section>

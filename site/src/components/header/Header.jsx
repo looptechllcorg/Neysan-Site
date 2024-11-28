@@ -78,7 +78,7 @@ const Header = () => {
               Products
             </NavLink></li>
                 <li>
-                <a href="">Media</a>
+                <a >Media</a>
                 <ul className='hoverList'>
                   <li>
                     <NavLink to="/photos">Photo</NavLink>

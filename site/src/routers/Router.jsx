@@ -4,6 +4,8 @@ import Home from "../pages/client/home/Home";
 import Photos from "../pages/client/photos/Photos";
 import Videos from "../pages/client/videos/Videos";
 import Product from "../pages/client/product/Product";
+import OurCompany from "../pages/client/ourCompany/OurCompany";
+import PointOfSale from "../pages/client/pointOfSale/PointOfSale";
 
 
 
@@ -19,6 +21,14 @@ export const ROUTES = [
             {
                 path: "contact",
                 element: <Contact />
+            },
+            {
+                path: "our-company",
+                element: <OurCompany />
+            },
+            {
+                path: "point-of-sale",
+                element: <PointOfSale />
             },
             {
                 path: "product",
