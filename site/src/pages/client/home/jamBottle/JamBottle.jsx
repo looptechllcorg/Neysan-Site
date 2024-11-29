@@ -4,11 +4,23 @@ import neysanBottle from '../../../../assets/image/JamBottle1.png';
 
 const JamBottle = () => {
   const [showHiddenBottle, setShowHiddenBottle] = useState(true);
-  const [isMobile, setIsMobile] = useState(window.innerWidth >= 1440); 
+  const [screenSize, setScreenSize] = useState({
+    isMobile: window.innerWidth <= 768,
+    isMedium: window.innerWidth > 768 && window.innerWidth <= 1440,
+  });
 
- 
+
   const scrollShowHiddenBottle = () => {
-    const threshold = isMobile ? window.innerHeight * 4.6 : window.innerHeight * 4.95; 
+    let threshold;
+
+    if (screenSize.isMobile) {
+      threshold = window.innerHeight * 4.4;
+    } else if (screenSize.isMedium) {
+      threshold = window.innerHeight * 4.6; 
+    } else {
+      threshold = window.innerHeight * 4.95; 
+    }
+
     if (window.scrollY > threshold) {
       setShowHiddenBottle(false);
     } else {
@@ -16,12 +28,14 @@ const JamBottle = () => {
     }
   };
 
- 
+
   const handleResize = () => {
-    setIsMobile(window.innerWidth >= 1440); 
+    setScreenSize({
+      isMobile: window.innerWidth <= 768,
+      isMedium: window.innerWidth > 768 && window.innerWidth <= 1440,
+    });
   };
-
-
+ 
   useEffect(() => {
     window.addEventListener('scroll', scrollShowHiddenBottle);
     window.addEventListener('resize', handleResize);
@@ -31,7 +45,7 @@ const JamBottle = () => {
       window.removeEventListener('scroll', scrollShowHiddenBottle);
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobile]); 
+  }, [screenSize]); 
 
   return (
     <div className={`bottle ${showHiddenBottle ? '' : 'noBottle'}`}>

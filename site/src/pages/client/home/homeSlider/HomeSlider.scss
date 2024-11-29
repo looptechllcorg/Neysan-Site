@@ -67,6 +67,9 @@
             }
             z-index: 99;
             left: 25% !important;
+            @media (max-width:768px) {
+                left: 15% !important;
+            }
         }
         .swiper-button-next{
             position: absolute;
@@ -85,6 +88,9 @@
             }
             z-index: 99;
             right: 25% !important;
+            @media (max-width:768px) {
+                right: 15% !important;
+            }
         }
 
     }

@@ -16,22 +16,19 @@ const Header = () => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      // İlk 25px için kontrol
       if (scrollTop > 25) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
 
-      // 250px sonrası için kontrol
-      if (scrollTop > 200) {
+      if (scrollTop > 180) {
         setIsScrolledFar(true);
       } else {
         setIsScrolledFar(false);
       }
     };
 
-    // Scroll olayını dinleme
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -144,7 +141,11 @@ const Header = () => {
     </div>
     
   </header>
-  <header className="mobileNavbar">
+  <header className={`mobileNavbar ${isScrolledFar ? "navbaractive" : ""}`}
+        style={{
+          transform: isScrolled && !isScrolledFar ? "translateY(-200px)" : "translateY(0px)",
+        }}
+  >
     <div className="container d-flex align-items-center justify-content-around">
       <div className="searchIcon">
         <SearchIcon/>

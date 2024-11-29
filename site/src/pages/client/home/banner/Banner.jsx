@@ -18,7 +18,7 @@ const Banner = () => {
         <img src={bannerImageRight} alt="" />
       </div>
       <div className="banner_text_box">
-        <span>.. Increased HEALTH With Qudret Salam ..</span>
+        <span>.. Increased HEALTH With Neysan ..</span>
         <h1>
         NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!
         </h1>
