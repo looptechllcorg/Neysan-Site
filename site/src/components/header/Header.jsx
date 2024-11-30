@@ -58,7 +58,7 @@ const Header = () => {
                 <ul className='nav_links'>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/our-company"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#777777"
               })}
@@ -87,7 +87,7 @@ const Header = () => {
                 </li>
                 <li>
                 <NavLink
-              to="/contact"
+              to="/point-of-sale"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#777777"
               })}
@@ -103,15 +103,7 @@ const Header = () => {
             >
               Contact
             </NavLink></li>
-                <li>
-                <NavLink
-              to="/contact"
-              style={({ isActive }) => ({
-                color: isActive ? "#FFB212" : "#777777"
-              })}
-            >
-              About
-            </NavLink></li>
+
               
               </ul>
                
@@ -151,13 +143,17 @@ const Header = () => {
         <SearchIcon/>
       </div>
       <div className="mobileLogo">
+        <NavLink
+        to="/"
+        onClick={()=>{setnavActive(false);}}>
+
         <img src={neysanLogo} alt="" />
+        </NavLink>
       </div>
      
-        {navActive == true ?  <span onClick={()=>{
-        setnavActive(false)
-        console.log(navActive);
-      }} className="openNavbar"><CloseIcon/></span >: <span onClick={()=>{
+        {navActive == true ?  <span 
+        onClick={()=>{setnavActive(false);}}
+         className="openNavbar"><CloseIcon/></span >: <span onClick={()=>{
         setnavActive(true)
         console.log(navActive);
       }} className="openNavbar"><MenuIcon/></span >}
@@ -170,7 +166,8 @@ const Header = () => {
     <ul className='nav_links'>
                 <li>
                 <NavLink
-              to="/contact"
+                onClick={()=>{setnavActive(false);}}
+              to="/our-company"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}
@@ -179,6 +176,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
+                onClick={()=>{setnavActive(false);}}
               to="/product"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
@@ -188,7 +186,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/media"
+              to="/videos"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}
@@ -197,7 +195,8 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
-              to="/contact"
+                onClick={()=>{setnavActive(false);}}
+              to="/point-of-sale"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}
@@ -206,6 +205,7 @@ const Header = () => {
             </NavLink></li>
                 <li>
                 <NavLink
+                onClick={()=>{setnavActive(false);}}
               to="/contact"
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
@@ -213,15 +213,7 @@ const Header = () => {
             >
               Contact
             </NavLink></li>
-                <li>
-                <NavLink
-              to="/contact"
-              style={({ isActive }) => ({
-                color: isActive ? "#FFB212" : "#006633"
-              })}
-            >
-              About
-            </NavLink></li>
+               
               
               </ul>
   </div>

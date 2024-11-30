@@ -10,7 +10,7 @@ const ClientRoot = () => {
     <Header/>
     <Outlet />
     <Footer/>
-    {/* <ScrollToTop/> */}
+    <ScrollToTop/>
     </>
   )
 }

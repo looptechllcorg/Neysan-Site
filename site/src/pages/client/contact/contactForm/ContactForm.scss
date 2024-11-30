@@ -1,4 +1,5 @@
 #contactform{
+    padding: 60px 0;
     form{
         width: 100%;
         background-color: #F7EBEB;
@@ -20,6 +21,9 @@
             // justify-content: space-around;
             align-items: center;
             .formInputDiv{
+                @media (max-width:768px) {
+                    width: 100%;
+                }
                 width: 49%;
                 label{
                     color: #973D1A;
