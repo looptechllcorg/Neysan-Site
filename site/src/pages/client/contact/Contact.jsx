@@ -7,7 +7,6 @@ const Contact = () => {
   return (
     <main>
       <ContactBanner/>
-
       <ContactForm/>
     </main>
   )

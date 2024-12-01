@@ -2,7 +2,11 @@ import React from 'react'
 
 const PointOfSale = () => {
   return (
-    <div>PointOfSale</div>
+    <main>
+      <section id='pointOfSale'>
+        
+      </section>
+    </main>
   )
 }
 
