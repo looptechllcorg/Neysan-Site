@@ -1,0 +1,52 @@
+#companyBanner{
+    .sectionHeader{
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 9.5%;
+            color: #FAA432;
+
+        }
+        h2{
+            text-align: center;
+            font-size: 55px;
+            color: #49382E;
+            line-height: 84px;
+            font-weight: 500;
+            text-transform: uppercase;
+            // max-width: 700px;
+        }
+
+    }
+    .container{
+        overflow: hidden;
+        border-radius: 30px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        h1{
+            animation: animationLeft 20s infinite;
+            
+            font-size: 76px;
+            line-height: 150px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+    @keyframes animationLeft {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+     
+    }
+
+}

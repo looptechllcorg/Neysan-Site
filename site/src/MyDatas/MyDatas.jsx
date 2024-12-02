@@ -271,3 +271,22 @@ export const MapsBrancs  = [
         title:"Zirə Bio Market"
     },
 ]
+
+// OurCompany 
+import Service1 from "../assets/image/OurServices/Service1.png"
+import Service2 from "../assets/image/OurServices/Service2.png"
+import Service3 from "../assets/image/OurServices/Service3.png"
+import Service4 from "../assets/image/OurServices/Service4.png"
+import Service5 from "../assets/image/OurServices/Service5.png"
+import Service6 from "../assets/image/OurServices/Service6.png"
+import Service7 from "../assets/image/OurServices/Service7.png"
+
+export const ServiceImages = [
+  { id: 1, src:Service1 , alt: "Oranges" },
+  { id: 2, src:Service2 ,alt: "Green Peas" },
+  { id: 3, src:Service3 , alt: "Blackberries" },
+  { id: 4, src:Service4 ,alt: "Plums" },
+  { id: 5, src:Service5 , alt: "Blueberries" },
+  { id: 6, src:Service6 , alt: "Grapefruit" },
+  { id: 7, src:Service7 , alt: "Raspberries" },
+]
