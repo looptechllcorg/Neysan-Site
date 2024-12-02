@@ -28,7 +28,7 @@ export const ROUTES = [
             },
             {
                 path: "point-of-sale",
-                element: <PointOfSale />
+                element: <PointOfSale/>
             },
             {
                 path: "product",

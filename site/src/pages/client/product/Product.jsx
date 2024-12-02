@@ -22,10 +22,10 @@ const Product = () => {
                   </div>
             </div>
             <div className="row py-3">
-            {categories.map((category) => (
-             <div className="col-2">
+            {categories.map((category,index) => (
+             <div className="col-2" key={index}>
                <button
-                key={category}
+                
                 onClick={() => setSelectedCategory(category)}
                 className={`filterBtn ${
                   selectedCategory === category ? "btnActive" : ""

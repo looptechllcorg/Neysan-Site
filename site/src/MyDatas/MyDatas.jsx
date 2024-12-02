@@ -234,3 +234,40 @@ export const VideoGallery =[
         videoSrc:"https://www.youtube.com/watch?v=zblxJ1fZCdY"
     },
 ]
+
+// Maps Location
+
+export const MapsBrancs  = [ 
+    {
+        address:"Səbail rayonu, Üzeyir Hacıbəyov 151 (Port Baku AVM-in 1-ci mərtəbəsi) ",
+        coordinates:"40.3665,49.8355",
+        email : null , 
+        id:1 , 
+        map_url : "https://maps.app.goo.gl/W45Q3eKJGG4t3MGD9",
+        title:"Port Baku Bazar"
+    },
+    {
+        address:"Təbriz küçəsi 116",
+        coordinates:"40.3945,49.8495",
+        email : null , 
+        id:2 , 
+        map_url : "https://maps.app.goo.gl/W45Q3eKJGG4t3MGD9",
+        title:"Port Baku Bazar"
+    },
+    {
+        address:"Fətəli Xan Xoyski prospekti 14",
+        coordinates:"40.3955,49.8185",
+        email : null , 
+        id:3 , 
+        map_url : "https://maps.app.goo.gl/W45Q3eKJGG4t3MGD9",
+        title:"Bravo Ganjlik Mall"
+    },
+    {
+        address:"Xəzər rayonu, Pirallahı yolu, Qoşaqışlaq, Baku 1120",
+        coordinates:"40.4095,49.8825",
+        email : null , 
+        id:1 , 
+        map_url : "https://maps.app.goo.gl/W45Q3eKJGG4t3MGD9",
+        title:"Zirə Bio Market"
+    },
+]

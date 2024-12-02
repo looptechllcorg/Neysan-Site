@@ -1,3 +1,81 @@
-#pointOfSale{
-    
+#pointOfSale {
+  width: 100%;
+  height: 500px;
+  .googleMap {
+    width: 100%;
+    height: 100%;
+  }
+  .marketLocations {
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    background: #f7ebeb;
+    .marketTitle {
+      color: #973d1a;
+    }
+    .margetInfoWrapper {
+      // background-color: #F7EBEB;
+      height: 380px;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 4px;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #973d1a;
+        border-radius: 10px;
+      }
+      .locationAddressCart {
+        margin: 1.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1rem;
+        margin-right: 10px;
+        padding: 1rem;
+        .marketNameAndMarketAddress {
+          .marketName {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #3d180a;
+          }
+          .address {
+            color: #973d1a;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+          }
+        }
+        .WebShowOnMapBtn {
+          cursor: pointer;
+          padding: 0.7rem 1rem;
+          border: none;
+          border-radius: 30px;
+          color: #973d1a;
+          font-size: 1rem;
+          font-weight: 700;
+          white-space: nowrap;
+          background: rgba(255, 255, 255, 0.53);
+          transition: 0.5s ease-in;
+          &:hover {
+            background-color: #973d1a;
+            color: white;
+          }
+        }
+        .MobileShowOnMapBtn {
+          display: none;
+        }
+      }
+      .activeElement {
+        background: rgba(217, 217, 217, 0.3);
+
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .leaflet-bottom {
+    display: none;
+  }
 }
