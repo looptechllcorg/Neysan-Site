@@ -290,3 +290,32 @@ export const ServiceImages = [
   { id: 6, src:Service6 , alt: "Grapefruit" },
   { id: 7, src:Service7 , alt: "Raspberries" },
 ]
+
+import bgFrs from "../assets/image/OurCompany/bg1.png"
+import bgSec from "../assets/image/OurCompany/bg2.png"
+import bgThr from "../assets/image/OurCompany/bg3.png"
+export const ourCompanyDatas = {
+    text:[
+        "The main activities are the production of freight cars, the repair of rolling stock, the manufacture of tank containers, tanks, metal structures and auto hydraulic lifts. \n\nThe high technological level of production, the true professionalism of our team and the experience of working in an international environment are the most important competitive advantage of the company. And the possibility of a quick changeover to the production of new products distinguishes our company from others. \nWe are committed to respect and integrity, and we pride ourselves on setting the pace and setting the new industry standard for business and manufacturing technology."
+    ],
+    datas: [
+        {
+            id:1,
+            imgSrc : bgFrs,
+            number:190,
+            text:"customer"
+        },
+        {
+            id:2,
+            imgSrc : bgSec,
+            number:40,
+            text:"Product"
+        },
+        {
+            id:3,
+            imgSrc : bgThr,
+            number:15,
+            text:"Offical Stores"
+        },
+    ]
+}
