@@ -5,7 +5,7 @@ const BestProduct = ({text,data}) => {
     console.log(data);
     
   return (
-    <section id='bestProduct'>
+    <section id='bestProduct'> 
         <div className="container">
             <div className="row">
                 <div className="col-4">

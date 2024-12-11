@@ -10,6 +10,7 @@ import sliderPattern from "../../../../assets/image/SliderPattern.png"
 import "./HomeSlider.scss"
 import ArrowLeft from '../../../../assets/icons/ArrowLeft';
 import ArrowRight from '../../../../assets/icons/ArrowRight';
+import { Link } from 'react-router-dom';
 const HomeSlider = () => {
 
 
@@ -64,7 +65,7 @@ const HomeSlider = () => {
               <p>{item.description}</p>
               <img className='pattern' src={sliderPattern} alt="Pattern" />
               <button>
-                Detailed
+                <Link to={`product/${item.id}`}>Detailed</Link>
               </button>
             </div>
           </SwiperSlide>

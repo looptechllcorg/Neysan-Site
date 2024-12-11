@@ -6,6 +6,7 @@ import Videos from "../pages/client/videos/Videos";
 import Product from "../pages/client/product/Product";
 import OurCompany from "../pages/client/ourCompany/OurCompany";
 import PointOfSale from "../pages/client/pointOfSale/PointOfSale";
+import DetailPage from "../pages/client/detailPage/DetailPage";
 
 
 
@@ -35,6 +36,10 @@ export const ROUTES = [
                 element: <Product />
             },
             {
+               path:"/product/:slug",
+                element: <DetailPage />
+            },
+            {
                 path: "photos",
                 element: <Photos />
             },
@@ -42,6 +47,10 @@ export const ROUTES = [
                 path: "videos",
                 element: <Videos />
             },
+            {
+                path:"*",
+                element:<Home/>
+            }
 
 
         ]

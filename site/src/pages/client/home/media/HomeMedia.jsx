@@ -23,7 +23,7 @@ const HomeMedia = () => {
         <Swiper
           spaceBetween={30}
           effect={"fade"}
-          loop={true}
+          // loop={true}
           pagination={{
             clickable: true,
           }}

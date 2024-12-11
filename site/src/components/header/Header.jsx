@@ -16,13 +16,13 @@ const Header = () => {
     const handleScroll = () => {
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      if (scrollTop > 25) {
+      if (scrollTop > 15) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
 
-      if (scrollTop > 180) {
+      if (scrollTop > 100) {
         setIsScrolledFar(true);
       } else {
         setIsScrolledFar(false);
