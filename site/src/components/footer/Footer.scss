@@ -1,48 +1,50 @@
 footer{
-    background-color: #912711;
-    
+    // background-color: #912711;
+    // margin-top: 60px;
+    width: 100%;
+    // height: 400px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
-    // .overlay{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: black;
-    //     opacity: 40%;
-       
-    // }
+    background-position: center;
     .footerHead{
-        padding: 120px 0 70px;
-        .footerLogo{
-            width: 25%;
+    //   padding: 20px 0 40px;
+     
             .logo{
+                @media (max-width:768px) {
+                  display: flex;
+                  justify-content: center;
+                }
                 img{
                     width: 178px;
                     height: 150px;
                     object-fit: cover;
                 }
             }
-            ul{
-                margin: 0;
-                padding: 0;
-                li{
-                    margin:0 0 7px ;
-                    color: #fff;
-                    opacity: 70%;
+        
+        .footerText{
+            // width: 25%;
+            // @media (max-width:768px) {
+            //     display: none;
+            // }
+                p{
+                    color: #FFFFFFB2;
+                    font-size: 20px;
+                    font-weight: 400;
+
                 }
-            }
             .socialLogos{
-                margin-top: 20px;
-                
+                margin-top: 20px; 
                 display: flex;
-                justify-content: space-between;
+                justify-content: start;
+                gap: 45px;
             }
         }
         .footerAboutUs{
-            height: 100%;
+            @media (max-width:768px) {
+                text-align: center;
+            }
             h4{
                 color: #fff;
                 font-size: 20px;
@@ -50,11 +52,16 @@ footer{
                 letter-spacing: 2%;
             }
             ul{
+                @media (max-width:768px) {
+                    text-align: center;
+                    align-items: center;
+                }
                 margin: 0;
                 padding: 0;
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
+                align-items: start;
                 li{
                     margin:0 0 7px ;
                     color: #fff;
@@ -63,7 +70,9 @@ footer{
             }
         }
         .footerContactUs{
-           
+            @media (max-width:768px) {
+                text-align: center;
+            }
             h4{
                 color: #fff;
                 font-size: 20px;
