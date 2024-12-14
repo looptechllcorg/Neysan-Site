@@ -26,7 +26,6 @@
       display: flex;
       width: 70%;
       justify-content: space-around;
-      // gap: 15px;
       align-items: center;
       margin: 0;
       padding: 0;
@@ -139,9 +138,6 @@
       object-fit: contain;
     }
   }
-  // .openNavbar{
-
-  // }
   .mobileNavbarItems {
     // background-color: black;
     padding: 70px 45px;
@@ -164,11 +160,23 @@
       li {
         text-align: start;
         a {
+          color: #006633;
           font-weight: 700;
           line-height: 32.5px;
           font-size: 32px;
           text-decoration: none;
         }
+        .activeList{
+          width: 100%;
+          height: var(--listHeight);
+          overflow: hidden;
+          transition: .3s ease-in-out;
+          li{
+            padding: 7px 0;
+            
+          }
+        }
+
       }
     }
   }

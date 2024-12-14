@@ -8,9 +8,13 @@ import CloseIcon from '../../assets/icons/CloseIcon';
 // import ArrowBottomIcon from '../../assets/icons/ArrowBottomIcon';
 const Header = () => {
   const [navActive,setnavActive] = useState(false)
+  const [mobiLListActive,setmobilListActive] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrolledFar, setIsScrolledFar] = useState(false);
 ;
+const openActiveList = ()=>{
+  setmobilListActive(!mobiLListActive)
+}
 
   useEffect(() => {
     const handleScroll = () => {
@@ -184,15 +188,19 @@ const Header = () => {
             >
               Products
             </NavLink></li>
-                <li>
-                <NavLink
-              to="/videos"
-              style={({ isActive }) => ({
-                color: isActive ? "#FFB212" : "#006633"
-              })}
-            >
-              Media
-            </NavLink></li>
+                <li onClick={ ()=>openActiveList()}>
+                <a>Media</a>
+                  <ul style={{
+                    "--listHeight" : mobiLListActive == true ? "auto" : "0"
+                  }} className="activeList">
+                    <li>
+                      <NavLink>Photos</NavLink>
+                    </li>
+                    <li>
+                      <NavLink>Videos</NavLink>
+                    </li>
+                  </ul>
+                </li>
                 <li>
                 <NavLink
                 onClick={()=>{setnavActive(false);}}
