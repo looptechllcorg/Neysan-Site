@@ -3,15 +3,26 @@ import "./Header.scss"
 import neysanLogo from "../../assets/image/Neysanlogo.png";
 import SearchIcon from "../../assets/icons/SearchIcon";
 import MenuIcon from "../../assets/icons/MenuIcon";
-import { Link,NavLink } from 'react-router-dom';
+import { Link,NavLink, useNavigate } from 'react-router-dom';
 import CloseIcon from '../../assets/icons/CloseIcon';
-// import ArrowBottomIcon from '../../assets/icons/ArrowBottomIcon';
 const Header = () => {
   const [navActive,setnavActive] = useState(false)
   const [mobiLListActive,setmobilListActive] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrolledFar, setIsScrolledFar] = useState(false);
-;
+
+  
+
+  
+  const navigate = useNavigate();
+  const handleSearch = (e) => {
+    // console.log();
+    
+    console.log(searchInputValue);
+    e.preventDefault();
+    // navigate("/search")
+  };
+
 const openActiveList = ()=>{
   setmobilListActive(!mobiLListActive)
 }
@@ -114,7 +125,13 @@ const openActiveList = ()=>{
                 
                   <div className="nav_btns">
                     <div className="search">
-                      <input type="text" placeholder='Search...' />
+                     <form  onSubmit={handleSearch}>
+                     <input
+                      onChange={(e)=>{setSearchInputValue(e.target.value)}}
+                      // value={searchInputValue || ""}  
+                      type="text" placeholder='Search...' 
+                      />
+                     </form>
                       <div className="icon">
 
                       <SearchIcon/>
@@ -180,8 +197,8 @@ const openActiveList = ()=>{
             </NavLink></li>
                 <li>
                 <NavLink
-                onClick={()=>{setnavActive(false);}}
               to="/product"
+                onClick={()=>{setnavActive(false);}}
               style={({ isActive }) => ({
                 color: isActive ? "#FFB212" : "#006633"
               })}
@@ -194,10 +211,19 @@ const openActiveList = ()=>{
                     "--listHeight" : mobiLListActive == true ? "auto" : "0"
                   }} className="activeList">
                     <li>
-                      <NavLink>Photos</NavLink>
+                      <NavLink
+                      onClick={()=>{setnavActive(false);}}
+                      style={({ isActive }) => ({
+                        color: isActive ? "#FFB212" : "#006633"
+                      })} to="/photos">Photos</NavLink>
                     </li>
                     <li>
-                      <NavLink>Videos</NavLink>
+                      <NavLink
+                      onClick={()=>{setnavActive(false);}}
+                      style={({ isActive }) => ({
+                        color: isActive ? "#FFB212" : "#006633"
+                      })}
+                       to="/videos">Videos</NavLink>
                     </li>
                   </ul>
                 </li>

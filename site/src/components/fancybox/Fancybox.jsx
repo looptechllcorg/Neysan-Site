@@ -20,7 +20,7 @@ function Fancybox(props) {
         };
     });
 
-    return <div ref={containerRef}>{props.children}</div>;
+    return <div style={{zIndex:"9999"}} ref={containerRef}>{props.children}</div>;
 }
 
 export default Fancybox;

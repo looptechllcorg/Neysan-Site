@@ -4,9 +4,21 @@
         font-size: 75px;
         width: 100%;
         line-height: 100px;
+        font-weight: 700;
+        color: #993D1C;
+        @media (max-width:768px) {
+            font-size:55px ;
+            font-weight: 700;
+            line-height: 60px;
+            text-align: center;
+          }
     }
     .pageText{
-        font-size: 20px;
+        @media (max-width:768px) {
+            font-size:19px ;    
+            line-height: 25px;
+          }
+        font-size: 25px;
         line-height: 30px;
         white-space: pre-line;
     }

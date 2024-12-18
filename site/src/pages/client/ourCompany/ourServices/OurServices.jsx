@@ -5,7 +5,7 @@ const OurServices = () => {
     
   return (
     <section id='ourServices'>
-        <div className="container">
+        <div className="container py-5">
             <div className="row">
             {ServiceImages.map((image,index)=>{
                 let className = "col-4"

@@ -7,6 +7,7 @@ import Product from "../pages/client/product/Product";
 import OurCompany from "../pages/client/ourCompany/OurCompany";
 import PointOfSale from "../pages/client/pointOfSale/PointOfSale";
 import DetailPage from "../pages/client/detailPage/DetailPage";
+import SearchResult from "../pages/client/search/SearchResult";
 
 
 
@@ -46,6 +47,10 @@ export const ROUTES = [
             {
                 path: "videos",
                 element: <Videos />
+            },
+            {
+                path: "search",
+                element: <SearchResult/>
             },
             {
                 path:"*",

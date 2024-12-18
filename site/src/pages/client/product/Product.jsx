@@ -23,7 +23,7 @@ const Product = () => {
             </div>
             <div className="row py-3">
             {categories.map((category,index) => (
-             <div className="col-2" key={index}>
+             <div className="col-lg-2 col-sm-3" key={index}>
                <button
                 
                 onClick={() => setSelectedCategory(category)}

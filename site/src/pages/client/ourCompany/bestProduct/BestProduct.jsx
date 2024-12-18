@@ -8,10 +8,10 @@ const BestProduct = ({text,data}) => {
     <section id='bestProduct'> 
         <div className="container">
             <div className="row">
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-12">
                     <h3 className="pageTitle">BEST ORGANİC PRODUCT</h3>
                 </div>
-                <div className="col-8">
+                <div className="col-lg-8 col-sm-12">
                     <p className='pageText'>{text}</p>
                 </div>
             </div>
