@@ -16,7 +16,7 @@
             line-height: 84px;
             font-weight: 500;
             text-transform: uppercase;
-            // max-width: 700px;
+           
         }
 
     }
@@ -29,14 +29,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-       
+        @media (max-width:768px) {
+            height: 300px;
+                  }
         h1{
             animation: animationLeft 20s infinite;
-            
+            width: 700px;
             font-size: 76px;
             line-height: 150px;
             font-weight: 600;
             color: #fff;
+            @media (max-width:768px) {
+            font-size: 35px;
+            line-height: 80px;
+                  }
         }
     }
     @keyframes animationLeft {

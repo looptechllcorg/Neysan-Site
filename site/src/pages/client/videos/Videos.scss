@@ -40,9 +40,15 @@
     }
     .imageSize-700{
         height: 600px;
+        @media (max-width:768px) {
+            height: 400px;
+                  }
     }
     .imageSize-345{
         height: 292px;
+        @media (max-width:768px) {
+            height: 192px;
+                  }
     }
     .modal {
         position: fixed;

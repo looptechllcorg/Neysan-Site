@@ -36,7 +36,7 @@ const DetailPage = () => {
             <div className="row justify-content-between">
               <div className="col-lg-4">
                 <div className="detailImage" style={{ "--circle-color": `#C8311F` }}>
-                  <img src={Image} alt="" />
+                  <img className='productImage' src={Image} alt="" />
                   <div className="imageBackground"></div>
                    <img className='cloud' src={productCloud} alt="" />
                 </div>

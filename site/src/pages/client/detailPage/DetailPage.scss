@@ -30,12 +30,14 @@ main{
                 border-radius: 50%;
                 z-index: -2; 
               }
-            img{
+            .productImage{
                 position: absolute;
                 bottom: 5%;
                 width: 200px;
                 height: 220px;
                 object-fit: contain;
+                transition: .5s ease-in-out;
+                animation:Fly 5s ease-in-out infinite;
                 
             }
             .cloud{
@@ -44,6 +46,7 @@ main{
                 position: absolute;
                 bottom: -25%  ;
                 z-index: -1;
+               animation:CloudAnimation 5s ease-in-out infinite;
             }
         }
         .detailProductInfo{
@@ -128,4 +131,38 @@ main{
             }
         }
     }
+}
+@keyframes Fly {
+    0% {
+        transform: translate(0%, 0) translateX(0) translateY(0);
+      }
+      25% {
+        transform: translate(0%, 0) translateX(-3px) translateY(-2px);
+      }
+      50% {
+        transform: translate(0%, 0) translateX(2px) translateY(3px); 
+      }
+      75% {
+        transform: translate(0%, 0) translateX(-2px) translateY(1px); 
+      }
+      100% {
+        transform: translate(0%, 0) translateX(0) translateY(0);
+      }
+}
+@keyframes CloudAnimation {
+    0% {
+        transform: translate(0%, 0) translateX(0) ;
+      }
+      25% {
+        transform: translate(0%, 0) translateX(-3px) ;
+      }
+      50% {
+        transform: translate(0%, 0) translateX(2px) ; 
+      }
+      75% {
+        transform: translate(0%, 0) translateX(-2px) ; 
+      }
+      100% {
+        transform: translate(0%, 0) translateX(0);
+      }
 }
