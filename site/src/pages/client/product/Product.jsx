@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const Product = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-
   const filteredProducts = selectedCategory === "All"
     ? productsData 
     : productsData.filter(product => product.category === selectedCategory);

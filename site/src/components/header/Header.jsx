@@ -5,22 +5,20 @@ import SearchIcon from "../../assets/icons/SearchIcon";
 import MenuIcon from "../../assets/icons/MenuIcon";
 import { Link,NavLink, useNavigate } from 'react-router-dom';
 import CloseIcon from '../../assets/icons/CloseIcon';
+
+import { useDataContext } from '../../Contexts/SearchContext';
 const Header = () => {
   const [navActive,setnavActive] = useState(false)
   const [mobiLListActive,setmobilListActive] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
   const [isScrolledFar, setIsScrolledFar] = useState(false);
-
+  const {searchInputValue,setSearchInputValue ,searchFunctions}= useDataContext()
   
-
   
   const navigate = useNavigate();
   const handleSearch = (e) => {
-    // console.log();
-    
-    console.log(searchInputValue);
     e.preventDefault();
-    // navigate("/search")
+    navigate("/search")
   };
 
 const openActiveList = ()=>{
@@ -127,8 +125,12 @@ const openActiveList = ()=>{
                     <div className="search">
                      <form  onSubmit={handleSearch}>
                      <input
-                      onChange={(e)=>{setSearchInputValue(e.target.value)}}
-                      // value={searchInputValue || ""}  
+                      onChange={(e)=>{
+                        setSearchInputValue(e.target.value)
+                        searchFunctions()
+                      }
+                      }
+                      value={searchInputValue || ""}  
                       type="text" placeholder='Search...' 
                       />
                      </form>

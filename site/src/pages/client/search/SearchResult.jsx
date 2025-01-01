@@ -9,6 +9,7 @@ const SearchResult = () => {
     <main>
 
     <div className="search-page">
+      Search Resulkts
     {/* <h1>Search Results for "{query}"</h1>
     {results.length > 0 ? (
       <ul>
