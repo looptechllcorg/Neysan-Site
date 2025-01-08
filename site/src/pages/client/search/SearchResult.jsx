@@ -1,26 +1,39 @@
 import React from 'react'
-// import { useSearch } from '../../../Contexts/SearchContext';
-// const { query, results } = useSearch();  
-
+import { useDataContext } from '../../../Contexts/SearchContext';
+import "./SearchResult.scss"
 
 const SearchResult = () => {
+  const { filteredItems} = useDataContext();  
+  console.log(filteredItems);
+  
   return (
 
     <main>
 
-    <div className="search-page">
-      Search Resulkts
-    {/* <h1>Search Results for "{query}"</h1>
-    {results.length > 0 ? (
-      <ul>
-      {results.map((result, index) => (
-        <li key={index}>{result.productName}</li>
+    <section id="searchPage">
+
+<div className="container">
+
+    {filteredItems.length > 0 ? (
+      <div className='row'>
+      {filteredItems.map((result, index) => (
+        <div className="col-lg-4">
+          <div className="cart">
+            <div className="cardImg">
+              <img src={result.image} alt="" /></div>
+          </div>
+          <div className="cardText">
+            <h3>{result.productName}</h3>
+            <p>{result.productWeight}</p>
+          </div>
+        </div>
         ))}
-        </ul>
+        </div>
         ) : (
           <p>No results found.</p>
-          )} */}
-  </div>
+          )}
+</div>
+  </section>
           </main>
   )
 }
