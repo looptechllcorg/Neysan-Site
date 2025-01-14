@@ -12,11 +12,8 @@ function App() {
   return (
     <>
       <DataContextProvider>
-
-      <RouterProvider  router={routes}  />
+      <RouterProvider router={routes}  />
       </DataContextProvider>
-
-       
     </>
   )
 }
