@@ -33,9 +33,10 @@
             height: 300px;
                   }
         h1{
-            animation: animationLeft 20s infinite;
-            width: 700px;
-            font-size: 76px;
+            animation: animationLeft 18s infinite;
+            width: 1000px;
+        
+            font-size: 66px;
             line-height: 150px;
             font-weight: 600;
             color: #fff;
@@ -47,10 +48,10 @@
     }
     @keyframes animationLeft {
         0%{
-            transform: translateX(100%);
+            transform: translateX(105%);
         }
         100%{
-            transform: translateX(-100%);
+            transform: translateX(-110%);
         }
      
     }

@@ -10,7 +10,7 @@ const MarketLogo = () => {
                     <div className="row">
                   
                           {marketLogoList.map((logo, index) => (
-                            <div key={index} className="col-4 g-4 ">
+                            <div key={index} className="col-3 g-4 ">
                               <div className="marketLogo">
                                 <img  src={logo} />
                               </div>

@@ -13,7 +13,7 @@ main{
         }
         .detailImage{
             width: 100%;
-            height: 300px;
+            height: 400px;
             position: relative;
             overflow: hidden;
             display: flex;
@@ -21,31 +21,31 @@ main{
             &::before {
                 content: "";
                 position: absolute;
-                top: 40%;
+                top: 55%;
                 left: 50%; 
                 transform: translateX(-50%);
                 width: 100%; 
-                height: 100%;
+                height: 70%;
                 background-color:var(--circle-color, rgba(0, 123, 255, 0.2)); /* Dairenin rengi */
                 border-radius: 50%;
                 z-index: -2; 
               }
             .productImage{
                 position: absolute;
-                bottom: 5%;
-                width: 200px;
-                height: 220px;
+                bottom: -4%;
+                width: 340px;
+                height: 340px;
                 object-fit: contain;
                 transition: .5s ease-in-out;
                 animation:Fly 5s ease-in-out infinite;
                 
             }
             .cloud{
-                width: 100%;
+                width: 105%;
                 height: auto;
                 position: absolute;
-                bottom: -25%  ;
-                z-index: -1;
+                bottom: -20%  ;
+                z-index: 0;
                animation:CloudAnimation 5s ease-in-out infinite;
             }
         }
@@ -118,9 +118,9 @@ main{
                         color: var(--text-color);
                         font-size: 18px;
                         display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;
                     }
                     p{  
                         margin: 0;

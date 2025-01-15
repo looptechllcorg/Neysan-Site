@@ -3,18 +3,16 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './PointOfSale.scss'
 import { MapsBrancs } from '../../../MyDatas/MyDatas';
-
+import mapLocation from "../../../assets/image/locationIcon.png"
 const PointOfSale = () => {
   const [location , setLocation] = useState([40.4093, 49.8671])
   const [activeBranchIndex, setActiveBranchIndex] = useState(0);
   const [map, setMap] = useState(null);
-  // const position = [40.4093, 49.8671];
-  const options = {
 
-      scrollwheel: false, 
-      zoomControl: true, 
-  };
-
+ const icon = L.icon({
+      iconUrl: mapLocation,
+      iconSize: [58, 58],
+    });
   const onClickMarketAddress = (item, index) => {
     setActiveBranchIndex(index);
     const coordinates = item.coordinates.split(",");
@@ -32,23 +30,22 @@ const PointOfSale = () => {
           <div className="row">
             <div className="col-lg-7 p-0">
               <div className="googleMap">
-              <MapContainer 
-              center={location} 
-              // options={options} 
-              zoom={12}
-              scrollWheelZoom={true}
-              ref={setMap}
-               style={{ height: '100%', width: '100%' }}>
-      <TileLayer
-          url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
-          attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-        />
-        <Marker position={location}>
-          <Popup>
-          Bakü  Merkezi
-          </Popup>
-        </Marker>
-      </MapContainer>
+              <MapContainer
+                center={location}
+                zoom={12}
+                scrollWheelZoom={true}
+                ref={setMap}
+                
+                style={{ width: "100%", height: "100%", zIndex: "5" }}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={location} icon={icon}>
+                  <Popup></Popup>
+                </Marker>
+              </MapContainer>
               </div>
             </div>
             <div className="col-lg-5 col-sm-12 p-0">

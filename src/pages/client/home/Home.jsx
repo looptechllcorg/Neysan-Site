@@ -7,12 +7,12 @@ import HomeSlider from './homeSlider/HomeSlider'
 import HomeMedia from './media/HomeMedia'
 import LeavePattern from '../../../assets/pattern/leaves2Pattern.png'
 const leaves = [
-  { id: 1, top: "5%", left: "-1%",right:"auto", size: "100px" },
-  { id: 2, top: "7%", left: "auto",right:"-1%", size: "80px" },
+  { id: 1, top: "4%", left: "-1%",right:"auto", size: "100px" },
+  { id: 2, top: "8%", left: "auto",right:"1%", size: "80px" },
   { id: 3, top: "16%", left: "-1%",right:"auto", size: "80px" },
-  { id: 4, top: "25%", left: "auto",right:"-1%", size: "90px" },
+  { id: 4, top: "25%", left: "auto",right:"1%", size: "90px" },
   { id: 5, top: "35%", left: "-1%",right:"auto", size: "70px" },
-  { id: 6, top: "45%", left: "auto",right:"-1%", size: "100px" },
+  { id: 6, top: "45%", left: "auto",right:"1%", size: "100px" },
   { id: 7, top: "60%", left: "-1%",right:"auto", size: "70px" },
 ];
 
@@ -32,7 +32,7 @@ const Home = () => {
             right:leaf.right,
             width: leaf.size,
             height: leaf.size,
-            zIndex:"99"
+            // zIndex:"99"
           }}
         />
       ))}
