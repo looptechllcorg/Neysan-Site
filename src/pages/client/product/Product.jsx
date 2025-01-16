@@ -3,14 +3,45 @@ import "./Product.scss"
 import productCloud from "../../../assets/image/productImage/productCloud.png"
 import { categories, productsData } from '../../../MyDatas/MyDatas'
 import { motion, AnimatePresence } from "framer-motion";
+import LeavePattern from '../../../assets/pattern/leaves2Pattern.png'
+import QaragatPattern from '../../../assets/pattern/qaragat1.png'
+import MorugPattern from '../../../assets/pattern/qirmiziMorug2.png'
+import FlowerPattern from '../../../assets/pattern/saffronFlower2.png'
 const Product = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProducts = selectedCategory === "All"
     ? productsData 
     : productsData.filter(product => product.category === selectedCategory);
+
+    const leaves = [
+      { id: 1, top: "10%", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
+      { id: 2, top: "24  %", left: "auto",right:"1%", size: "80px",src:LeavePattern },
+     { id: 3, top: "48%", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
+       { id: 4, top: "65%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
+       { id: 5, top: "85%", left: "-1%",right:"auto", size: "80px",src:LeavePattern },
+      { id: 6, top: "91%", left: "auto",right:"0%", size: "90px",src:LeavePattern },
+      
+    ];
   return (
-    <main>
+    <main  style={{position:"relative"}}>
+  {leaves.map((leaf) => (
+        <img
+          key={leaf.id}
+          src={leaf.src}
+          alt="Yaprak"
+          style={{
+            position: "absolute",
+            top: leaf.top,
+            left: leaf.left,
+            right:leaf.right,
+            width: leaf.size,
+            height: leaf.size,
+            objectFit:"contain"
+            // zIndex:"99"
+          }}
+        />
+      ))}
       <section id='products'>
           <div className="container">
             <div className="row">
