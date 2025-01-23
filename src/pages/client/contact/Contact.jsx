@@ -1,15 +1,14 @@
-import React from 'react'
-import ContactForm from './contactForm/ContactForm'
-import ContactBanner from './contactBanner/ContactBanner'
-
+import React from "react";
+import ContactForm from "./contactForm/ContactForm";
+import ContactBanner from "./contactBanner/ContactBanner";
 
 const Contact = () => {
   return (
     <main>
-      <ContactBanner/>
-      <ContactForm/>
+      <ContactBanner />
+      <ContactForm />
     </main>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

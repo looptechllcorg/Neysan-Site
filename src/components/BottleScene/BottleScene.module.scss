@@ -1,0 +1,16 @@
+.canvasDiv {
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    // border: 1px solid black;
+}
+
+@media only screen and (max-width: 950px) {
+    .canvasDiv {
+        height: 65vh;
+    }
+}

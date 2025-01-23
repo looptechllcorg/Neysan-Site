@@ -9,64 +9,60 @@ import PointOfSale from "../pages/client/pointOfSale/PointOfSale";
 import DetailPage from "../pages/client/detailPage/DetailPage";
 import SearchResult from "../pages/client/search/SearchResult";
 
-
-
 export const ROUTES = [
-    {
-        path: "/",
-        element: <ClientRoot />,
-        children: [
-            {
-                index: true,
-                element: <Home />
-            },
-            {
-                path: "contact",
-                element: <Contact />
-            },
-            {
-                path: "our-company",
-                element: <OurCompany />
-            },
-            {
-                path: "point-of-sale",
-                element: <PointOfSale/>
-            },
-            {
-                path: "product",
-                element: <Product />
-            },
-            {
-               path:"/product/:slug",
-                element: <DetailPage />
-            },
-            {
-                path: "photos",
-                element: <Photos />
-            },
-            {
-                path: "videos",
-                element: <Videos />
-            },
-            {
-                path: "search",
-                element: <SearchResult/>
-            },
-            {
-                path:"*",
-                element:<Home/>
-            }
-
-
-        ]
-    },
-    {
-        // future: {
-        //   v7_relativeSplatPath: true,
-        // },
-      }
-    // {
-    //     path: "*",
-    //     element: <ErrorPage />
+  {
+    path: "/",
+    element: <ClientRoot />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "our-company",
+        element: <OurCompany />,
+      },
+      {
+        path: "point-of-sale",
+        element: <PointOfSale />,
+      },
+      {
+        path: "product",
+        element: <Product />,
+      },
+      {
+        path: "/product/:slug",
+        element: <DetailPage />,
+      },
+      {
+        path: "photos",
+        element: <Photos />,
+      },
+      {
+        path: "videos",
+        element: <Videos />,
+      },
+      {
+        path: "search",
+        element: <SearchResult />,
+      },
+      {
+        path: "*",
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    // future: {
+    //   v7_relativeSplatPath: true,
     // },
-]
+  },
+  // {
+  //     path: "*",
+  //     element: <ErrorPage />
+  // },
+];
