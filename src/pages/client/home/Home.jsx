@@ -7,6 +7,8 @@ import HomeSlider from './homeSlider/HomeSlider';
 import HomeMedia from './media/HomeMedia';
 import LeavePattern from '../../../assets/pattern/leaves2Pattern.png';
 import BottleScene from '../../../components/BottleScene/BottleScene';
+import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
+
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '100px' },
 	{ id: 2, top: '8%', left: 'auto', right: '1%', size: '80px' },
@@ -38,8 +40,8 @@ const Home = () => {
 			))}
 			<BottleScene />
 			<Banner />
-			<HomeTwotoFour />
-			<HomeSlider />
+			<HomeTwotoFour data={hometwoToFourDatas}/>
+			<HomeSlider />  
 			<HomeMedia />
 			<MarketLogo />
 		</main>

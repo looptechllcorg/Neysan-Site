@@ -57,3 +57,11 @@ main{
 .fancybox__container {
 	z-index: 9999 !important;
 }
+
+.home2Between4SectionWrapper #homeInformation:nth-child(even) .row {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+	

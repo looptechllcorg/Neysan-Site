@@ -27,7 +27,7 @@ const HomeSlider = () => {
       <Swiper
         // spaceBetween={150}
         // slidesPerView={2.2}
-        centeredSlides={true}
+        centeredSlides={true}  
         loop={true}  
         breakpoints={{
           769: {
@@ -51,7 +51,7 @@ const HomeSlider = () => {
       >
         {homeSliderData.map((item, index) => (
           <SwiperSlide
-            key={item.id}
+            key={item.id} 
             style={{
               opacity: activeIndex === index ? 1 : 0.5 
             }}
@@ -59,9 +59,8 @@ const HomeSlider = () => {
             <div className='slide_card' >
               <img className='slideImage'
                 src={item.img}
-                alt={item.title}
               />
-              <h3>{item.title}</h3>
+              <h3>{item.name}</h3>
               <p>{item.description}</p>
               <img className='pattern' src={sliderPattern} alt="Pattern" />
               <button>

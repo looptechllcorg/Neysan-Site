@@ -11,49 +11,77 @@ import marketLogo9 from "../assets/Logos/portBakuBazarLogo.png";
 import marketLogo10 from "../assets/Logos/rahatLogo.png";
 import marketLogo11 from "../assets/Logos/zireBioMarket.png";
 import marketLogo12 from "../assets/Logos/grossMarketLogo.png";
+import homeBgCloud1 from "../../src/assets/image/bgCloud1.png";
+import homeBgCloud2 from "../../src/assets/image/bgCloud2.png";
+import homeBgCloud3 from "../../src/assets/image/bgCloud3.png";
+
+
+export const hometwoToFourDatas=[
+    {
+        id:1,
+        title:"one= What If?",
+        info:"one section data === What if we remove the insecurity and cautiousness from life? What if we turned back the clock? What if we could go back to the days when we had a rather uncomplicated affair with food? What if we could relive days when there were zero lifestyle diseases as a consequence of eating? What if we simplify?",
+        bgImg:homeBgCloud1
+    },
+    {
+        id:2, 
+        title:"two =Let ask why?",
+        info:"two section data === Olive is a versatile and ancient fruit that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.",
+        bgImg:homeBgCloud2
+    },
+    {
+        id:3,
+        title:"three= We have tried",
+        info:"three section data === Olive is a versatile and ancient fruit that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.",
+        bgImg:homeBgCloud3
+    }
+] 
 
 export const marketLogoList = [marketLogo1, marketLogo2, marketLogo3, marketLogo4, marketLogo5, marketLogo6, marketLogo7, marketLogo8,marketLogo9,marketLogo10,marketLogo11,marketLogo12,marketLogo4,marketLogo7,marketLogo2,marketLogo10
 ]
 // HomeSlider JAmBottles
+
 import jamBottle1 from "../assets/image/JamBottle1.png"
 import jamBottle2 from "../assets/image/JamBottle2.png"
 import jamBottle3 from "../assets/image/JamBottle3.png"
+import jamBottlex from "../assets/image/Untitled-8.png";
+import jamBottlea from "../assets/image/NeysanJamBoottle.png";
 
 
 export const homeSliderData =[
     {
         id:1,
-        img: jamBottle1,
+        img: jamBottlex,
         name: "Ağ gilas mürəbbəsi",
-        description: "Ağ gilas mürəbbəsi limon ilə 320 qr.",
+        description: "test 1 = Ağ gilas mürəbbəsi limon ilə 320 qr.",
        
     },
     {
         id:2,
-        img: jamBottle1,
+        img: jamBottle3,
         name: "Ağ gilas mürəbbəsi",
-        description: "Saftali mürəbbəsi limon ilə 320 qr.",
+        description: "test 2 = Saftali mürəbbəsi limon ilə 320 qr.",
        
     },
     {
         id:3,
-        img: jamBottle1,
+        img: jamBottle2,
         name: "Ağ gilas mürəbbəsi",
-        description: "Qara Qaragat mürəbbəsi limon ilə 320 qr.",
+        description: "test3 = Qara Qaragat mürəbbəsi limon ilə 320 qr.",
        
     },
     {
         id:4,
         img: jamBottle1,
         name: "Ağ gilas mürəbbəsi",
-        description: "Ağ gilas mürəbbəsi limon ilə 320 qr.",
+        description: "test4 = Ağ gilas mürəbbəsi limon ilə 320 qr.",
        
     },
     {
         id:5,
-        img: jamBottle1,
+        img: jamBottle2,
         name: "Ağ gilas mürəbbəsi",
-        description: "Ağ gilas mürəbbəsi limon ilə 320 qr.",
+        description: "test5 = Ağ gilas mürəbbəsi limon ilə 320 qr.",
        
     },
 ]
