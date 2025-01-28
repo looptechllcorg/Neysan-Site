@@ -7,7 +7,11 @@ import { Link,NavLink, useNavigate } from 'react-router-dom';
 import CloseIcon from '../../assets/icons/CloseIcon';
 
 import { useDataContext } from '../../Contexts/SearchContext';
+import { LanguageContext } from '../../Contexts/LanguageContext';
+import { useTranslation } from 'react-i18next';
 const Header = () => {
+  const {t} = useTranslation()
+  const { siteLang,onClickChangeLang, inputChangeLang } = LanguageContext();
   const [navActive,setnavActive] = useState(false)
   const [mobiLListActive,setmobilListActive] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,7 +80,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#777777"
               })}
             >
-              Our Company
+              {t("ourCompany")}
             </NavLink></li>
                 <li>
                 <NavLink
@@ -85,16 +89,16 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#777777"
               })}
             >
-              Products
+              {t("products")}
             </NavLink></li>
                 <li>
-                <a >Media</a>
+                <a >{t("media")}</a>
                 <ul className='hoverList'>
                   <li>
-                    <NavLink to="/photos">Photo</NavLink>
+                    <NavLink to="/photos">{t("photos")}</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/videos">Video</NavLink>
+                    <NavLink to="/videos">{t("videos")}</NavLink>
                   </li>
                 </ul>
                 </li>
@@ -105,7 +109,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#777777"
               })}
             >
-              Point of sale
+              {t("PointSales")}
             </NavLink></li>
                 <li>
                 <NavLink
@@ -114,7 +118,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#777777"
               })}
             >
-              Contact
+              {t("contact")}
             </NavLink></li>
 
               
@@ -131,7 +135,7 @@ const openActiveList = ()=>{
                       }
                       }
                       value={searchInputValue || ""}  
-                      type="text" placeholder='Search...' 
+                      type="text" placeholder={`${t("search")}...` } 
                       />
                      </form>
                       <div className="icon">
@@ -141,7 +145,7 @@ const openActiveList = ()=>{
                     </div>
                     <div className="changeLang">
                       {/* <ArrowBottomIcon/> */}
-                      <select  name="language">
+                      <select onChange={inputChangeLang} value={siteLang} name="language">
                             <option value="az">AZ</option>
                             <option value="en">EN</option>
                             <option value="ru">RU</option>
@@ -195,7 +199,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#006633"
               })}
             >
-              Our Company
+            {t("ourCompany")}
             </NavLink></li>
                 <li>
                 <NavLink
@@ -205,10 +209,10 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#006633"
               })}
             >
-              Products
+             {t("products")}
             </NavLink></li>
                 <li onClick={ ()=>openActiveList()}>
-                <a>Media</a>
+                <a>{t("media")}</a>
                   <ul style={{
                     "--listHeight" : mobiLListActive == true ? "auto" : "0"
                   }} className="activeList">
@@ -217,7 +221,7 @@ const openActiveList = ()=>{
                       onClick={()=>{setnavActive(false);}}
                       style={({ isActive }) => ({
                         color: isActive ? "#FFB212" : "#006633"
-                      })} to="/photos">Photos</NavLink>
+                      })} to="/photos">{t("photos")}</NavLink>
                     </li>
                     <li>
                       <NavLink
@@ -225,7 +229,7 @@ const openActiveList = ()=>{
                       style={({ isActive }) => ({
                         color: isActive ? "#FFB212" : "#006633"
                       })}
-                       to="/videos">Videos</NavLink>
+                       to="/videos">{t("videos")}</NavLink>
                     </li>
                   </ul>
                 </li>
@@ -237,7 +241,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#006633"
               })}
             >
-              Point of sale
+              {t("PointSales")}
             </NavLink></li>
                 <li>
                 <NavLink
@@ -247,7 +251,7 @@ const openActiveList = ()=>{
                 color: isActive ? "#FFB212" : "#006633"
               })}
             >
-              Contact
+              {t("contact")}
             </NavLink></li>
                
               

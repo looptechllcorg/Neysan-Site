@@ -10,7 +10,9 @@ import LocationIcon from "../../assets/icons/LocationIcon";
 import TelephoneIcon from "../../assets/icons/TelephoneIcon";
 import MessageIcon from "../../assets/icons/MessageIcon";
 import FooterBG from "../../assets/image/GroupFooter.png";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+    const {t} = useTranslation()
   return (
     <footer style={{ backgroundImage: `url(${FooterBG})` }}>
       <div className="footerHead">
@@ -35,18 +37,18 @@ const Footer = () => {
               <div className="footerAboutUs">
                 <h4>ABOUT US</h4>
                 <ul>
-                  <li>Our Company</li>
-                  <li>Product</li>
+                  <li> {t("ourCompany")}</li>
+                  <li>{t("products")}</li>
                   <li>History</li>
-                  <li>Media</li>
-                  <li>Point of Sale</li>
+                  <li>{t("media")}</li>
+                  <li>{t("PointSales")}</li>
                   <li>Useful</li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-12 g-3">
               <div className="footerContactUs">
-                <h4>CONTACT US</h4>
+                <h4>{t("contactUs")}</h4>
                 <ul>
                   <li></li>
                   <li>

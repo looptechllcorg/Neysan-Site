@@ -7,16 +7,14 @@ const HomeInformation = ({sectionData}) => {
   const words = sectionData.info.split(" ");
   const title = sectionData.title.split(" ");
   const { ref, inView } = useInView({
-    triggerOnce: false, 
-    threshold: 0.3, 
+    triggerOnce: false,
+		threshold: 0.1,
   });
   const container = {
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      transition: { duration: 0.4, delay: 0.03 },
     },
   };
 
