@@ -1,16 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neysan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
     <div id="root"></div>
+    <script>
+        // left: 37, up: 38, right: 39, down: 40,
+        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+        var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+        function preventDefault(e) {
+            e.preventDefault();
+        }
+
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+
+        // modern Chrome requires { passive: false } when adding event
+        var supportsPassive = false;
+        try {
+            window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                get: function () { supportsPassive = true; }
+            }));
+        } catch (e) { }
+
+        var wheelOpt = supportsPassive ? { passive: false } : false;
+        var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+        // call this to Disable
+        function disableScroll() {
+            // window.scrollActivity = false;
+            window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+            window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+            window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+            window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+        }
+
+        // call this to Enable
+        function enableScroll() {
+            // window.scrollActivity = true;
+            window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+            window.removeEventListener('touchmove', preventDefault, wheelOpt);
+            window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+        }
+        window.disableScroll = disableScroll;
+        window.enableScroll = enableScroll;
+        // window.scrollActivity = true;
+
+
+        // Scroll eventi dinleyicisi ekle
+        // window.addEventListener('wheel', function (event) {
+        //     // deltaY değeri
+        //     let delta = event.deltaY;
+
+        //     // Scroll hızını kısıtlamak için bir sınır belirleyelim
+        //     const minDelta = 5; // Min değer (örneğin 40)
+        //     const maxDelta = 10; // Max değer (örneğin 100)
+
+        //     // Eğer deltaY değeri belirtilen sınırlar dışında ise, kısıtla
+        //     if (delta < minDelta) {
+        //         delta = minDelta;
+        //     } else if (delta > maxDelta) {
+        //         delta = maxDelta;
+        //     }
+        //     delta = 30
+        //     // Kısıtlanmış değeri event'e uygulayalım
+        //     event.preventDefault(); // Varsayılan scroll hareketini durdur
+        //     window.scrollBy(0, delta); // Bu şekilde scroll işlemi yapılır
+
+        // }, { passive: false });
+
+    </script>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
+
 </html>

@@ -8,7 +8,16 @@ const BottleScene = ({ modelFilePath, showHiddenBottle }) => {
 	const directionLight = new DirectionalLight();
 	directionLight.intensity = 2;
 	return (
-		<div className={style.canvasDiv}>
+		<div
+			style={{
+				opacity: showHiddenBottle ? 1 : 0,
+				// width: showHiddenBottle ? "100%" : "300px",
+				// overflow: "hidden",
+				// zIndex: showHiddenBottle ? 1 : -1,
+				// transition: 'opacity 0.5s ease, transform 0.5s ease, width 0.5s ease',
+			}}
+			className={style.canvasDiv}
+		>
 			<Canvas
 				shadows
 				camera={{
