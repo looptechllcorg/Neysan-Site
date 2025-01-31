@@ -14,7 +14,7 @@ import gsap from 'gsap';
 
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '100px' },
-	{ id: 2, top: '8%', left: 'auto', right: '1%', size: '80px' },
+	{ id: 2, top: '12%', left: 'auto', right: '1%', size: '80px' },
 	{ id: 3, top: '16%', left: '-1%', right: 'auto', size: '80px' },
 	{ id: 4, top: '25%', left: 'auto', right: '1%', size: '90px' },
 	{ id: 5, top: '35%', left: '-1%', right: 'auto', size: '70px' },
@@ -136,7 +136,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<main className="a0" style={{ position: 'relative' }}>
+		<main id='noPadding' className="a0" style={{ position: 'relative' }}>
 			{leaves.map((leaf) => (
 				<img
 					key={leaf.id}

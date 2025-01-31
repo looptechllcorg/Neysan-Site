@@ -52,7 +52,9 @@ table {
 }
 main{
 	padding-top: 120px;
-
+}
+#noPadding{
+	padding: 0 !important;
 }
 .fancybox__container {
 	z-index: 9999 !important;

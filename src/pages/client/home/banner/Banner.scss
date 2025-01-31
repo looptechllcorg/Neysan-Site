@@ -3,9 +3,8 @@
   justify-content: center;
   position: relative;
   margin:0px 0 0 ;
-  // padding-top: 165px;
-  // padding-bottom: 145px;
-  height: 150vh;
+  padding-top: 120px;
+  height: 100vh;
   @media (min-width:1400px) {
    height: 120vh;
   }
@@ -31,7 +30,7 @@
   }
   .bannerAnimationBgLeft{
       position: absolute;
-      top: 145px;
+      top: 15%;
       left: 0;
       animation: moveUpDown 5s infinite;
       img{
@@ -41,7 +40,7 @@
   }
   .bannerAnimationBgRight{
       position: absolute;
-      bottom:35vh;
+      bottom:5%;
       right: 0;
       animation: moveUpDown 4.5s infinite;
       // @media (min-width:1400px) {
@@ -80,7 +79,7 @@
  top 110vh left 30vw;
   .qaragatPattern1{
     position: absolute;
-    bottom: 35vh;
+    bottom: 15vh;
     left: 50px;
     animation: moveLeftright 4.5s infinite;
   }
