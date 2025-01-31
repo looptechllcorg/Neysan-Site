@@ -3,7 +3,6 @@
 		"home":"Ana səhifə",
 		"ourCompany":"Bizim şirkət",
 		"products":"Məhsullar",
-		"olivesHistory":"Zeytun tarixi",
 		 "media":" Media",
 		 "PointSales":"Satış nöqtələri",
 		 "useful":"Faydalı",
@@ -16,6 +15,8 @@
 		 "menu":"Menyu",
 		 "contactUs":"Bizimlə əlaqə",
 		 
+		 "BannerText" :"Neysan ilə artan Sağlamlıq",
+		
 		 "notFound":"Nəticə tapılmadı",
 		 "swalAlertTitle":"Daxil etdiyiniz məlumatlar göderildi",
 		 "swalAlertHTML":"Təşəkkür edirik",
@@ -39,11 +40,10 @@
 		"contactDescription":"Xahiş edirik, aşağıdakı formanı doldurun ki, sualınıza və ya müraciətinizə ən yaxşı şəkildə cavab verə bilək. Mesajınıza mümkün qədər tez cavab verməyə çalışacağıq."
 	     },
 	"en":{
-		"100%Organic":"100 % Organic",
+
 		"home":"Home",
 		"ourCompany":"Our company",
 		"products":"Products",
-		"olivesHistory":"Olives History",
 		 "media":"Media",
 		 "PointSales": "Point Of Sales",
 		 "useful":"Useful",
@@ -55,7 +55,9 @@
 		 "view":"View",
 		 "menu":"Menu",
 		 "contactUs":"Contact Us",
-		 "download":"download PDF",
+
+		
+		 
 		 "notFound":"No result found",
 		 "swalAlertTitle":"The information you entered has been sent",
 		 "swalAlertHTML":"Thank you",
@@ -80,10 +82,10 @@
 	    },
 	"ru":{
 		"100%Organic":"100 % ОРГАНИЧЕСКИЙ",
+
 		"home":"Дом",
 		"ourCompany":"Наша компания",
 		"products":"Продукты",
-		"olivesHistory":"История оливок",
 		 "media":"Медиа",
 		 "PointSales":"Точки продаж",
 		 "useful":"Полезным",
