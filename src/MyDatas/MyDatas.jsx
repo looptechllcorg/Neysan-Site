@@ -124,10 +124,36 @@ import productMorug from '../assets/image/productImage/3.png';
 import productSaftali from '../assets/image/productImage/4.png';
 import productZeferan from '../assets/image/productImage/5.png';
 import productGavali from '../assets/image/productImage/6.png';
-import productAggilas from '../assets/image/productImage/7.png';
+import productAggilasLimon from '../assets/image/productImage/7.png';
+
+import productCiyelek from '../assets/image/productImage/8.png';
+import productErik from '../assets/image/productImage/9.png';
+import productCennet from '../assets/image/productImage/10.png';
+import productBehmez from '../assets/image/productImage/11.png';
+import productHeyva from '../assets/image/productImage/12.png';
+import productErikMorug from '../assets/image/productImage/13.png';
+import productAggilasQoz from '../assets/image/productImage/14.png';
+
 import productTomat from '../assets/image/productImage/15.png';
+import productArmud from '../assets/image/productImage/16.png';
 import productBoyurtken from '../assets/image/productImage/17.png';
-import productYarpaq from '../assets/image/productImage/34.png';
+import productZogal from '../assets/image/productImage/18.png';
+import productRedQaragat from '../assets/image/productImage/19.png';
+import productGoyem from '../assets/image/productImage/20.png';
+import productAlbali from '../assets/image/productImage/21.png';
+
+import productAggilasQaragat from '../assets/image/productImage/22.png';
+import productGilas from '../assets/image/productImage/23.png';
+import productZogalEzme from '../assets/image/productImage/24.png';
+import productEncirCem from '../assets/image/productImage/25.png';
+import productGavaliCem from '../assets/image/productImage/26.png';
+import productErikCem from '../assets/image/productImage/27.png';
+import productYarpag720 from '../assets/image/productImage/28.png';
+
+import productCiyelekCem from '../assets/image/productImage/29.png';
+import productYarpag500 from '../assets/image/productImage/30.png';
+import productZeferanMini from '../assets/image/productImage/31.png';
+
  
 
 export const productsData = [
@@ -143,7 +169,7 @@ export const productsData = [
 	{
 		id: 2,
 		bgColor: '#C99500',
-		image: productAggilas,
+		image: productAggilasLimon,
 		productName: 'Ag Gilas murebbesi Limon Ile',
 		description:"",
 		productWeight: '320qr',
@@ -169,7 +195,7 @@ export const productsData = [
 	},
 	{
 		id: 5,
-		bgColor: '#6A232C',
+		bgColor: '#54414A',
 		image: productBoyurtken,
 		productName: 'Böyürtkən murebbesi',
 		description:"",
@@ -178,7 +204,7 @@ export const productsData = [
 	},
 	{
 		id: 6,
-		bgColor: '#56722F',
+		bgColor: '#696425',
 		image: productEncir,
 		productName: 'Əncir murebbesi',
 		description:"",
@@ -187,12 +213,12 @@ export const productsData = [
 	},
 	{
 		id: 7,
-		bgColor: '#A5E460',
-		image: productYarpaq,
+		bgColor: '#89902C',
+		image: productYarpag500,
 		productName: 'Uzum Yarpagi',
 		description:"",
-		productWeight: '320qr',
-		category: 'Vegetable',
+		productWeight: '500qr',
+		category: 'Other',
 	},
 	{
 		id: 8,
@@ -205,27 +231,28 @@ export const productsData = [
 	},
 	{
 		id: 9,
-		bgColor: '#D9C4E4',
+		bgColor: '#5B2E6F',
 		image: productGavali,
 		productName: 'Gavalı Mürəbbəsi',
 		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
+
 	{
 		id: 10,
-		bgColor: '#890020',
-		image: productMorug,
-		productName: 'Moruğ Mürəbbəsi',
+		bgColor: '#AE3307',
+		image: productCennet,
+		productName: 'Cənnət Alması Mürəbbəsi',
 		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
 	{
 		id:11,
-		bgColor: '#c32c3f',
-		image: productZeferan,
-		productName: 'Zəfəran Mürəbbəsi',
+		bgColor: '#A1454A',
+		image: productCiyelek,
+		productName: 'Çiyələk Mürəbbəsi ',
 		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
@@ -233,44 +260,44 @@ export const productsData = [
   {
     id: 12,
     bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    image: productErik,
+    productName: 'Ərik Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 13,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#184070',
+    image: productBehmez,
+    productName: 'Üzüm Bəhməzi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 14,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#A6740B',
+    image: productHeyva,
+    productName: 'Heyva Mürəbbəsi Qoz ilə',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 15,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#8B3030',
+    image: productErikMorug,
+    productName: 'Ərik Mürəbbəsi Moruğ ilə',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 16,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#B6980E',
+    image: productAggilasQoz,
+    productName: 'Gilas Mürəbbəsi Qoz ilə',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
@@ -278,141 +305,143 @@ export const productsData = [
   {
     id: 17,
     bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    image: productMorug,
+    productName: 'Moruğ Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 18,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#D19568',
+    image: productArmud,
+    productName: 'Armud Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 19,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#972831',
+    image: productZogal,
+    productName: 'Zoğal Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 20,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#A83F4B',
+    image: productRedQaragat,
+    productName: 'Qırmızı Qarağat Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
+//   #c32c3f
   {
     id: 21,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#30345C',
+    image: productGoyem,
+    productName: 'Göyəm Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 22,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#7F1227',
+    image: productAlbali,
+    productName: 'Albalı Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 23,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#AD853A',
+    image: productAggilasQaragat,
+    productName: 'Ağ Gilas Mürəbbəsi Qarağat ilə',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 24,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#B96E04',
+    image: productGilas,
+    productName: 'Ağ Gilas Mürəbbəsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 25,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#781A12',
+    image: productZogalEzme,
+    productName: 'Zoğal Əzməsi',
     description: '',
     productWeight: '320qr',
     category: 'Vegetable',
   },
   {
     id: 26,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#8F9865',
+    image: productEncirCem,
+    productName: 'Əncir Cemi ',
     description: '',
     productWeight: '320qr',
-    category: 'Vegetable',
+    category: 'Jam',
   },
   {
     id: 27,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#9D5A82',
+    image: productGavaliCem,
+    productName: 'Gavalı Cemi ',
     description: '',
     productWeight: '320qr',
-    category: 'Vegetable',
+    category: 'Jam',
   },
   {
     id: 28,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#C97D60',
+    image: productErikCem,
+    productName: 'Ərik Cemi',
     description: '',
     productWeight: '320qr',
-    category: 'Vegetable',
+    category: 'Jam',
   },
   {
     id: 29,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#89902C',
+    image: productYarpag720,
+    productName: 'Üzüm Yarpagı',
     description: '',
-    productWeight: '320qr',
-    category: 'Vegetable',
+    productWeight: '720qr',
+    category: 'Other',
   },
   {
     id: 30,
-    bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    bgColor: '#B92B27',
+    image: productCiyelekCem,
+    productName: ' Çiyələk Cemi',
     description: '',
     productWeight: '320qr',
-    category: 'Vegetable',
+    category: 'Jam',
   },
   {
     id: 31,
     bgColor: '#c32c3f',
-    image: productZeferan,
-    productName: 'Zəfəran Mürəbbəsi',
+    image: productZeferanMini,
+    productName: 'Zəfəran',
     description: '',
     productWeight: '320qr',
-    category: 'Vegetable',
-  },
+    category: 'Other',
+  }
+  ,
   {
     id: 32,
-    bgColor: '#c32c3f',
+    bgColor: '#B966A2',
     image: productZeferan,
     productName: 'Zəfəran Mürəbbəsi',
     description: '',
