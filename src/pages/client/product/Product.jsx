@@ -81,7 +81,7 @@ const Product = () => {
 
                 <div className="productCard">
                   <div className="cardImg" style={{ "--circle-color": `${product.bgColor}` }}>
-                    <img src={product.image} alt={product.productName} />
+                    <img className='prdocutCardImage' src={product.image} alt={product.productName} />
                     <div className="imageBackground"></div>
                    <img className='cloud' src={productCloud} alt="" />
                   </div>

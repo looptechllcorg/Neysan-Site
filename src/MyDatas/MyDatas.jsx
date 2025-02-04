@@ -1,20 +1,3 @@
-// MArketLogos
-import marketLogo1 from '../assets/Logos/arazLogo.png';
-import marketLogo2 from '../assets/Logos/abseronmarketLogo.png';
-import marketLogo3 from '../assets/Logos/bazarStoreLogo.png';
-import marketLogo4 from '../assets/Logos/bolmartLogo.png';
-import marketLogo5 from '../assets/Logos/bravoLogo.png';
-import marketLogo6 from '../assets/Logos/favoritLogo.png';
-import marketLogo7 from '../assets/Logos/grantMartLogo.png';
-import marketLogo8 from '../assets/Logos/happymarketLogo.png';
-import marketLogo9 from '../assets/Logos/portBakuBazarLogo.png';
-import marketLogo10 from '../assets/Logos/rahatLogo.png';
-import marketLogo11 from '../assets/Logos/zireBioMarket.png';
-import marketLogo12 from '../assets/Logos/grossMarketLogo.png';
-import homeBgCloud1 from '../../src/assets/image/bgCloud1.png';
-import homeBgCloud2 from '../../src/assets/image/bgCloud2.png';
-import homeBgCloud3 from '../../src/assets/image/bgCloud3.png';
-
 export const hometwoToFourDatas = [
 	{
 		id: 1,
@@ -35,6 +18,23 @@ export const hometwoToFourDatas = [
 		bgImg: homeBgCloud3,
 	},
 ];
+// MArketLogos
+import marketLogo1 from '../assets/Logos/arazLogo.png';
+import marketLogo2 from '../assets/Logos/abseronmarketLogo.png';
+import marketLogo3 from '../assets/Logos/bazarStoreLogo.png';
+import marketLogo4 from '../assets/Logos/bolmartLogo.png';
+import marketLogo5 from '../assets/Logos/bravoLogo.png';
+import marketLogo6 from '../assets/Logos/favoritLogo.png';
+import marketLogo7 from '../assets/Logos/grantMartLogo.png';
+import marketLogo8 from '../assets/Logos/happymarketLogo.png';
+import marketLogo9 from '../assets/Logos/portBakuBazarLogo.png';
+import marketLogo10 from '../assets/Logos/rahatLogo.png';
+import marketLogo11 from '../assets/Logos/zireBioMarket.png';
+import marketLogo12 from '../assets/Logos/grossMarketLogo.png';
+import homeBgCloud1 from '../../src/assets/image/bgCloud1.png';
+import homeBgCloud2 from '../../src/assets/image/bgCloud2.png';
+import homeBgCloud3 from '../../src/assets/image/bgCloud3.png';
+
 
 export const marketLogoList = [
 	marketLogo1,
@@ -118,22 +118,25 @@ export const homeVideoSliderSection = [
 ];
 
 // Products
-import productTomat from '../assets/image/productImage/productImage-Tomat.png';
-import productAggilas from '../assets/image/productImage/productImage-AgGilas.png';
-import productGavali from '../assets/image/productImage/productImage-Gavali.png';
-import productMorug from '../assets/image/productImage/productImage-Morug.png';
-import productQaragat from '../assets/image/productImage/productImage-Qaragat.png';
-import productSaftali from '../assets/image/productImage/productImage-Saftali.png';
-import productYarpaq from '../assets/image/productImage/productImage-Yarpaq.png';
-import productZeytun from '../assets/image/productImage/productImage-Zeytun.png';
+import productQaragat from '../assets/image/productImage/1.png';
+import productEncir from '../assets/image/productImage/2.png';
+import productMorug from '../assets/image/productImage/3.png';
+import productSaftali from '../assets/image/productImage/4.png';
+import productZeferan from '../assets/image/productImage/5.png';
+import productGavali from '../assets/image/productImage/6.png';
+import productAggilas from '../assets/image/productImage/7.png';
+import productTomat from '../assets/image/productImage/15.png';
+import productBoyurtken from '../assets/image/productImage/17.png';
+import productYarpaq from '../assets/image/productImage/34.png';
+ 
 
 export const productsData = [
 	{
 		id: 1,
 		bgColor: '#BB1B23',
-
 		image: productTomat,
 		productName: 'Pomidor Qurusu Zeytun yaginda',
+		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
@@ -142,6 +145,7 @@ export const productsData = [
 		bgColor: '#C99500',
 		image: productAggilas,
 		productName: 'Ag Gilas murebbesi Limon Ile',
+		description:"",
 		productWeight: '320qr',
 		category: 'Fruit',
 	},
@@ -150,6 +154,7 @@ export const productsData = [
 		bgColor: '#312D45',
 		image: productQaragat,
 		productName: 'Qara Qaragat murebbesi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Fruit',
 	},
@@ -158,22 +163,25 @@ export const productsData = [
 		bgColor: '#AA7BAE',
 		image: productGavali,
 		productName: 'Gavali Cemi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Fruit',
 	},
 	{
 		id: 5,
 		bgColor: '#6A232C',
-		image: productMorug,
-		productName: 'Morug murebbesi',
+		image: productBoyurtken,
+		productName: 'Böyürtkən murebbesi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Fruit',
 	},
 	{
 		id: 6,
 		bgColor: '#56722F',
-		image: productZeytun,
-		productName: 'Zeytun murebbesi Limon ile',
+		image: productEncir,
+		productName: 'Əncir murebbesi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
@@ -182,6 +190,7 @@ export const productsData = [
 		bgColor: '#A5E460',
 		image: productYarpaq,
 		productName: 'Uzum Yarpagi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
@@ -190,6 +199,7 @@ export const productsData = [
 		bgColor: '#C8311F',
 		image: productSaftali,
 		productName: 'Saftali Murebbesi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Fruit',
 	},
@@ -197,11 +207,220 @@ export const productsData = [
 		id: 9,
 		bgColor: '#D9C4E4',
 		image: productGavali,
-		productName: 'Zeferan',
+		productName: 'Gavalı Mürəbbəsi',
+		description:"",
 		productWeight: '320qr',
 		category: 'Vegetable',
 	},
+	{
+		id: 10,
+		bgColor: '#890020',
+		image: productMorug,
+		productName: 'Moruğ Mürəbbəsi',
+		description:"",
+		productWeight: '320qr',
+		category: 'Vegetable',
+	},
+	{
+		id:11,
+		bgColor: '#c32c3f',
+		image: productZeferan,
+		productName: 'Zəfəran Mürəbbəsi',
+		description:"",
+		productWeight: '320qr',
+		category: 'Vegetable',
+	},
+  {
+    id: 12,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 13,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 14,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 15,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 16,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 17,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 18,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 19,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 20,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 21,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 22,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 23,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 24,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 25,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 26,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 27,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 28,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 29,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 30,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 31,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  },
+  {
+    id: 32,
+    bgColor: '#c32c3f',
+    image: productZeferan,
+    productName: 'Zəfəran Mürəbbəsi',
+    description: '',
+    productWeight: '320qr',
+    category: 'Vegetable',
+  }
 ];
+
 export const categories = ['All', 'Fruit', 'Vegetable'];
 
 // Photos Page
