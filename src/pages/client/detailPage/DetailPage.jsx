@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
-import {  Navigation } from 'swiper/modules';
+import {  Autoplay } from 'swiper/modules';
 
 import ArrowLeft from '../../../assets/icons/ArrowLeft';
 import ArrowRight from '../../../assets/icons/ArrowRight';
@@ -15,12 +15,22 @@ import productCloud from "../../../assets/image/productImage/productCloud.png"
 import Image from '../../../assets/image/JamBottle1.png'
 import CheckIcon from '../../../assets/icons/CheckIcon';
 import "./DetailPage.scss"
+import { useTranslation } from 'react-i18next';
 const DetailPage = () => {
+  const {t} = useTranslation()
     const {slug} = useParams()
-    console.log(slug);
+
+
+    const productData = productsData.find(item => item.id === parseInt(slug));
+        console.log(productData);
+        
     
+    const featuredProducts = productsData.filter(item =>item.category == productData.category)
+
+console.log(featuredProducts);
+
+
     const [activeIndex, setActiveIndex] = useState(0);
-  
     const handleSlideChange = (swiper) => {
         setActiveIndex(swiper.realIndex);
       };
@@ -35,8 +45,8 @@ const DetailPage = () => {
             </div>
             <div className="row justify-content-between">
               <div className="col-lg-4">
-                <div className="detailImage" style={{ "--circle-color": `#C8311F` }}>
-                  <img className='productImage' src={Image} alt="" />
+                <div className="detailImage" style={{ "--circle-color": `${productData.bgColor}` }}>
+                  <img className='productImage' src={productData.image} alt="" />
                   <div className="imageBackground"></div>
                    <img className='cloud' src={productCloud} alt="" />
                 </div>
@@ -44,8 +54,8 @@ const DetailPage = () => {
               <div className="col-lg-6">
                 <div className="detailProductInfo">
                 
-                    <h3 className='productName'>Ag Gilas Murebbesi Limon Ile </h3>
-                    <p className='productDetail'>330 ml</p>
+                    <h3 className='productName'>{t(productData.productName)}</h3>
+                    <p className='productDetail'>{t(productData.productWeight)}</p>
                     <div className="productTitle">
                     Nourish your and babies skin with <br />
                     Nourish your and babies skin with  <br />
@@ -71,12 +81,17 @@ const DetailPage = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          <div className="col-lg-10">
+          <div className="col-lg-12">
 
        <div className='sliderBox' style={{ width: '100%',  }}>
       <Swiper
         centeredSlides={true}
         loop={true}  
+        speed={3000}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           769: {
             slidesPerView: 1,
@@ -88,13 +103,13 @@ const DetailPage = () => {
             spaceBetween: 30,
           },
         }}
-
+        modules={[Autoplay]}
         pagination={{ clickable: true }}
 
         onSlideChange={handleSlideChange} 
       
       >
-        {productsData.map((item, index) => (
+        {featuredProducts.map((item, index) => (
           
           
           <SwiperSlide
@@ -104,14 +119,14 @@ const DetailPage = () => {
               backgroundColor: activeIndex === index ? item.bgColor : "" 
             }}
           >
-            <Link to={`/product/${index}`}>
+            <Link to={`/product/${item.id}`}>
             <div className='slide_card' >
               <img className='slideImage'
                 src={item.image}
                 alt={item.productName}
               />
-              <h3>{item.productName}</h3>
-              <p>{item.productWeight}</p>
+              <h3>{t(item.productName)}</h3>
+              <p>{t(item.productWeight)}</p>
 
             </div>
             </Link>

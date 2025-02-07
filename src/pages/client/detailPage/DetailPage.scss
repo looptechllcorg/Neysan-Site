@@ -112,7 +112,9 @@ main{
                     text-align: center;
                     .slideImage{
                         width: 100%;
-                        height: 250px;
+                        height: 280px;
+                        object-fit: cover;
+                        object-position: bottom;
                     }
                     h3{
                         color: var(--text-color);

@@ -7,16 +7,28 @@ import LeavePattern from '../../../assets/pattern/leaves2Pattern.png'
 import QaragatPattern from '../../../assets/pattern/qaragat1.png'
 import MorugPattern from '../../../assets/pattern/qirmiziMorug2.png'
 import FlowerPattern from '../../../assets/pattern/saffronFlower2.png'
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 const Product = () => {
+  const [visibleProducts, setVisibleProducts] = useState(9);
+  const {t} = useTranslation()
+  console.log("prData=",productsData);
+  
+  const handleLoadMore = () => {
+    setVisibleProducts((prev) => prev + 9);
+  };
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProducts = selectedCategory === "All"
     ? productsData 
     : productsData.filter(product => product.category === selectedCategory);
-
+    
+    const displayedProducts = filteredProducts.slice(0, visibleProducts);
     const leaves = [
-      { id: 1, top: "10%", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
-      { id: 2, top: "24  %", left: "auto",right:"1%", size: "80px",src:LeavePattern },
+      { id: 1, top: "35vh", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
+      { id: 2, top: "65vh", left: "auto",right:"1%", size: "80px",src:LeavePattern },
      { id: 3, top: "48%", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
        { id: 4, top: "65%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
        { id: 5, top: "85%", left: "-1%",right:"auto", size: "80px",src:LeavePattern },
@@ -61,7 +73,7 @@ const Product = () => {
                   selectedCategory === category ? "btnActive" : ""
                 }`}
               >
-                {category}
+                {t(category)}
               </button>
              </div>
             ))}
@@ -69,7 +81,7 @@ const Product = () => {
           </div>
             <div className="row py-5">
             <AnimatePresence>
-            {productsData && filteredProducts.map((product , index)=>(
+            {displayedProducts.map((product , index)=>(
                    <motion.div
                    key={product.id}
                    className="col-xxl-3 col-lg-4 col-md-6 col-sm-12"
@@ -78,7 +90,8 @@ const Product = () => {
                    exit={{ opacity: 0, y: -20 }} 
                    transition={{ duration: 0.4 }} 
                  >
-
+                  <Link to={`/product/${product.id}`}>
+                  
                 <div className="productCard">
                   <div className="cardImg" style={{ "--circle-color": `${product.bgColor}` }}>
                     <img className='prdocutCardImage' src={product.image} alt={product.productName} />
@@ -86,10 +99,13 @@ const Product = () => {
                    <img className='cloud' src={productCloud} alt="" />
                   </div>
                   <div className="cardText">
-                    <h4>{product.productName}</h4>
-                    <p> {product.productWeight}</p>
+                    <h4>{t(product.productName)}</h4>
+                    
+                    <p> {t(product.productWeight)}</p>
                   </div>
                 </div>
+
+                </Link>
               
               </motion.div>
               )
@@ -97,7 +113,19 @@ const Product = () => {
               )}
             </AnimatePresence>
              
-              
+            {visibleProducts < filteredProducts.length && (
+  <div className="container">
+    <div className="row justify-content-center">
+      <div className="col-lg-4">
+      <div className="text-center">
+    <button className="filterBtn" onClick={handleLoadMore}>
+      Load More
+    </button>
+  </div>
+      </div>
+    </div>
+  </div>
+)}
             </div>
           </div>
       </section>
