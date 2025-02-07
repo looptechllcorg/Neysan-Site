@@ -42,6 +42,10 @@
                     border-radius: 18px;
                     border: 1px solid #0D9B4D;
                     transition: .4s ease-in-out;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
                     &:hover{
                         background-color: #FFB212;
                         border: 1px solid #FFB212;

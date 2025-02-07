@@ -3,6 +3,7 @@ import "./Videos.scss";
 import { VideoGallery } from "../../../MyDatas/MyDatas";
 import PlayButton from "../../../assets/icons/PlayButton";
 import Fancybox from "../../../components/fancybox/Fancybox";
+import SectionHeader from "../../../components/SectionsHeader/SectionHeader";
 
 const Photos = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -22,13 +23,8 @@ const Photos = () => {
   return (
     <section id="photos">
       <div className="container">
-        <div className="row pb-5">
-          <div className="sectionHeader">
-            <p>.. Increased HEALTH With NEYSAN ..</p>
-            <h2>Videos</h2>
-          </div>
-        </div>
-        <div className="row">
+      <SectionHeader sectionHeaderh2="videos"/>
+        <div className="row mt-5">
           <div className="col-lg-6 col-sm-6 g-3">
           <Fancybox>
         <a

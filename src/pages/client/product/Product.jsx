@@ -8,7 +8,8 @@ import QaragatPattern from '../../../assets/pattern/qaragat1.png'
 import MorugPattern from '../../../assets/pattern/qirmiziMorug2.png'
 import FlowerPattern from '../../../assets/pattern/saffronFlower2.png'
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import SectionHeader from '../../../components/SectionsHeader/SectionHeader';
 
 const Product = () => {
   const [visibleProducts, setVisibleProducts] = useState(9);
@@ -56,14 +57,8 @@ const Product = () => {
       ))}
       <section id='products'>
           <div className="container">
-            <div className="row">
-                  <div className="sectionHeader">
-                    <p>.. Increased HEALTH With NEYSAN ..</p>
-                    <h2>PRODUCTS</h2>
-                    <h3>TƏBİƏTDƏN SİZƏ TİPLİ TEXT</h3>
-                  </div>
-            </div>
-            <div className="row py-3">
+          <SectionHeader sectionHeaderh2="products" sectionHeaderh3="productsBannertext"/>
+            <div className="row justify-content-center py-3">
             {categories.map((category,index) => (
              <div className="col-lg-2 col-sm-3" key={index}>
                <button
@@ -90,7 +85,7 @@ const Product = () => {
                    exit={{ opacity: 0, y: -20 }} 
                    transition={{ duration: 0.4 }} 
                  >
-                  <Link to={`/product/${product.id}`}>
+                  <NavLink to={`/product/${product.id}`}>
                   
                 <div className="productCard">
                   <div className="cardImg" style={{ "--circle-color": `${product.bgColor}` }}>
@@ -105,8 +100,8 @@ const Product = () => {
                   </div>
                 </div>
 
-                </Link>
               
+                </NavLink>
               </motion.div>
               )
                 

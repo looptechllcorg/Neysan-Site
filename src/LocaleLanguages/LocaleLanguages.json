@@ -14,7 +14,11 @@
 		"view": "Baxın",
 		"menu": "Menyu",
 		"contactUs": "Bizimlə əlaqə",
-		"BannerText": "Neysan ilə artan Sağlamlıq",
+
+		"sectionHeaderTextP": ".. Neysan ilə artan Sağlamlıq ..",
+		"productsBannertext": "TƏBİƏTDƏN SİZƏ",
+		"homeBannerText": "NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!",
+
 		"notFound": "Nəticə tapılmadı",
 		"swalAlertTitle": "Daxil etdiyiniz məlumatlar göderildi",
 		"swalAlertHTML": "Təşəkkür edirik",
@@ -34,6 +38,8 @@
 		"textarea-error": "Fikrinizi dəqiq və aydın ifadə edin",
 		"send": "Göndər",
 		"contactDescription": "Xahiş edirik, aşağıdakı formanı doldurun ki, sualınıza və ya müraciətinizə ən yaxşı şəkildə cavab verə bilək. Mesajınıza mümkün qədər tez cavab verməyə çalışacağıq.",
+		
+	
 		"Jam": "Mürəbbə",
 		"Jelly": "Cem",
 		"Other": "Digər",
@@ -71,6 +77,8 @@
 		"productCiyelekCem": "Çiyələk Cemi",
 		"productZeferanMini": "Zəfəran",
 		"productZeferan": "Zəfəran Mürəbbəsi"
+
+
 	},
 	"en": {
 		"home": "Home",
@@ -87,6 +95,12 @@
 		"view": "View",
 		"menu": "Menu",
 		"contactUs": "Contact Us",
+
+		"sectionHeaderTextP": ".. Increased HEALTH With NEYSAN ..",
+		"productsBannertext": "NATURE TO YOU",
+		"homeBannerText": "NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!",
+
+
 		"notFound": "No result found",
 		"swalAlertTitle": "The information you entered has been sent",
 		"swalAlertHTML": "Thank you",
@@ -106,6 +120,7 @@
 		"textarea-error": "Explain your opinion clearly",
 		"send": "Send",
 		"contactDescription": "We ask that you please fill out the form below, which will allow us to answer your question or request in the best way possible. We will respond to your message as soon as we can.",
+		
 		"Jam": "Jam",
 		"Jelly": "Jelly",
 		"Other": "Other",
@@ -160,7 +175,11 @@
 		"view": "Вид",
 		"menu": "Меню",
 		"contactUs": "Связаться",
-		"download": "скачать PDF",
+
+"sectionHeaderTextP": ".. Улучшение здоровья с помощью Нейсан ..",
+		"productsBannertext": "TƏBİƏTDƏN SİZƏ",
+		"homeBannerText": "Нейсан - ДЛЯ САМЫХ СЛАДКИХ МОМЕНТОВ!",
+	
 		"notFound": "Результатов не найдено",
 		"swalAlertTitle": "Введённые данные были отправлены",
 		"swalAlertHTML": "Благодарим вас",

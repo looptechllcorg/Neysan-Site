@@ -1,14 +1,13 @@
 import React from 'react'
 import "./CompanyBanner.scss"
 import BannerBg from "../../../../assets/image/CompanyBanner.png"
+import { useTranslation } from 'react-i18next'
+import SectionHeader from '../../../../components/SectionsHeader/SectionHeader'
 const CompanyBanner = () => {
+    const {t} = useTranslation()
   return (
     <section id='companyBanner'>
-         <div className="sectionHeader">
-                    <p>.. Increased HEALTH With NEYSAN ..</p>
-                    <h2>oUR COMPANY</h2>
-            
-                  </div>
+       <SectionHeader sectionHeaderh2="ourCompany"/>
         <div className="container" style={{backgroundImage:`url(${BannerBg})`}}>
                 <h1>Visualize Your Journey to Health</h1>
         </div>

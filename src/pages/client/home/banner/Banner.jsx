@@ -6,7 +6,9 @@ import bannerImageRight from "../../../../assets/image/BannerPatternRectangle107
 import bannerCloud from "../../../../assets/image/BannerCloud.png"
 import Qaragat1 from "../../../../assets/pattern/qaragat1.png"
 import Qaragat2 from "../../../../assets/pattern/qaragat2.png"
+import { useTranslation } from 'react-i18next'
 const Banner = () => {
+      const {t} = useTranslation()
   return (
     <section id='banner'>
       <img className='qaragatPattern1' src={Qaragat1} alt="" />
@@ -18,9 +20,9 @@ const Banner = () => {
         <img src={bannerImageRight} alt="" />
       </div>
       <div className="banner_text_box">
-        <span>.. Increased HEALTH With Neysan ..</span>
+        <span>{t("sectionHeaderTextP")}</span>
         <h1>
-        NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!
+        {t("homeBannerText")}
         </h1>
       </div>
       {/* <div className="banner_bg">

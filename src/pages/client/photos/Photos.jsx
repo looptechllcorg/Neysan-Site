@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Photos.scss"
 import { PhotoGallery } from '../../../MyDatas/MyDatas'
+import SectionHeader from '../../../components/SectionsHeader/SectionHeader';
 
 const Photos = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -18,13 +19,8 @@ const Photos = () => {
   return (
     <section id='photos'>
         <div className="container">
-        <div className="row pb-5">
-                  <div className="sectionHeader">
-                    <p>.. Increased HEALTH With NEYSAN ..</p>
-                    <h2>Photos</h2>
-                  </div>
-            </div>
-            <div className="row">
+        <SectionHeader sectionHeaderh2="photos"/>
+            <div className="row mt-5">
                 <div className="col-lg-7 col-md-12 col-sm-12">
                     <div className="row flex-wrap">
                         <div className="col-lg-7 col-sm-7 col-xs-7 g-3">

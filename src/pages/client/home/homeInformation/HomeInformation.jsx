@@ -25,7 +25,7 @@ const HomeInformation = ({ sectionData, className }) => {
 
 	return (
 		<section className={className} ref={ref} id="homeInformation">
-			<div className="container-lg ">
+			<div className="container-lg">
 				<div className="row">
 					<div className="informationBox col-lg-4 col-sm-4">
 						<motion.div
