@@ -7,10 +7,10 @@ import HomeSlider from './homeSlider/HomeSlider';
 import HomeMedia from './media/HomeMedia';
 import LeavePattern from '../../../assets/pattern/leaves2Pattern.png';
 import BottleScene from '../../../components/BottleScene/BottleScene';
+import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
-import gsap from 'gsap';
 
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '100px' },
@@ -62,6 +62,7 @@ const Home = () => {
 		let sectionIndex = 0;
 		window.sectionIndex = 0;
 		const onComplete = () => {
+			console.log('completed');
 			isRunned = false;
 		};
 		const handleWheel = (e) => {
@@ -76,7 +77,7 @@ const Home = () => {
 					window.sectionIndex = sectionIndex;
 					console.log(sectionsClassNames[sectionIndex], sectionIndex);
 					gsap.to(window, {
-						duration: 1.2,
+						duration: 2,
 						scrollTo: `.${sectionsClassNames[sectionIndex]}`,
 						onComplete: () => onComplete(),
 					});
@@ -136,7 +137,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<main id='noPadding' className="a0" style={{ position: 'relative' }}>
+		<main id="noPadding" className="a0" style={{ position: 'relative' }}>
 			{leaves.map((leaf) => (
 				<img
 					key={leaf.id}
