@@ -1,8 +1,8 @@
 .canvasDiv {
-    height: 600px;
-    width: 600px;
+    height: 50vh;
+    // width: 50vh;
     position: fixed;
-    top: 140px;
+    top: 240px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
@@ -11,6 +11,6 @@
 
 @media only screen and (max-width: 950px) {
     .canvasDiv {
-        height: 65vh;
+        height: 45vh;
     }
 }
