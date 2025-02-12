@@ -154,7 +154,7 @@ const Home = () => {
 					}}
 				/>
 			))}
-			{/* <BottleScene showHiddenBottle={showHiddenBottle} /> */}
+			<BottleScene showHiddenBottle={showHiddenBottle} />
 			<Banner />
 			<HomeTwotoFour data={hometwoToFourDatas} />
 			<HomeSlider />
