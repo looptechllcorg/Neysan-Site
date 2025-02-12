@@ -445,7 +445,7 @@ export const productsData = [
     productName: 'productZeferan',
     description: '',
     productWeight: '320qr',
-    category: 'Jam',
+    category: 'Other',
   }
 ];
 

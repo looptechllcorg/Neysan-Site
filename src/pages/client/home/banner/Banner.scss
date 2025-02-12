@@ -33,6 +33,7 @@
       top: 15%;
       left: 0;
       animation: moveUpDown 5s infinite;
+      z-index: -1;
       img{
           width: 300px;
           height: 300px;
@@ -43,9 +44,7 @@
       bottom:5%;
       right: 0;
       animation: moveUpDown 4.5s infinite;
-      // @media (min-width:1400px) {
-      // bottom: 70vh;
-      // }
+      z-index: -1;
       img{
           width: 200px;
           height: 200px;
@@ -81,12 +80,14 @@
     position: absolute;
     bottom: 15vh;
     left: 50px;
+    z-index: -1;
     animation: moveLeftright 4.5s infinite;
   }
   .qaragatPattern2{
     position: absolute;
     top: 165px;
     right: 100px;
+    z-index: -1;
     animation: moveLeftright 6s infinite;
   }
 }
