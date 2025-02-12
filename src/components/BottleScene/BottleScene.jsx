@@ -11,10 +11,10 @@ const BottleScene = ({ modelFilePath, showHiddenBottle }) => {
 		<div
 			style={{
 				opacity: showHiddenBottle ? 1 : 0,
-				// width: showHiddenBottle ? "100%" : "300px",
-				// overflow: "hidden",
-				// zIndex: showHiddenBottle ? 1 : -1,
-				// transition: 'opacity 0.5s ease, transform 0.5s ease, width 0.5s ease',
+				// width: showHiddenBottle ? '100%' : '300px',
+				// overflow: 'hidden',
+				zIndex: showHiddenBottle ? 99 : -1,
+				transition: 'opacity 0.5s ease, transform 0.5s ease, width 0.5s ease',
 			}}
 			className={style.canvasDiv}
 		>

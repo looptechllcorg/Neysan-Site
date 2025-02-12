@@ -23,13 +23,8 @@ const BottleModel = ({ modelFilePath, position, rotation }) => {
 	});
 
 	return (
-		<group>
-			<group
-				position={[0, 0, 0]}
-				// rotation={[0, Math.PI / 4, 0]}
-				ref={groupRef}
-				dispose={null}
-			>
+		<group ref={groupRef}>
+			<group position={[0, 0, 0]} rotation={[0, Math.PI / 4, 0]} dispose={null}>
 				<group position={[-41.43, 0, 4.33]}>
 					<group position={[41.431, 0.003, -4.33]} rotation={[-Math.PI / 2, 0, 0]}>
 						<mesh
