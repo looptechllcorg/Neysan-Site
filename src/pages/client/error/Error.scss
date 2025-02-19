@@ -1,0 +1,38 @@
+#errorPage{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pageText{
+        width: 50wh;
+        text-align: center;
+        h4{
+            font-size: 3rem;
+            color: #FAA432;
+        }
+        h1{
+            font-size: 10rem;
+            color: #9A0000;
+            font-weight: 900;
+        }
+        p{
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            color: #FAA432;
+        }
+        a{
+            background-color: #42aa49;
+            padding: 10px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            transition: .3s ease-in-out;
+            &:hover{
+                background-color: white;
+                color: #42aa49;
+                border: 1px solid #42aa49;
+            }
+        }
+    }
+}

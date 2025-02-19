@@ -1,4 +1,8 @@
 #searchPage{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
     .cart{
         .cardImg{
             width: 100%;
@@ -12,6 +16,8 @@
         .cardText{
             h3{
                 font-size: 24px;
+                color: black;
+                text-align: center;
             }
             p{
                 font-size: 14px;

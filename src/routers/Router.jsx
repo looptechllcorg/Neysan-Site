@@ -8,6 +8,7 @@ import OurCompany from "../pages/client/ourCompany/OurCompany";
 import PointOfSale from "../pages/client/pointOfSale/PointOfSale";
 import DetailPage from "../pages/client/detailPage/DetailPage";
 import SearchResult from "../pages/client/search/SearchResult";
+import Error from "../pages/client/error/Error";
 
 export const ROUTES = [
   {
@@ -50,16 +51,17 @@ export const ROUTES = [
         path: "search",
         element: <SearchResult />,
       },
-      {
-        path: "*",
-        element: <Home />,
-      },
+     
     ],
   },
   {
-    // future: {
-    //   v7_relativeSplatPath: true,
-    // },
+    path: "*",
+    element: <Error />,
+  },
+  {
+    future: {
+      v7_relativeSplatPath: true,
+    },
   },
   // {
   //     path: "*",
