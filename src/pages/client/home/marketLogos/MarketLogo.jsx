@@ -1,12 +1,14 @@
 import React from 'react'
 import "./MarketLogos.scss"
 import { marketLogoList } from "../../../../MyDatas/MyDatas"
+import { useTranslation } from 'react-i18next'
 const MarketLogo = () => {
+  const {t} = useTranslation()
   return (
     <section>
             <div className="homePointOfSale">
                   <div className="container-lg">
-                      <h3 className="homePointOfSaleTitle">POİNT OF SALE</h3>
+                      <h3 className="homePointOfSaleTitle">{t("PointSales")}</h3>
                     <div className="row">
                   
                           {marketLogoList.map((logo, index) => (

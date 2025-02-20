@@ -1,20 +1,20 @@
 export const hometwoToFourDatas = [
 	{
 		id: 1,
-		title: 'one= What If?',
+		title: 'What If?',
 		info: 'one section data === What if we remove the insecurity and cautiousness from life? What if we turned back the clock? What if we could go back to the days when we had a rather uncomplicated affair with food? What if we could relive days when there were zero lifestyle diseases as a consequence of eating? What if we simplify?',
 		bgImg: homeBgCloud1,
 	},
 	{
 		id: 2,
-		title: 'two =Let ask why?',
-		info: 'two section data === Olive is a versatile and ancient Jam that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.',
+		title: 'Let ask why?',
+		info: 'Olive is a versatile and ancient Jam that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.',
 		bgImg: homeBgCloud2,
 	},
 	{
 		id: 3,
-		title: 'three= We have tried',
-		info: 'three section data === Olive is a versatile and ancient Jam that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.',
+		title: 'We have tried',
+		info: 'Olive is a versatile and ancient Jam that has been cultivated for thousands of years, playing a central role in Mediterranean cultures. Not only is it a key ingredient in countless dishes, but its oil, derived from pressing olives, is renowned for its health benefits and culinary uses.',
 		bgImg: homeBgCloud3,
 	},
 ];

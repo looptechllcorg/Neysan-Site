@@ -150,7 +150,7 @@ const Home = () => {
 						right: leaf.right,
 						width: leaf.size,
 						height: leaf.size,
-						// zIndex:"99"
+						zIndex:"9"
 					}}
 				/>
 			))}

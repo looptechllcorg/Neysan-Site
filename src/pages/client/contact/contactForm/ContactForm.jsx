@@ -3,24 +3,26 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import Swal from 'sweetalert2'
 import "./ContactForm.scss"
+import { useTranslation } from 'react-i18next';
 const ContactForm = () => {
+  const {t} = useTranslation()
     const validationSchema = Yup.object({
         firstName: Yup.string()
-          .required("First name is required")
-          .min(2, "First name must be at least 2 characters"),
+          .required(t("name-error"))
+          .min(2, t("minimun")),
         lastName: Yup.string()
-          .required("Last name is required")
-          .min(2, "Last name must be at least 2 characters"),
+          .required(t("lastname-error"))
+          .min(2, t("minimun")),
         email: Yup.string()
-          .email("Invalid email address")
-          .required("Email is required"),
+          .email(t("Invalid-email-address"))
+          .required(t("email-error")),
         phoneNumber: Yup.string()
-          .matches(/^[0-9]+$/, "Phone number must be digits only")
-          .min(10, "Phone number must be at least 10 digits")
-          .required("Phone number is required"),
+          .matches(/^[0-9]+$/, t("Invalid-number-address"))
+          .min(9, t("Invalid-number-address"))
+          .required(t("number-error")),
         message: Yup.string()
-          .max(500, "Message cannot exceed 500 characters")
-          .required("Message is required"),
+          // .max(500, "Message cannot exceed 500 characters")
+          .required(t("textarea-error")),
       });
       
     const formik = useFormik({
@@ -37,7 +39,7 @@ const ContactForm = () => {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Your work has been saved",
+            title: t("swalAlertTitle"),
             showConfirmButton: false,
             timer: 1500
           });
@@ -51,61 +53,61 @@ const ContactForm = () => {
                 <div className="col-11">
                     <form onSubmit={formik.handleSubmit}>
                         <div className="formHeader">
-                            <h3>Send Us a Message</h3>
+                            <h3>{t("contactDescription")}</h3>
                         </div>
                         <div className="formInputs">
                             <div className="formInputDiv">
-                                <label htmlFor="firstName"> First Name</label>
+                                <label htmlFor="firstName"> {t("firstName")}</label>
                                 <input 
                                 type="text" 
                                 id='firstName' 
                                 name='firstName'
-                                placeholder='First Name'
+                                placeholder={t("firstName")}
                                 onChange={formik.handleChange}
                                 value={formik.values.firstName}
                                 />
                                 {formik.errors.firstName ? <div style={{ color: "red" }}>{formik.errors.firstName}</div> : null}
                             </div>
                             <div className="formInputDiv">
-                                <label htmlFor="lastName"> Last Name</label>
+                                <label htmlFor="lastName"> {t("lastName")}</label>
                                 <input
                                  type="text" 
                                  id='lastName' 
                                  name='lastName'
-                                 placeholder='Last Name' 
+                                 placeholder={t("lastName")}
                                  onChange={formik.handleChange}
                                  value={formik.values.lastName}/>
                                  {formik.errors.lastName ? <div style={{ color: "red" }}>{formik.errors.lastName}</div> : null}
                             </div>
                             <div className="formInputDiv">
-                                <label htmlFor="phoneNumber"> Phone Number</label>
+                                <label htmlFor="phoneNumber"> {t("number")}</label>
                                 <input 
                                 type="tel" 
                                 id='phoneNumber' 
                                 name='phoneNumber'
-                                placeholder='Phone Number'  
+                                placeholder={t("number")}
                                 onChange={formik.handleChange}
                                 value={formik.values.phoneNumber}/>
                                 {formik.errors.phoneNumber ? <div style={{ color: "red" }}>{formik.errors.phoneNumber}</div> : null}
                            </div>
                             <div className="formInputDiv">
-                                <label htmlFor="email"> E-mail Address</label>
+                                <label htmlFor="email">{t("email")}</label>
                                 <input 
                                 type="text" 
                                 id='name' 
                                 name='email'
-                                placeholder='E-mail Address' 
+                                placeholder={t("email")}
                                 onChange={formik.handleChange}
                                 value={formik.values.email}/>
                                 {formik.errors.email ? <div style={{ color: "red" }}>{formik.errors.email}</div> : null}
                            
                             </div>
                             <div className="formTextAreaDiv">
-                                <label htmlFor="message">Message</label>
+                                <label htmlFor="message">{t("message")}</label>
                                 <textarea 
                                 name="message" 
                                 id="message" 
-                                placeholder='Write a Message'
+                                placeholder={t("message2")}
                                 onChange={formik.handleChange}
                                     value={formik.values.message}
                                 ></textarea>
@@ -114,7 +116,7 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <div className="formButton">
-                            <button type='submit' >Send Message</button>
+                            <button type='submit' >{t("send")}</button>
                         </div>
                     </form>
                 </div>

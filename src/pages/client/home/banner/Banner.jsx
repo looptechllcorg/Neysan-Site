@@ -5,7 +5,7 @@ import bannerImageLeft from "../../../../assets/image/BannerPatternRectangle106.
 import bannerImageRight from "../../../../assets/image/BannerPatternRectangle107.png"
 import bannerCloud from "../../../../assets/image/BannerCloud.png"
 import Qaragat1 from "../../../../assets/pattern/qaragat1.png"
-import Qaragat2 from "../../../../assets/pattern/qaragat2.png"
+import Qaragat2 from "../../../../assets/pattern/armudPattern.png"
 import { useTranslation } from 'react-i18next'
 const Banner = () => {
       const {t} = useTranslation()

@@ -4,7 +4,9 @@ import 'leaflet/dist/leaflet.css';
 import "./ContactBanner.scss"
 import BannerImage from "../../../../assets/image/ContactBannerImage.png"
 import mapLocation from "../../../../assets/image/locationIcon.png"
+import { useTranslation } from 'react-i18next';
 const ContactBanner = () => {
+      const {t} = useTranslation()
     const position = [40.4093, 49.8671];
     const icon = L.icon({
       iconUrl: mapLocation,
@@ -14,8 +16,8 @@ const ContactBanner = () => {
     <>
     <section id='contactBanner' style={{backgroundImage: `url(${BannerImage})`}}>
         <div className="bannerText">
-          <h2>Contact Us</h2>
-          <p>Home - Contact</p>
+          <h2>{t("contactUs")}</h2>
+          <p>{t("contactBanner")}</p>
         </div>
     </section>
     

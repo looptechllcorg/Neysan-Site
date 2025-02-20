@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import './PointOfSale.scss'
 import { MapsBrancs } from '../../../MyDatas/MyDatas';
 import mapLocation from "../../../assets/image/locationIcon.png"
+import { useTranslation } from 'react-i18next';
 const PointOfSale = () => {
   const [location , setLocation] = useState([40.4093, 49.8671])
   const [activeBranchIndex, setActiveBranchIndex] = useState(0);
@@ -22,6 +23,7 @@ const PointOfSale = () => {
       duration: 1,
     });
   };
+    const {t} = useTranslation()
   return (
     <main>
 
@@ -52,7 +54,7 @@ const PointOfSale = () => {
             <div className="col-lg-5 col-sm-12 p-0">
                 <div className="marketLocations">
                   <div className="marketTitle">
-                    <h3>Our Locations</h3>
+                    <h3>{t("ourLocation")}</h3>
                   </div>
                 <div className="margetInfoWrapper">
               {MapsBrancs.map((item, index) => (
@@ -72,7 +74,7 @@ const PointOfSale = () => {
                     }}
                     className="WebShowOnMapBtn"
                   >
-                    SHOW ON MAP
+                    {t("showOnMap")}
                   </button>
                   <a
                     onClick={() => {
@@ -82,7 +84,7 @@ const PointOfSale = () => {
                     target="_blank"
                     className="MobileShowOnMapBtn"
                   >
-                    SHOW ON MAP
+                    {t("showOnMap")}
                   </a>
                 </div>
               ))}

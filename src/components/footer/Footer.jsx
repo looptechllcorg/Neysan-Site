@@ -10,6 +10,7 @@ import LocationIcon from "../../assets/icons/LocationIcon";
 import TelephoneIcon from "../../assets/icons/TelephoneIcon";
 import MessageIcon from "../../assets/icons/MessageIcon";
 import FooterBG from "../../assets/image/GroupFooter.png";
+import Looptech from "../../assets/Logos/new-looptech2.png"
 import { useTranslation } from "react-i18next";
 const Footer = () => {
     const {t} = useTranslation()
@@ -25,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-4 col-md-5 col-sm-6 g-3 footerText">
              
-             <p>Our fruit jams are crafted with the finest, hand-picked fruits to deliver a burst of natural flavor in every spoonful. Made with simple, high-quality ingredients.</p>
+             <p>{t("footerText")}</p>
               <div className="socialLogos">
                 <FaceIcons />
                 <XIcon />
@@ -35,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 g-3">
               <div className="footerAboutUs">
-                <h4>ABOUT US</h4>
+                <h4>{t("aboutUs")}</h4>
                 <ul>
                   <li> {t("ourCompany")}</li>
                   <li>{t("products")}</li>
@@ -71,7 +72,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <p className="copyright">Copyright © 2024</p>
+            <a  href="https://looptech.az/" target="_blank" className="copyright">{t("footerCopyright")} :  <img src={Looptech} alt="" /></a>
             </div>
           </div>
         </div>
