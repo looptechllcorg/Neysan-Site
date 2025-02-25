@@ -33,7 +33,7 @@ const Home = () => {
 		let isRunned = false;
 		const handleScroll = (e) => {
 			// console.log(window.scrollY);
-			if (window.scrollY >= 4 * window.innerHeight - 2) {
+			if (window.scrollY >= 4 * window.outerHeight - 2) {
 				inBottom = true;
 				isRunned = false;
 				setShowHiddenBottle(false);
@@ -41,7 +41,7 @@ const Home = () => {
 			} else {
 				if (!inBottom && !isRunned) {
 					window.disableScroll();
-					window.scrollTo(0, 4 * window.innerHeight - 6);
+					window.scrollTo(0, 4 * window.outerHeight - 6);
 					// setTimeout(() => {
 					isRunned = true;
 					// }, 1000);
@@ -66,7 +66,7 @@ const Home = () => {
 			isRunned = false;
 		};
 		const handleWheel = (e) => {
-			if (window.scrollY < 4 * window.innerHeight - 2) {
+			if (window.scrollY < 4 * window.outerHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned) {
 					if (e.deltaY > 0 && sectionsClassNames.length > sectionIndex + 1) {
@@ -106,7 +106,7 @@ const Home = () => {
 			lastTouchScreenY = null;
 		};
 		const handleTouchMove = (e) => {
-			if (window.scrollY <= 4 * window.innerHeight - 2) {
+			if (window.scrollY <= 4 * window.outerHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned && lastTouchScreenY) {
 					if (e.targetTouches[0].screenY < lastTouchScreenY && sectionsClassNames.length > sectionIndex + 1) {
@@ -135,7 +135,6 @@ const Home = () => {
 		};
 	}, []);
 
-
 	return (
 		<main id="noPadding" className="a0" style={{ position: 'relative' }}>
 			{leaves.map((leaf) => (
@@ -150,7 +149,7 @@ const Home = () => {
 						right: leaf.right,
 						width: leaf.size,
 						height: leaf.size,
-						zIndex:"9"
+						zIndex: '9',
 					}}
 				/>
 			))}
