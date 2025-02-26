@@ -60,30 +60,10 @@
         }
         window.disableScroll = disableScroll;
         window.enableScroll = enableScroll;
-        // window.scrollActivity = true;
 
-
-        // Scroll eventi dinleyicisi ekle
-        // window.addEventListener('wheel', function (event) {
-        //     // deltaY değeri
-        //     let delta = event.deltaY;
-
-        //     // Scroll hızını kısıtlamak için bir sınır belirleyelim
-        //     const minDelta = 5; // Min değer (örneğin 40)
-        //     const maxDelta = 10; // Max değer (örneğin 100)
-
-        //     // Eğer deltaY değeri belirtilen sınırlar dışında ise, kısıtla
-        //     if (delta < minDelta) {
-        //         delta = minDelta;
-        //     } else if (delta > maxDelta) {
-        //         delta = maxDelta;
-        //     }
-        //     delta = 30
-        //     // Kısıtlanmış değeri event'e uygulayalım
-        //     event.preventDefault(); // Varsayılan scroll hareketini durdur
-        //     window.scrollBy(0, delta); // Bu şekilde scroll işlemi yapılır
-
-        // }, { passive: false });
+        // window.innerHeight values for mobile and desktop
+        const isMobile = /iPhone|Android|iPad/i.test(navigator.userAgent);
+        window.spesificHeight = isMobile ? window.outerHeight : window.innerHeight;
 
     </script>
     <script type="module" src="/src/main.jsx"></script>

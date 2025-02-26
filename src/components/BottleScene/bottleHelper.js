@@ -19,7 +19,7 @@ for (let i = 360; i > 0; i -= 1) {
 var memory = {};
 const getRotation = () => {
 	if (!memory[window.scrollY]) {
-		memory[window.scrollY] = (2 * Math.PI * window.scrollY) / window.outerHeight;
+		memory[window.scrollY] = (2 * Math.PI * window.scrollY) / window.spesificHeight;
 	}
 	return memory[window.scrollY];
 };
@@ -30,7 +30,7 @@ const getScaleRotation = () => {
 	let result = resultArrScale;
 	let ratio = 28.8;
 
-	let res = ratio * Math.PI * (window.scrollY / (document.body.clientHeight - window.outerHeight - 500));
+	let res = ratio * Math.PI * (window.scrollY / (document.body.clientHeight - window.spesificHeight - 500));
 	const idx = Math.floor(res / (Math.PI / 180));
 	res = result[idx] * (Math.PI / 180);
 	return res;

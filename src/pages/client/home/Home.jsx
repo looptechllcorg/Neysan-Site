@@ -32,8 +32,9 @@ const Home = () => {
 		let inBottom = false;
 		let isRunned = false;
 		const handleScroll = (e) => {
-			// console.log(window.scrollY);
-			if (window.scrollY >= 4 * window.outerHeight - 2) {
+			// console.log('outer -- ', window.outerWidth, window.outerHeight);
+			// console.log('inner -- ', window.innerWidth, window.innerHeight);
+			if (window.scrollY >= 4 * window.spesificHeight - 2) {
 				inBottom = true;
 				isRunned = false;
 				setShowHiddenBottle(false);
@@ -41,7 +42,7 @@ const Home = () => {
 			} else {
 				if (!inBottom && !isRunned) {
 					window.disableScroll();
-					window.scrollTo(0, 4 * window.outerHeight - 6);
+					window.scrollTo(0, 4 * window.spesificHeight - 6);
 					// setTimeout(() => {
 					isRunned = true;
 					// }, 1000);
@@ -66,7 +67,7 @@ const Home = () => {
 			isRunned = false;
 		};
 		const handleWheel = (e) => {
-			if (window.scrollY < 4 * window.outerHeight - 2) {
+			if (window.scrollY < 4 * window.spesificHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned) {
 					if (e.deltaY > 0 && sectionsClassNames.length > sectionIndex + 1) {
@@ -106,7 +107,7 @@ const Home = () => {
 			lastTouchScreenY = null;
 		};
 		const handleTouchMove = (e) => {
-			if (window.scrollY <= 4 * window.outerHeight - 2) {
+			if (window.scrollY <= 4 * window.spesificHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned && lastTouchScreenY) {
 					if (e.targetTouches[0].screenY < lastTouchScreenY && sectionsClassNames.length > sectionIndex + 1) {
