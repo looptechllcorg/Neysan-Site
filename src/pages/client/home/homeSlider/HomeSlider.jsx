@@ -22,7 +22,7 @@ const HomeSlider = () => {
 
 	return (
 		<section className="a4" id="homeSlider">
-			<div className="sliderBox" style={{ width: '100vw', height: '100vh' }}>
+			<div className="sliderBox">
 				<Swiper
 					// spaceBetween={150}
 					// slidesPerView={2.2}
