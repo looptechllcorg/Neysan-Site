@@ -65,10 +65,10 @@ const HomeSlider = () => {
 							</div>
 						</SwiperSlide>
 					))}
-					<div className="swiper-button-prev">
+					<div className="swiper-button-prev sliderbtn">
 						<ArrowLeft />
 					</div>
-					<div className="swiper-button-next">
+					<div className="swiper-button-next sliderbtn">
 						<ArrowRight />
 					</div>
 				</Swiper>
