@@ -7,8 +7,10 @@ const CompanyBanner = () => {
     const {t} = useTranslation()
   return (
     <section id='companyBanner'>
+      <div className="container">
        <SectionHeader sectionHeaderh2="ourCompany"/>
-        <div className="container" style={{backgroundImage:`url(${BannerBg})`}}>
+      </div>
+        <div className="container backgroundImage" style={{backgroundImage:`url(${BannerBg})`,overflow:"hidden"}}>
                 <h1>Visualize Your Journey to Health</h1>
         </div>
     </section>
