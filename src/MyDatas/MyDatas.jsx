@@ -53,46 +53,6 @@ export const marketLogoList = [
 	marketLogo2,
 	marketLogo10,
 ];
-// HomeSlider JamBottles
-
-import JamBottle1 from '../assets/image/JamBottle1.png';
-import JamBottle2 from '../assets/image/JamBottle2.png';
-import JamBottle3 from '../assets/image/JamBottle3.png';
-import JamBottlex from '../assets/image/Untitled-8.png';
-import JamBottlea from '../assets/image/NeysanJamBoottle.png';
-
-export const homeSliderData = [
-	{
-		id: 1,
-		img: JamBottlex,
-		name: 'Ağ gilas mürəbbəsi',
-		description: 'test 1 = Ağ gilas mürəbbəsi limon ilə 320 qr.',
-	},
-	{
-		id: 2,
-		img: JamBottle3,
-		name: 'Ağ gilas mürəbbəsi',
-		description: 'test 2 = Saftali mürəbbəsi limon ilə 320 qr.',
-	},
-	{
-		id: 3,
-		img: JamBottle2,
-		name: 'Ağ gilas mürəbbəsi',
-		description: 'test3 = Qara Qaragat mürəbbəsi limon ilə 320 qr.',
-	},
-	{
-		id: 4,
-		img: JamBottle1,
-		name: 'Ağ gilas mürəbbəsi',
-		description: 'test4 = Ağ gilas mürəbbəsi limon ilə 320 qr.',
-	},
-	{
-		id: 5,
-		img: JamBottle2,
-		name: 'Ağ gilas mürəbbəsi',
-		description: 'test5 = Ağ gilas mürəbbəsi limon ilə 320 qr.',
-	},
-];
 
 // HomeMedia PlayVideo
 import videoSliderImgOne from '../assets/image/BgMedia1.png';
@@ -162,6 +122,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 2,
@@ -171,6 +141,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 3,
@@ -180,6 +160,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 4,
@@ -189,6 +179,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 5,
@@ -198,6 +198,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 6,
@@ -207,6 +217,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 7,
@@ -216,6 +236,16 @@ export const productsData = [
 		description: '',
 		productWeight: '500qr',
 		category: 'Other',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 8,
@@ -225,16 +255,17 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
-	// {
-	// 	id: 9,
-	// 	bgColor: '#5B2E6F',
-	// 	image: productGavali,
-	// 	productName: 'Gavalı Mürəbbəsi',
-	// 	description:"",
-	// 	productWeight: '320qr',
-	// 	category: 'Jam',
-	// },
 
 	{
 		id: 10,
@@ -244,6 +275,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 11,
@@ -253,6 +294,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 12,
@@ -262,6 +313,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 13,
@@ -271,6 +332,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 14,
@@ -280,6 +351,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 15,
@@ -289,6 +370,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 16,
@@ -298,6 +389,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 17,
@@ -307,6 +408,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 18,
@@ -316,6 +427,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 19,
@@ -325,6 +446,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 20,
@@ -334,6 +465,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	//   #c32c3f
 	{
@@ -344,6 +485,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 22,
@@ -353,6 +504,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 23,
@@ -389,6 +550,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jelly',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 27,
@@ -416,6 +587,16 @@ export const productsData = [
 		description: '',
 		productWeight: '720qr',
 		category: 'Other',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 30,
@@ -425,6 +606,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jelly',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 31,
@@ -434,6 +625,16 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Other',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
 	{
 		id: 32,
@@ -443,10 +644,17 @@ export const productsData = [
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
+		productDetail: [
+			{ title: 'type', value: 'glass' },
+			{ title: 'net', value: '320qr' },
+			{ title: 'suzme', value: '350qr' },
+			{ title: 'brut', value: '565qr' },
+			{ title: 'qutu', value: '12' },
+			{ title: 'qutuBrut', value: '7' },
+			{ title: 'palet', value: '144' },
+			{ title: 'barkod', value: '4760155591223' },
+		],
 	},
-  
-
-
 ];
 
 export const categories = ['All', 'Jam', 'Jelly', 'Other'];

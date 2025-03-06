@@ -1,16 +1,6 @@
 main{
     #productDetail{
-        .sectionHeader{
-            padding: 50px 0;
-            p{
-                text-align: center;
-                font-size: 15px;
-                line-height: 24px;
-                letter-spacing: 9.5%;
-                color: #FAA432;
-    
-            }
-        }
+
         .detailImage{
             width: 100%;
             height: 400px;
@@ -32,10 +22,10 @@ main{
               }
             .productImage{
                 position: absolute;
-                bottom: -4%;
-                width: 340px;
-                height: 340px;
-                object-fit: contain;
+                bottom: 2%;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
                 transition: .5s ease-in-out;
                 animation:Fly 5s ease-in-out infinite;
                 
@@ -53,9 +43,10 @@ main{
             .productName{
                 color:#55941A ;
                 font-size: 60px;
+                text-align: center;
                 font-family: "Amatic SC", sans-serif;
             }
-            .productDetail{
+            .productWeight{
                 font-size: 30px;
                 font-weight: 500;
                 color: #000;
@@ -64,6 +55,25 @@ main{
                 font-size: 23px;
                 font-weight: 300;
                 color: #000;
+            }
+            .productDetail{
+                display: flex;
+                flex-direction: column;
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    .detailborder{
+                        height: auto;
+                        background-color: #70B21F;
+                        width: 4px;
+                    }
+                    span{
+                        font-family: "Roboto", sans-serif;
+                        width: 40%;
+                        font-weight: 3400;
+                        font-size: 1.4rem;
+                    }
+                }
             }
             .detailButton{
                 width: 100%;
@@ -104,12 +114,16 @@ main{
                 border-radius: 15px;
                 padding: 15px;
                 // height: 380px;
+                a{
+                    text-decoration: none;
+                }
                 .slide_card{
                     border-radius: 15px;
                     background-color: #ffffff1f;
                     padding: 10px;
                     width: 100%;
                     text-align: center;
+                   
                     .slideImage{
                         width: 100%;
                         height: 280px;
@@ -117,6 +131,7 @@ main{
                         object-position: bottom;
                     }
                     h3{
+                        
                         color: var(--text-color);
                         font-size: 18px;
                         display: -webkit-box;

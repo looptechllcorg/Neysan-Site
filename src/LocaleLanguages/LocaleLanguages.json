@@ -59,6 +59,25 @@
 		"email-error": "Email adresinizi daxil edin",
 		"textarea-error": "Fikrinizi dəqiq və aydın ifadə edin",
 		"send": "Göndər",
+		"placeOrder": "Sifaris Et",
+
+
+		"type":"Qablaşdırma Növü",
+		"net":"Net Ağırlıq",
+		"suzme":"Süzmə Ağırlıq",
+		"brut":"Brutto Ağırlıq",
+		"qutu":"Qutu Sayı",
+		"qutuBrut":"Qutu Brutto ağırlıq",
+		"palet":"Palet Qutu sayı",
+		"barkod":"Barkod",
+
+		"glass":"Şüşə",
+		"350qr":"350 qr",
+		"565qr":"565 qr",
+		"12":"12 ədəd",
+		"7":"7 kq",
+		"144":"144 qutu",
+		
 		
 	
 		"Jam": "Mürəbbə",
@@ -160,6 +179,25 @@
 		"email-error": "Enter your email address.",
 		"textarea-error": "Express your thoughts clearly and concisely",
 		"send": "Send",
+		"placeOrder": "Place an order",
+
+
+		"type":"Packaging Type",
+		"net":"Net Weight",
+		"suzme":"Filter Weight",
+		"brut":"Gross Weight",
+		"qutu":"Box Number",
+		"qutuBrut":"Box Gross Weight",
+		"palet":"Pallet Box Quantity",
+		"barkod":"Barcode",
+
+		"glass":"Glass",
+		"350qr":"350 gr",
+		"565qr":"565 gr",
+		"12":"12 piece",
+		"7":"7 kg",
+		"144":"144 box",
+
 
 		"Jam": "Jam",
 		"Jelly": "Jelly",
@@ -259,6 +297,24 @@
 		"email-error": "Введите свой адрес электронной почты.",
 		"textarea-error": "Выражайте свои мысли ясно и кратко.",
 		"send": "Отправлять",
+		"placeOrder": "Оформить заказ",
+
+
+		"type":"Тип упаковки",
+		"net":"Вес нетто",
+		"suzme":"Вес фильтра",
+		"brut":"Вес брутто",
+		"qutu":"Номер ящика",
+		"qutuBrut":"Вес брутто коробки",
+		"palet":"Количество ящиков на поддоне",
+		"barkod":"Штрих-код",
+
+		"glass":"Стекло",
+		"350qr":"350 г",
+		"565qr":"565 г",
+		"12":"12 штук",
+		"7":"7 kг",
+		"144":"144 коробки",
 
 		
 		"Jam": "Варенье",

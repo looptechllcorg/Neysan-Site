@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
-import { homeSliderData, productsData } from '../../../../MyDatas/MyDatas';
+import { productsData } from '../../../../MyDatas/MyDatas';
 import sliderPattern from '../../../../assets/image/SliderPattern.png';
 import './HomeSlider.scss';
 import ArrowLeft from '../../../../assets/icons/ArrowLeft';
