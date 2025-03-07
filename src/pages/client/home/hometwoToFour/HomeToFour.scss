@@ -3,24 +3,31 @@
 	.homePatternOne {
 		position: absolute;
 		width: 170px;
-		top: 95vh;
+		top: 20vh;
 		right: 30vh;
 		animation: moveUpDown 6s infinite;
+		@media (max-width: 768px) {
+			top: 20vh;
+			right: 100px;
+      width: 100px;
+		}
 		@media (max-width: 460px) {
 			top: 80vh;
-			right: 37vh;
-      width: 130px;
+			left: 10%;
+      width: 90px;
 		}
 	}
 	.homePatternTwo {
 		position: absolute;
 		width: 90px;
-		top: 130vh;
+		top: 120vh;
 		left: 20vh;
 		animation: moveDownUp 6s infinite;
 		@media (max-width: 460px) {
 			top: 110vh;
-			left: 40vh;
+			left: auto;
+			right: 10%;
+			width: 70px;
 		}
 	}
 	.homePatternThree {
@@ -29,9 +36,10 @@
 		left: 22vh;
 		width: 220px;
 		animation: moveDownUp 6s infinite;
+
     @media (max-width: 460px) {
 			top: 180vh;
-			left: 35vh;
+			left: 10%;
       width: 150px;
 		}
 	}
@@ -43,7 +51,7 @@
 		animation: moveUpDown 6s infinite;
     @media (max-width: 460px) {
 			top: 210vh;
-			right: 40vh;
+			right: 10%;
 		}
 	}
 	.homePatternFive {

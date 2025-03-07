@@ -7,7 +7,8 @@
     height: 100vh;
 
     h1{
-     
+        position: relative;
+        z-index: 99;
         text-align: center;
         font-size: 75px;
         color: #9A0000;
@@ -22,14 +23,14 @@
    
    background-repeat: no-repeat;
    background-position: 
-   top 50vh right 10vw,
-   top 110vh left 30vw;
+   top 50vh right 50%,
+   top 110vh left 50%;
       
   
   @media (max-width:768px) {
     background-image: url("../../../../assets/image/BannerCloud.png");
      background-repeat: no-repeat;
-     background-position: top 55vh left 0vw;
+     background-position: top 55vh left 50%;
   }
   @media (min-width:1400px) {
     background-position:  
@@ -41,17 +42,22 @@
     top: 15%;
     left: 0%;
     animation: moveUpDown 5s infinite;
-    z-index: -1;
+    z-index: 10;
     img{
         width: 300px;
         height: 300px;
     }
     @media (max-width:768px) {
+        top: 25%;
         left: -10%;
        img{
         width: 150px;
         height: 150px;
        }
+    }
+    @media (max-width: 460px) {
+        top: 25%;
+        // left: 0;
     }
 }
 .bannerAnimationBgRight{
@@ -59,7 +65,7 @@
     bottom:5%;
     right: 0;
     animation: moveUpDown 4.5s infinite;
-    z-index: -1;
+    z-index: 10;
     img{
         width: 200px;
         height: 200px;
@@ -77,7 +83,7 @@
     position: absolute;
     bottom: 15vh;
     left: 50px;
-    z-index: -1;
+    z-index: 2;
     animation: moveLeftright 4.5s infinite;
     @media (max-width:768px) {
         width: 50px;
@@ -91,7 +97,7 @@
     position: absolute;
     top: 165px;
     right: 50px;
-    z-index: -1;
+    z-index: 10;
     animation: moveLeftright 6s infinite;
     @media (max-width:768px) {
         width: 50px;

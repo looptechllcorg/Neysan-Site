@@ -15,7 +15,7 @@
 		background-size: cover;
 		background-position: center;
 		@media (max-width: 768px) {
-			top: 70%;
+			top: 25%;
 			
 		}
 		@media (max-width: 518px) {
@@ -47,15 +47,14 @@
 		}
 		@media (max-width: 768px) {
 			background-color: rgba(255, 255, 255, 0.39);
-			// border: 1px solid red;
-			// filter: blur(1px);
+			margin-left: 0;
 			border-radius: 10px;
-			h3 {
+			.motionHeader {
 				font-size: 34px;
 				text-align: center;
 				line-height: 40px;
 			}
-			p {
+			.motionSpan {
 				line-height: 25px;
 				max-width: 280px;
 				font-size: 16px;

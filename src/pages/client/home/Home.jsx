@@ -13,7 +13,7 @@ import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
 
 const leaves = [
-	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '100px' },
+	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '80px' },
 	{ id: 2, top: '12%', left: 'auto', right: '1%', size: '80px' },
 	{ id: 3, top: '16%', left: '-1%', right: 'auto', size: '80px' },
 	{ id: 4, top: '26%', left: 'auto', right: '1%', size: '90px' },
@@ -159,7 +159,7 @@ const Home = () => {
 			<HomeTwotoFour data={hometwoToFourDatas} />
 			<HomeSlider />
 			<HomeMedia />
-			<MarketLogo />
+			{/* <MarketLogo /> */}
 		</main>
 	);
 };
