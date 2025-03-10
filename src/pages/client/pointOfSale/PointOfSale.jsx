@@ -65,8 +65,8 @@ const PointOfSale = () => {
                   }`}
                 >
                   <div className="marketNameAndMarketAddress">
-                    <h5 className="marketName">{item.title}</h5>
-                    <p className="address">{item.address}</p>
+                    <h5 className="marketName">{t(item.title)}</h5>
+                    <p className="address">{t(item.address)}</p>
                   </div>
                   <button
                     onClick={() => {
@@ -77,10 +77,8 @@ const PointOfSale = () => {
                     {t("showOnMap")}
                   </button>
                   <a
-                    onClick={() => {
-                      onClickMarketAddress(item, index);
-                    }}
-                    href={item.url}
+                 
+                    href={item.map_url}
                     target="_blank"
                     className="MobileShowOnMapBtn"
                   >

@@ -28,10 +28,8 @@ const Footer = () => {
              
              <p>{t("footerText")}</p>
               <div className="socialLogos">
-                <FaceIcons />
-                <XIcon />
-                <YoutubeIcon />
-                <InstaIcon />
+                <a href="https://www.facebook.com/" target="_blank"><FaceIcons /></a>
+                <a href="https://www.instagram.com/" target="_blank"><InstaIcon /></a>
               </div>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 g-3">

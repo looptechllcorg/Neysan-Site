@@ -28,7 +28,7 @@
 		"homeBannerText": "NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!",
 
 		"footerCopyright":"Saytı Hazırladı",
-		"footerText":"AZ Our fruit jams are crafted with the finest, hand-picked fruits to deliver a burst of natural flavor in every spoonful. Made with simple, high-quality ingredients.",
+		"footerText":"Azərbaycanda 2016-cı ilin mart ayından “ZİRƏ AQROPARK” Məhdud Məsuliyyətli Cəmiyyəti, elə həmin tarixdə də onun bazası əsasında fəaliyyətə başlayan “Neysan” - Abşeronun zümrüd boyunbağısı hesab edilən zeytun meyvəsini, onun yağını, ümumiyyətlə, bu nemətin faydasını insanlara yenidən tanıtmağı qarşısına məqsəd qoydu.",
 
 		"notFound": "Nəticə tapılmadı",
 		"All": "Hamısı",
@@ -69,6 +69,16 @@
 		"HomeAnswer2": "Bu məhsul, zəngin vitamin və antioksidantlarla bədəni qoruyur, immuniteti gücləndirir. Tomat qurusu həm də enerji verir və mədə-bağırsaq sistemini tənzimləyir. Təbii dadı və faydalı xüsusiyyətləri ilə yeməklərə xüsusi ləzzət qatır.",
 		"HomeAnswer3": "Salatlar, makaronlar, pizzalar, souslar və qəlyanaltılar üçün idealdır. Xüsusi aroması sayəsində yeməklərə dərin və unikal dad qatır.",
 
+		"pointOfSalesTitle1": "Azadlıq Pr.",
+		"pointOfSalesTitle2": "Əcəmi",
+		"pointOfSalesTitle3": "Əhmədli",
+		"pointOfSalesTitle4": "Yasamal",
+		"pointOfSalesTitle5": "Dübəndi",
+		"pointOfSalesLocation1": "Nəsimi ray. Azadlıq pr.105. Nəsimi bazarının yaxınlığı, Azadlıq Residence y/k altı.",
+		"pointOfSalesLocation2": "1ci mkr. Asif Məhərrəmov 35α. Memar Əcəmi m/st 10 dəq.məsafədə, Şamaxinkadan 3cü mkr dairəsinə düşən yolun sağında",
+		"pointOfSalesLocation3": "Xətai ray. Məhəmməd Hadi 136. KTV1-in yaxınlığında, Doğtaş mebel mağazası ilə üzbəüz, dayanacağın arxası.",
+		"pointOfSalesLocation4": "Yasamal ray. Nazim Hikmət 27. Musabəyov parkının yaxınlığında, Bazar Store olan sırada.",
+		"pointOfSalesLocation5": "Xəzər ray. Zirə yolu, Zirə Gülçülük mağazasının yanı.",
 
 
 
@@ -136,7 +146,7 @@
 		"ourCompany": "Our company",
 		"products": "Products",
 		"media": "Media",
-		"PointSales": "Point Of Sales",
+		"PointSales": "Point of Sales",
 		"useful": "Useful",
 		"contact": "Contact",
 		"search": "Search",
@@ -161,7 +171,7 @@
 
 
 		"footerCopyright":"Created by",
-		"footerText":"Our fruit jams are crafted with the finest, hand-picked fruits to deliver a burst of natural flavor in every spoonful. Made with simple, high-quality ingredients.",
+		"footerText":"Since March 2016, 'ZIRA AGROPARC' Limited Liability Company, which began operating on its basis on the same date, has set itself the goal of re-introducing to people the olive fruit, its oil, and in general the benefits of this blessing, which is considered the emerald necklace of 'Neysan' - Absheron.",
 
 		"notFound": "No results found.",
 		"All": "All",
@@ -191,6 +201,25 @@
 		"textarea-error": "Express your thoughts clearly and concisely",
 		"send": "Send",
 		"placeOrder": "Place an order",
+
+
+"HomeQuestion1": "What is Tomato Paste?",
+		"HomeQuestion2": "Benefits?",
+		"HomeQuestion3": "Usage",
+		"HomeAnswer1": "These are tomatoes that are naturally dried under the sun's rays, without any additives or preservatives. They add a special flavor to dishes with their high quality and rich aroma.",
+		"HomeAnswer2": "This product protects the body with rich vitamins and antioxidants, strengthens the immune system. Dried tomatoes also provide energy and regulate the gastrointestinal system. With their natural taste and beneficial properties, they add a special flavor to dishes.",
+		"HomeAnswer3": "Ideal for salads, pasta, pizzas, sauces and snacks. Thanks to its special aroma, it adds a deep and unique taste to dishes.",
+
+		"pointOfSalesTitle1": "Azadlıq Pr.",
+		"pointOfSalesTitle2": "Ajami",
+		"pointOfSalesTitle3": "Ahmadli",
+		"pointOfSalesTitle4": "Yasamal",
+		"pointOfSalesTitle5": "Dübendi",
+		"pointOfSalesLocation1": "Nasimi district. Azadlig ave. 105. Near Nasimi market, under Azadlig Residence.",
+		"pointOfSalesLocation2": "1st mkr. Asif Maharramov 35α. 10 minutes from Memar Ajami m/st, on the right of the road from Shamakhinka to the 3rd mkr roundabout",
+		"pointOfSalesLocation3": "Khatai ray. Mahammad Hadi 136. Near KTV1, opposite Dogtas furniture store, behind the parking lot.",
+		"pointOfSalesLocation4": "Yasamal ray. Nazim Hikmet 27. Near Musabeyov park, next to Bazar Store.",
+		"pointOfSalesLocation5": "Khazar railway. Zira road, next to Zira Florist shop.",
 
 
 		"type":"Packaging Type",
@@ -280,7 +309,7 @@
 
 				
 		"footerCopyright":"Cайт разработан",
-		"footerText":"RU Our fruit jams are crafted with the finest, hand-picked fruits to deliver a burst of natural flavor in every spoonful. Made with simple, high-quality ingredients.",
+		"footerText":"Начиная с марта 2016 года, начавшее свою деятельность на его базе в тот же день Общество с ограниченной ответственностью «ЗИРА АГРОПАРК» поставило перед собой цель вновь познакомить людей с плодом оливы, ее маслом и в целом с преимуществами этого блага, которое по праву считается изумрудным ожерельем «Нейсана» - Абшерона.",
 	
 		"notFound": "Результаты не найдены.",
 		"All": "Все",
@@ -310,6 +339,25 @@
 		"textarea-error": "Выражайте свои мысли ясно и кратко.",
 		"send": "Отправлять",
 		"placeOrder": "Оформить заказ",
+
+		"HomeQuestion1": "Что такое томатная паста?",
+		"HomeQuestion2": "Преимущества?",
+		"HomeQuestion3": "Использование",
+		"HomeAnswer1": "Это помидоры, высушенные естественным путем под солнечными лучами, без каких-либо добавок и консервантов. Он придает блюдам особый вкус благодаря своему высокому качеству и насыщенному аромату.",
+		"HomeAnswer2": "Этот продукт защищает организм и укрепляет иммунную систему благодаря богатому содержанию витаминов и антиоксидантов. Сушеные томаты также обеспечивают энергией и регулируют работу желудочно-кишечного тракта. Он придает блюдам особый вкус благодаря своему натуральному вкусу и полезным свойствам.",
+		"HomeAnswer3": "Идеально подходит для салатов, пасты, пиццы, соусов и закусок. Благодаря своему особому аромату он придает блюдам глубокий и неповторимый вкус.",
+
+
+		"pointOfSalesTitle1": "Азадлыг Пр.",
+		"pointOfSalesTitle2": "Аджами",
+		"pointOfSalesTitle3": "Ахмадли",
+		"pointOfSalesTitle4": "Ясамал",
+		"pointOfSalesTitle5": "Дюбенди",
+		"pointOfSalesLocation1": "Насими Рэй. Проспект Азадлыг, 105 Рядом с Насиминским базаром, под зданием резиденции «Азадлыг».",
+		"pointOfSalesLocation2": "1-й мкр. Асиф Магеррамов 35а. 10 минут от метро Мемар Аджами, по правой стороне дороги, ведущей от Шамахинки к 3-му микрорайонному кольцу",
+		"pointOfSalesLocation3": "Хатайский рай. Махаммад Хади 136. Рядом с KTV1, напротив мебельного магазина Doğtaş, за парковкой.",
+		"pointOfSalesLocation4": "Ясамальская железная дорога. Назыма Хикмета 27. Возле парка Мусабекова, рядом с магазином Bazar.",
+		"pointOfSalesLocation5": "Каспийское море. Zira Road, рядом с цветочным магазином Zira Florist.",
 
 
 		"type":"Тип упаковки",
