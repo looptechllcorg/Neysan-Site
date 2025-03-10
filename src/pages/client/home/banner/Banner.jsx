@@ -25,12 +25,6 @@ const Banner = () => {
         {t("homeBannerText")}
         </h1>
       </div>
-      {/* <div className="banner_bg">
-          <img src={bannerBg} alt="" />
-      </div>
-      <div className="bannerCloud">
-        <img src={bannerCloud} alt="" />
-      </div> */}
     </section>
   )
 }

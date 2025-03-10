@@ -99,7 +99,6 @@ audio,
 video {
     margin: 0;
     scroll-behavior: auto !important;
-
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -156,4 +155,8 @@ main {
 .home2Between4SectionWrapper #homeInformation:nth-child(even) .row {
     display: flex;
     flex-direction: row-reverse;
+    @media (max-width:426px) {
+        flex-direction: row;
+        justify-content: center !important; 
+    }
 }

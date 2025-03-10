@@ -37,7 +37,7 @@
                     .slideImage {
                         width: 400px;
                         height: 50vh;
-                        object-fit: contain;
+                        object-fit: cover;
                         @media (max-width:768px) {
                             height: 40vh;
                         }

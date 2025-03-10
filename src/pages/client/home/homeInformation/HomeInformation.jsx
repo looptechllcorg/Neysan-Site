@@ -2,10 +2,15 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './HomeInformation.scss';
+import { useTranslation } from 'react-i18next';
 
 const HomeInformation = ({ sectionData, className }) => {
-  const words = sectionData.info.split(' ');
-  const title = sectionData.title.split(' ');
+       const {t} = useTranslation()
+  const homequestion = t(sectionData.info)
+  const homeanswer = t(sectionData.title)
+  
+  const words = homequestion.split(' ');
+  const title = homeanswer.split(' ');
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.1,
@@ -39,7 +44,7 @@ const HomeInformation = ({ sectionData, className }) => {
   return (
     <section className={className} ref={ref} id="homeInformation">
       <div className="container-lg">
-        <div className="row">
+        <div className="row ">
           <div className="informationBox col-lg-4 col-sm-4">
             <motion.div
               variants={containerVariants}
@@ -47,7 +52,7 @@ const HomeInformation = ({ sectionData, className }) => {
               animate={inView ? 'visible' : 'hidden'}
               style={{
                 display: 'flex',
-                gap: '4px',
+                gap: '5px',
                 justifyContent: 'start',
                 flexWrap: 'wrap',
               }}

@@ -14,7 +14,7 @@ import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
 
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '80px' },
-	{ id: 2, top: '12%', left: 'auto', right: '1%', size: '80px' },
+	{ id: 2, top: '15%', left: 'auto', right: '1%', size: '80px' },
 	{ id: 3, top: '16%', left: '-1%', right: 'auto', size: '80px' },
 	{ id: 4, top: '26%', left: 'auto', right: '1%', size: '90px' },
 	{ id: 5, top: '35%', left: '-1%', right: 'auto', size: '70px' },

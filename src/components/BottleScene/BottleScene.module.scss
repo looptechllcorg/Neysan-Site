@@ -1,12 +1,13 @@
 .canvasDiv {
-    height: 50vh;
-    // width: 50vh;
+    height: 55vh;
+    width: 55vh;
     position: fixed;
     top: 160px;
     left: 48.5%;
     transform: translateX(-50%);
     z-index: 90;
     // border: 1px solid black;
+   
 }
 
 @media only screen and (max-width: 950px) {

@@ -25,23 +25,22 @@
 		}
 	}
 	.informationBox {
-		
 		position: relative;
 		z-index: 100;
-		max-width: 400px;
+		// max-width: 400px;
 		margin-left: 15px;
 		margin-top: 70px;
 		
 		.motionHeader {
-			max-width: 390px;
-			font-size: 55px;
+			max-width: 400px;
+			font-size: 39px;
 			font-weight: 700;
 			line-height: 55px;
 			color: #42aa49;
 		}
 		.motionSpan {
 			max-width: 320px;
-			font-size: 24px;
+			font-size: 22px;
 			font-weight: 400;
 			line-height: 29px;
 		}
@@ -50,7 +49,7 @@
 			margin-left: 0;
 			border-radius: 10px;
 			.motionHeader {
-				font-size: 34px;
+				font-size: 30px;
 				text-align: center;
 				line-height: 40px;
 			}

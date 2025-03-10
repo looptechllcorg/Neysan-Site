@@ -21,8 +21,9 @@ const DetailPage = () => {
 	const productData = productsData.find((item) => item.id === parseInt(slug));
 	console.log(productData);
 
-	const featuredProducts = productsData.filter((item) => item.category == productData.category);
-
+	const featuredProducts = productsData.filter(
+		(item) => item.category === productData.category && item.id !== productData.id
+	  );
 	console.log(featuredProducts);
 
 	const [activeIndex, setActiveIndex] = useState(0);

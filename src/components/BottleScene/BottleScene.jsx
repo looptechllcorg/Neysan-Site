@@ -25,7 +25,6 @@ const BottleScene = ({ modelFilePath, showHiddenBottle }) => {
 					fov: 15,
 				}}
 				onCreated={({ camera, scene }) => {
-					// camera.add(directionLight);
 					scene.add(camera);
 				}}
 			>

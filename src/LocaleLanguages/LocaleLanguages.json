@@ -62,6 +62,16 @@
 		"placeOrder": "Sifaris Et",
 
 
+		"HomeQuestion1": "Tomat Qurusu nədir?",
+		"HomeQuestion2": "Faydaları?",
+		"HomeQuestion3": "İstifadəsi",
+		"HomeAnswer1": "Günəş şüaları altında təbii şəkildə qurudulmuş, heç bir qatqı maddəsi və konservant əlavə edilməmiş tomatlardır. Yüksək keyfiyyəti və zəngin aroması ilə yeməklərə xüsusi ləzzət qatır.",
+		"HomeAnswer2": "Bu məhsul, zəngin vitamin və antioksidantlarla bədəni qoruyur, immuniteti gücləndirir. Tomat qurusu həm də enerji verir və mədə-bağırsaq sistemini tənzimləyir. Təbii dadı və faydalı xüsusiyyətləri ilə yeməklərə xüsusi ləzzət qatır.",
+		"HomeAnswer3": "Salatlar, makaronlar, pizzalar, souslar və qəlyanaltılar üçün idealdır. Xüsusi aroması sayəsində yeməklərə dərin və unikal dad qatır.",
+
+
+
+
 		"type":"Qablaşdırma Növü",
 		"net":"Net Ağırlıq",
 		"suzme":"Süzmə Ağırlıq",
@@ -74,6 +84,7 @@
 		"glass":"Şüşə",
 		"350qr":"350 qr",
 		"565qr":"565 qr",
+		"650qr":"650 qr",
 		"12":"12 ədəd",
 		"7":"7 kq",
 		"144":"144 qutu",
@@ -194,6 +205,7 @@
 		"glass":"Glass",
 		"350qr":"350 gr",
 		"565qr":"565 gr",
+		"650qr":"650 gr",
 		"12":"12 piece",
 		"7":"7 kg",
 		"144":"144 box",
@@ -202,9 +214,9 @@
 		"Jam": "Jam",
 		"Jelly": "Jelly",
 		"Other": "Other",
-		"320qr": "320 g",
-		"500qr": "500 g",
-		"720qr": "720 g",
+		"320qr": "320 gr",
+		"500qr": "500 gr",
+		"720qr": "720 gr",
 		"productTomat": "Sun-Dried Tomatoes in Olive Oil",
 		"productAggilasLimon": "White Cherry Jam with Lemon",
 		"productQaragat": "Black Currant Jam",
@@ -312,6 +324,7 @@
 		"glass":"Стекло",
 		"350qr":"350 г",
 		"565qr":"565 г",
+		"650qr":"650 г",
 		"12":"12 штук",
 		"7":"7 kг",
 		"144":"144 коробки",
