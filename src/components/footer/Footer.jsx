@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="footerBottom">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12">
             <a  href="https://looptech.az/" target="_blank" className="copyright">{t("footerCopyright")} :  <img src={Looptech} alt="" /></a>
             </div>
           </div>

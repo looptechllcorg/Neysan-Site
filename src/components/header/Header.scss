@@ -94,6 +94,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @media (min-width:1440px) {
+            height: 40px;
+            width: 40px;
+          }
+          svg{
+            width: 50%;
+            height: 50%;
+          }
         }
       }
       .changeLang {
@@ -151,6 +159,25 @@
     z-index: 9999;
     top: 112px;
     transition: 0.4s ease-in-out;
+    .straxberry-slice{
+      button{
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        border:1px solid #000;
+        padding: 8px 10px;
+        font-size: 16px;
+        transition: 0.4s ease-in-out;
+      }
+      .activebtn{
+        background-color: #ffb212;
+        border-color: #ffb212;
+        color: #fff;
+      }
+      // .deactivebtn{
+      //   background-color: #ffb212;
+      // }
+    }
     .nav_links {
       display: flex;
       flex-direction: column;

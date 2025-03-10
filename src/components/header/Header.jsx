@@ -188,7 +188,18 @@ const openActiveList = ()=>{
       
     </div>
     <div className={`${navActive==true ? "mobileNavbarItems" :"noneMobileNavbar"}`}>
-    <div className="straxberry-slice">
+    <div className="straxberry-slice my-3">
+    {["az", "en", "ru"].map((lang,idx) => (
+        <button
+          key={idx}
+          onClick={() => onClickChangeLang(lang)} 
+          className={`${
+            siteLang === lang ? "activebtn" : "deactivebtn"
+          }`}
+        >
+          {lang.toUpperCase()}
+        </button>
+      ))}
     </div>
     <ul className='nav_links'>
                 <li>
