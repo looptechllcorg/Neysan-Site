@@ -2,7 +2,7 @@ import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import "./ContactBanner.scss"
-import BannerImage from "../../../../assets/image/ContactBannerImage.png"
+import BannerImage from "../../../../assets/image/picture5-min.jpg"
 import mapLocation from "../../../../assets/image/locationIcon.png"
 import { useTranslation } from 'react-i18next';
 const ContactBanner = () => {

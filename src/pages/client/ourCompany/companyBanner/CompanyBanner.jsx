@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CompanyBanner.scss"
-import BannerBg from "../../../../assets/image/CompanyBanner.png"
+import BannerBg from "../../../../assets/image/picture6-min.jpg"
 import { useTranslation } from 'react-i18next'
 import SectionHeader from '../../../../components/SectionsHeader/SectionHeader'
 const CompanyBanner = () => {
