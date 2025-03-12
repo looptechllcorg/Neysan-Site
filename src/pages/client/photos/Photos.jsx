@@ -37,7 +37,7 @@ const Photos = () => {
                       </div>
                         </div>
                         <div className="col-12 col-sm-12 g-3">
-                            <img onClick={() => openModal(PhotoGallery[3].imgSrc)} className='galeryImage imageSize-285' src={PhotoGallery[3].imgSrc} alt="" />
+                            <img onClick={() => openModal(PhotoGallery[3].imgSrc)} className='galeryImage imageSize-285 img-fluid' src={PhotoGallery[3].imgSrc} alt="" />
                         </div>
                     </div>
                 </div>

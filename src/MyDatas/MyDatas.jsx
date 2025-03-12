@@ -271,7 +271,7 @@ export const productsData = [
 		id: 11,
 		bgColor: '#A1454A',
 		image: productCiyelek,
-		productName: 'productCiyelek ',
+		productName: 'productCiyelek',
 		description: '',
 		productWeight: '320qr',
 		category: 'Jam',
@@ -654,12 +654,12 @@ export const productsData = [
 export const categories = ['All', 'Jam', 'Jelly', 'Other'];
 
 // Photos Page
-import Photo1 from '../assets/image/Photos/Photo1.png';
-import Photo2 from '../assets/image/Photos/Photo2.png';
-import Photo3 from '../assets/image/Photos/Photo3.png';
-import Photo4 from '../assets/image/Photos/Photo4.png';
-import Photo5 from '../assets/image/Photos/Photo5.png';
-import Photo6 from '../assets/image/Photos/Photo6.png';
+import Photo1 from '../assets/image/Photos/Photo1.jpg';
+import Photo2 from '../assets/image/Photos/Photo2.jpg';
+import Photo3 from '../assets/image/Photos/Photo3.jpg';
+import Photo4 from '../assets/image/Photos/Photo1.jpg';
+import Photo5 from '../assets/image/Photos/Photo4.jpg';
+import Photo6 from '../assets/image/Photos/Photo3.jpg';
 export const PhotoGallery = [
 	{
 		id: 1,

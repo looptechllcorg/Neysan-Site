@@ -28,7 +28,7 @@ const Product = () => {
     
     const displayedProducts = filteredProducts.slice(0, visibleProducts);
     const leaves = [
-      { id: 1, top: "35vh", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
+      { id: 1, top: "22vh", left: "-3%",right:"auto", size: "90px",src:LeavePattern },
       { id: 2, top: "65vh", left: "auto",right:"1%", size: "80px",src:LeavePattern },
      { id: 3, top: "48%", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
        { id: 4, top: "65%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
@@ -50,8 +50,8 @@ const Product = () => {
             right:leaf.right,
             width: leaf.size,
             height: leaf.size,
-            objectFit:"contain"
-            // zIndex:"99"
+            objectFit:"contain",
+            zIndex:"-1"
           }}
         />
       ))}
@@ -60,7 +60,7 @@ const Product = () => {
           <SectionHeader sectionHeaderh2="products" sectionHeaderh3="productsBannertext"/>
             <div className="row justify-content-center py-3">
             {categories.map((category,index) => (
-             <div className="col-lg-2 col-sm-3" key={index}>
+             <div className="col-lg-2 col-sm-3 col-6 g-2" key={index}>
                <button
                 
                 onClick={() => setSelectedCategory(category)}

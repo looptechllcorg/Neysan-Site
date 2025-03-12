@@ -15,6 +15,10 @@
         line-height: 84px;
         font-weight: 500;
         text-transform: uppercase;
+        @media (max-width:768px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
     }
     h3{
         text-align: center;
@@ -22,5 +26,9 @@
         color: #49382E;
         line-height: 64px;
         font-weight: 500;
+        @media (max-width:768px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 }

@@ -92,7 +92,8 @@ const openActiveList = ()=>{
               {t("products")}
             </NavLink></li>
                 <li>
-                <a >{t("media")}</a>
+                <NavLink to="/photos">{t("photos")}</NavLink>
+                {/* <a >{t("media")}</a>
                 <ul className='hoverList'>
                   <li>
                     <NavLink to="/photos">{t("photos")}</NavLink>
@@ -100,7 +101,7 @@ const openActiveList = ()=>{
                   <li>
                     <NavLink to="/videos">{t("videos")}</NavLink>
                   </li>
-                </ul>
+                </ul> */}
                 </li>
                 <li>
                 <NavLink
@@ -222,7 +223,7 @@ const openActiveList = ()=>{
             >
              {t("products")}
             </NavLink></li>
-                <li onClick={ ()=>openActiveList()}>
+                {/* <li onClick={ ()=>openActiveList()}>
                 <a>{t("media")}</a>
                   <ul style={{
                     "--listHeight" : mobiLListActive == true ? "auto" : "0"
@@ -243,7 +244,17 @@ const openActiveList = ()=>{
                        to="/videos">{t("videos")}</NavLink>
                     </li>
                   </ul>
-                </li>
+                </li> */}
+                <li>
+                <NavLink
+              to="/photos"
+                onClick={()=>{setnavActive(false);}}
+              style={({ isActive }) => ({
+                color: isActive ? "#FFB212" : "#006633"
+              })}
+            >
+             {t("photos")}
+            </NavLink></li>
                 <li>
                 <NavLink
                 onClick={()=>{setnavActive(false);}}
