@@ -28,11 +28,11 @@ const Product = () => {
     
     const displayedProducts = filteredProducts.slice(0, visibleProducts);
     const leaves = [
-      { id: 1, top: "22vh", left: "-3%",right:"auto", size: "90px",src:LeavePattern },
+      { id: 1, top: "22vh", left: "0%",right:"auto", size: "90px",src:LeavePattern },
       { id: 2, top: "65vh", left: "auto",right:"1%", size: "80px",src:LeavePattern },
-     { id: 3, top: "48%", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
+     { id: 3, top: "48%", left: "0%",right:"auto", size: "180px",src:MorugPattern },
        { id: 4, top: "65%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
-       { id: 5, top: "85%", left: "-1%",right:"auto", size: "80px",src:LeavePattern },
+       { id: 5, top: "85%", left: "0%",right:"auto", size: "80px",src:LeavePattern },
       { id: 6, top: "91%", left: "auto",right:"0%", size: "90px",src:LeavePattern },
       
     ];

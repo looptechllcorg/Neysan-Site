@@ -790,26 +790,26 @@ import bgThr from '../assets/image/OurCompany/bg3.png';
 
 export const ourCompanyDatas = {
 	text: [
-		'The main activities are the production of freight cars, the repair of rolling stock, the manufacture of tank containers, tanks, metal structures and auto hydraulic lifts. \n\nThe high technological level of production, the true professionalism of our team and the experience of working in an international environment are the most important competitive advantage of the company. And the possibility of a quick changeover to the production of new products distinguishes our company from others. \nWe are committed to respect and integrity, and we pride ourselves on setting the pace and setting the new industry standard for business and manufacturing technology.',
+		'ourCompanyDescription',
 	],
 	datas: [
 		{
 			id: 1,
 			imgSrc: bgFrs,
 			number: 190,
-			text: 'customer',
+			text: 'Customer',
 		},
 		{
 			id: 2,
 			imgSrc: bgSec,
 			number: 28,
-			text: 'Product',
+			text: 'products',
 		},
 		{
 			id: 3,
 			imgSrc: bgThr,
-			number: 15,
-			text: 'Offical Stores',
+			number: 4,
+			text: 'OfficalStores',
 		},
 	],
 };

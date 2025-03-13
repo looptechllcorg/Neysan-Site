@@ -16,30 +16,34 @@
 		"contactUs": "Bizimlə əlaqə",
 		"aboutUs": "HAQQIMIZDA",
 		"contactBanner": "Ana səhifə - Əlaqə",
-		
+		"ourCompanyBanner": "Sağlamlığa səyahətinizi görüntüləyin",
+		"ourCompanyDescription": "'Neysan' mürəbbə zavodu 2016-cı ildə Abşeron yarımadasının Zirə qəsəbəsində 'Zira Agropark' Məhdud Məhsuliyyətli Cəmiyyətinin bazası əsasında fəaliyyətə başlamışdır. Zavodumuz 3000 m2 qapalı və 3000 m2 açıq ərazini əhatə edərək ən son texnologiyalarla təchiz olunmuş və yüksək keyfiyyət standartlarına uyğun məhsullar istehsal etməklə məşğuldur.",
+		"ourCompanyServicestext": "Neysan, təbii və ləzzətli mürəbbə istehsal edən keyfiyyətə önəm verən bir şirkətdir. Seçilmiş təzə meyvələr və ənənəvi reseptlər əsasında hazırlanan məhsullarımız süfrənizə saf dad və sağlamlıq gətirir. Müştərilərimizə hər zaman yüksək keyfiyyət və orqanik ləzzət təqdim etməyi hədəfləyirik.",
+		"Customer": "Müştəri",
+		"OfficalStores": "Rəsmi Mağazalar",
+		"companyPageTitle": "ƏN YAXŞI ORQANİK MƏHSUL",
+		"ourServices": "XİDMƏTLƏRİMİZ",
+
 		"errorPageButton": "Ana Səhifəyə Qayıt",
 		"errorPageHeading": "Səhifə tapılmadı",
 		"errorPageTittle": "Üzr istəyirik, lakin tələb etdiyiniz səhifə tapılmadı",
-
-
 
 		"sectionHeaderTextP": ".. Neysan ilə artan Sağlamlıq ..",
 		"productsBannertext": "TƏBİƏTDƏN SİZƏ",
 		"homeBannerText": "NEYSAN - ƏN ŞİRİN ANLAR ÜÇÜN!",
 
-		"footerCopyright":"Saytı Hazırladı",
-		"footerText":"Azərbaycanda 2016-cı ilin mart ayından “ZİRƏ AQROPARK” Məhdud Məsuliyyətli Cəmiyyəti, elə həmin tarixdə də onun bazası əsasında fəaliyyətə başlayan “Neysan” - Abşeronun zümrüd boyunbağısı hesab edilən zeytun meyvəsini, onun yağını, ümumiyyətlə, bu nemətin faydasını insanlara yenidən tanıtmağı qarşısına məqsəd qoydu.",
+		"footerCopyright": "Saytı Hazırladı",
+		"footerText": "Azərbaycanda 2016-cı ilin mart ayından “ZİRƏ AQROPARK” Məhdud Məsuliyyətli Cəmiyyəti, elə həmin tarixdə də onun bazası əsasında fəaliyyətə başlayan “Neysan” - Abşeronun zümrüd boyunbağısı hesab edilən zeytun meyvəsini, onun yağını, ümumiyyətlə, bu nemətin faydasını insanlara yenidən tanıtmağı qarşısına məqsəd qoydu.",
 
 		"notFound": "Nəticə tapılmadı",
 		"All": "Hamısı",
 		"Detailed": "Ətraflı",
 		"TasteTheDifferenceNearYou": "Yaxınlığınızdakı Fərqi Dadın.",
-		
-		
+
 		"ourLocation": "Bizim Məkanlar",
 		"showOnMap": "XƏRİTƏDƏ GÖSTƏRİN",
 		"CheckOutOurLocations": "Yerlərimizi Yoxlayın.",
-		
+
 		"swalAlertTitle": "Daxil etdiyiniz məlumatlar göderildi",
 		"swalAlertHTML": "Təşəkkür edirik",
 
@@ -61,7 +65,6 @@
 		"send": "Göndər",
 		"placeOrder": "Sifaris Et",
 
-
 		"HomeQuestion1": "Tomat Qurusu nədir?",
 		"HomeQuestion2": "Faydaları?",
 		"HomeQuestion3": "İstifadəsi",
@@ -80,27 +83,23 @@
 		"pointOfSalesLocation4": "Yasamal ray. Nazim Hikmət 27. Musabəyov parkının yaxınlığında, Bazar Store olan sırada.",
 		"pointOfSalesLocation5": "Xəzər ray. Zirə yolu, Zirə Gülçülük mağazasının yanı.",
 
+		"type": "Qablaşdırma Növü",
+		"net": "Net Ağırlıq",
+		"suzme": "Süzmə Ağırlıq",
+		"brut": "Brutto Ağırlıq",
+		"qutu": "Qutu Sayı",
+		"qutuBrut": "Qutu Brutto ağırlıq",
+		"palet": "Palet Qutu sayı",
+		"barkod": "Barkod",
 
+		"glass": "Şüşə",
+		"350qr": "350 qr",
+		"565qr": "565 qr",
+		"650qr": "650 qr",
+		"12": "12 ədəd",
+		"7": "7 kq",
+		"144": "144 qutu",
 
-		"type":"Qablaşdırma Növü",
-		"net":"Net Ağırlıq",
-		"suzme":"Süzmə Ağırlıq",
-		"brut":"Brutto Ağırlıq",
-		"qutu":"Qutu Sayı",
-		"qutuBrut":"Qutu Brutto ağırlıq",
-		"palet":"Palet Qutu sayı",
-		"barkod":"Barkod",
-
-		"glass":"Şüşə",
-		"350qr":"350 qr",
-		"565qr":"565 qr",
-		"650qr":"650 qr",
-		"12":"12 ədəd",
-		"7":"7 kq",
-		"144":"144 qutu",
-		
-		
-	
 		"Jam": "Mürəbbə",
 		"Jelly": "Cem",
 		"Other": "Digər",
@@ -138,8 +137,6 @@
 		"productCiyelekCem": "Çiyələk Cemi",
 		"productZeferanMini": "Zəfəran",
 		"productZeferan": "Zəfəran Mürəbbəsi"
-
-
 	},
 	"en": {
 		"home": "Home",
@@ -158,29 +155,33 @@
 		"contactUs": "Contact Us",
 		"aboutUs": "ABOUT US",
 		"contactBanner": "Home - Contact",
-		
+		"ourCompanyBanner": "Visualize Your Journey to Health",
+		"ourCompanyDescription": "'Neysan' jam factory began its operations in 2016 on the basis of 'Zira Agropark' Limited Liability Company in the Zira settlement of the Absheron Peninsula. Our factory covers an area of ​​3000 m2 of closed and 3000 m2 of open land, is equipped with the latest technologies and is engaged in the production of products that meet high quality standards.",
+		"ourCompanyServicestext": "Neysan is a company that focuses on quality, producing natural and delicious jams. Our products, prepared based on selected fresh fruits and traditional recipes, bring pure taste and health to your table. We always aim to offer our customers high quality and organic flavor.",
+		"Customer": "Customer",
+		"OfficalStores": "Offical Stores",
+		"companyPageTitle": "BEST ORGANİC PRODUCT",
+"ourServices": "OUR SERVICES",
+
 		"errorPageButton": "Back to Home",
 		"errorPageHeading": "Page Not Found",
 		"errorPageTittle": "We are sorry,But The page You reguested Was not found",
-
-
 
 		"sectionHeaderTextP": ".. Increased HEALTH With NEYSAN ..",
 		"productsBannertext": "NATURE TO YOU",
 		"homeBannerText": "NEYSAN - FOR THE SWEETEST MOMENTS!",
 
-
-		"footerCopyright":"Created by",
-		"footerText":"Since March 2016, 'ZIRA AGROPARC' Limited Liability Company, which began operating on its basis on the same date, has set itself the goal of re-introducing to people the olive fruit, its oil, and in general the benefits of this blessing, which is considered the emerald necklace of 'Neysan' - Absheron.",
+		"footerCopyright": "Created by",
+		"footerText": "Since March 2016, 'ZIRA AGROPARC' Limited Liability Company, which began operating on its basis on the same date, has set itself the goal of re-introducing to people the olive fruit, its oil, and in general the benefits of this blessing, which is considered the emerald necklace of 'Neysan' - Absheron.",
 
 		"notFound": "No results found.",
 		"All": "All",
 		"Detailed": "Detailed",
-		
+
 		"ourLocation": "Our Locations",
 		"showOnMap": "SHOW ON MAP",
 		"CheckOutOurLocations": "Yerlərimizi Yoxlayın.",
-		
+
 		"swalAlertTitle": "The information you entered has been sent.",
 		"swalAlertHTML": "Təşəkkür edirik",
 
@@ -202,8 +203,7 @@
 		"send": "Send",
 		"placeOrder": "Place an order",
 
-
-"HomeQuestion1": "What is Tomato Paste?",
+		"HomeQuestion1": "What is Tomato Paste?",
 		"HomeQuestion2": "Benefits?",
 		"HomeQuestion3": "Usage",
 		"HomeAnswer1": "These are tomatoes that are naturally dried under the sun's rays, without any additives or preservatives. They add a special flavor to dishes with their high quality and rich aroma.",
@@ -221,24 +221,22 @@
 		"pointOfSalesLocation4": "Yasamal ray. Nazim Hikmet 27. Near Musabeyov park, next to Bazar Store.",
 		"pointOfSalesLocation5": "Khazar railway. Zira road, next to Zira Florist shop.",
 
+		"type": "Packaging Type",
+		"net": "Net Weight",
+		"suzme": "Filter Weight",
+		"brut": "Gross Weight",
+		"qutu": "Box Number",
+		"qutuBrut": "Box Gross Weight",
+		"palet": "Pallet Box Quantity",
+		"barkod": "Barcode",
 
-		"type":"Packaging Type",
-		"net":"Net Weight",
-		"suzme":"Filter Weight",
-		"brut":"Gross Weight",
-		"qutu":"Box Number",
-		"qutuBrut":"Box Gross Weight",
-		"palet":"Pallet Box Quantity",
-		"barkod":"Barcode",
-
-		"glass":"Glass",
-		"350qr":"350 gr",
-		"565qr":"565 gr",
-		"650qr":"650 gr",
-		"12":"12 piece",
-		"7":"7 kg",
-		"144":"144 box",
-
+		"glass": "Glass",
+		"350qr": "350 gr",
+		"565qr": "565 gr",
+		"650qr": "650 gr",
+		"12": "12 piece",
+		"7": "7 kg",
+		"144": "144 box",
 
 		"Jam": "Jam",
 		"Jelly": "Jelly",
@@ -296,29 +294,33 @@
 		"contactUs": "Связаться",
 		"aboutUs": "О НАС",
 		"contactBanner": "Дом - Контакты",
+		"ourCompanyBanner": "Визуализируйте свой путь к здоровью",
+		"ourCompanyDescription": "Завод по производству джемов «Нейсан» начал свою деятельность в 2016 году в поселке Зиря Апшеронского полуострова на базе Общества с ограниченной ответственностью «Зиря Агропарк». Наш завод занимает площадь 3000 м2 в помещении и 3000 м2 на открытом воздухе, оснащен новейшими технологиями и выпускает продукцию, соответствующую высоким стандартам качества.",
+		"ourCompanyServicestext": "Neysan — компания, заботящаяся о качестве, которая производит натуральные и вкусные джемы. Наши продукты, приготовленные на основе отборных свежих фруктов и традиционных рецептов, привнесут чистый вкус и пользу на ваш стол. Мы всегда стремимся предоставлять нашим клиентам высококачественную и органическую продукцию.",
+		"Customer": "Клиент",
+		"OfficalStores": "Официальные магазины",
+		"companyPageTitle": "ЛУЧШИЙ ОРГАНИЧЕСКИЙ ПРОДУКТ",
+		"ourServices": "НАШИ УСЛУГИ",
 
 		"errorPageButton": "Вернуться на домашнюю страницу",
 		"errorPageHeading": "Страница не найдена",
 		"errorPageTittle": "Извините, но запрошенная вами страница не найдена.",
 
-
-
-"sectionHeaderTextP": ".. Улучшение здоровья с помощью Нейсан ..",
+		"sectionHeaderTextP": ".. Улучшение здоровья с помощью Нейсан ..",
 		"productsBannertext": "ОТ ПРИРОДЫ К ВАМ",
 		"homeBannerText": "Нейсан - ДЛЯ САМЫХ СЛАДКИХ МОМЕНТОВ!",
 
-				
-		"footerCopyright":"Cайт разработан",
-		"footerText":"Начиная с марта 2016 года, начавшее свою деятельность на его базе в тот же день Общество с ограниченной ответственностью «ЗИРА АГРОПАРК» поставило перед собой цель вновь познакомить людей с плодом оливы, ее маслом и в целом с преимуществами этого блага, которое по праву считается изумрудным ожерельем «Нейсана» - Абшерона.",
-	
+		"footerCopyright": "Cайт разработан",
+		"footerText": "Начиная с марта 2016 года, начавшее свою деятельность на его базе в тот же день Общество с ограниченной ответственностью «ЗИРА АГРОПАРК» поставило перед собой цель вновь познакомить людей с плодом оливы, ее маслом и в целом с преимуществами этого блага, которое по праву считается изумрудным ожерельем «Нейсана» - Абшерона.",
+
 		"notFound": "Результаты не найдены.",
 		"All": "Все",
 		"Detailed": "Подробный",
-		
+
 		"ourLocation": "Наши местоположения",
 		"showOnMap": "ПОКАЗАТЬ НА КАРТЕ",
 		"CheckOutOurLocations": "Ознакомьтесь с нашими филиалами.",
-		
+
 		"swalAlertTitle": "Введенная вами информация была отправлена.",
 		"swalAlertHTML": "Спасибо.",
 
@@ -347,7 +349,6 @@
 		"HomeAnswer2": "Этот продукт защищает организм и укрепляет иммунную систему благодаря богатому содержанию витаминов и антиоксидантов. Сушеные томаты также обеспечивают энергией и регулируют работу желудочно-кишечного тракта. Он придает блюдам особый вкус благодаря своему натуральному вкусу и полезным свойствам.",
 		"HomeAnswer3": "Идеально подходит для салатов, пасты, пиццы, соусов и закусок. Благодаря своему особому аромату он придает блюдам глубокий и неповторимый вкус.",
 
-
 		"pointOfSalesTitle1": "Азадлыг Пр.",
 		"pointOfSalesTitle2": "Аджами",
 		"pointOfSalesTitle3": "Ахмадли",
@@ -359,25 +360,23 @@
 		"pointOfSalesLocation4": "Ясамальская железная дорога. Назыма Хикмета 27. Возле парка Мусабекова, рядом с магазином Bazar.",
 		"pointOfSalesLocation5": "Каспийское море. Zira Road, рядом с цветочным магазином Zira Florist.",
 
+		"type": "Тип упаковки",
+		"net": "Вес нетто",
+		"suzme": "Вес фильтра",
+		"brut": "Вес брутто",
+		"qutu": "Номер ящика",
+		"qutuBrut": "Вес брутто коробки",
+		"palet": "Количество ящиков на поддоне",
+		"barkod": "Штрих-код",
 
-		"type":"Тип упаковки",
-		"net":"Вес нетто",
-		"suzme":"Вес фильтра",
-		"brut":"Вес брутто",
-		"qutu":"Номер ящика",
-		"qutuBrut":"Вес брутто коробки",
-		"palet":"Количество ящиков на поддоне",
-		"barkod":"Штрих-код",
+		"glass": "Стекло",
+		"350qr": "350 г",
+		"565qr": "565 г",
+		"650qr": "650 г",
+		"12": "12 штук",
+		"7": "7 kг",
+		"144": "144 коробки",
 
-		"glass":"Стекло",
-		"350qr":"350 г",
-		"565qr":"565 г",
-		"650qr":"650 г",
-		"12":"12 штук",
-		"7":"7 kг",
-		"144":"144 коробки",
-
-		
 		"Jam": "Варенье",
 		"Jelly": "Джем",
 		"Other": "Другое",

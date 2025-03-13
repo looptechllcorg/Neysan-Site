@@ -134,6 +134,7 @@
   z-index: 999;
   background-color: #fff;
   .searchIcon {
+    width: 100%;
     svg {
       &:hover {
         fill: #ffb212 !important;
@@ -141,7 +142,7 @@
     }
   }
   .mobileLogo {
-    width: 120px;
+    width: 100%;
     height: 120px;
     img {
       width: 100%;

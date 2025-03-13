@@ -11,6 +11,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
 import Bar from '../../../assets/Gif/Bar';
+import ScrollToTop from '../../../components/ScrolToTop/ScrolToTop';
 
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '80px' },
@@ -60,7 +61,7 @@ const Home = () => {
 		let sectionIndex = 0;
 		window.sectionIndex = 0;
 		const onComplete = () => {
-			console.log('completed');
+			// console.log('completed');
 			isRunned = false;
 		};
 		const handleWheel = (e) => {
@@ -132,9 +133,13 @@ const Home = () => {
 			window.removeEventListener('touchmove', handleTouchMove);
 		};
 	}, []);
+	useEffect(()=>{
+    <ScrollToTop />
+	},[])
 
 	return (
 		<>
+		
 			<BottleScene showHiddenBottle={showHiddenBottle} setIsBottleLoaded={setIsBottleLoaded} />
 			{!isBottleLoaded ? (
 				<div
@@ -175,6 +180,7 @@ const Home = () => {
 					<HomeTwotoFour data={hometwoToFourDatas} />
 					<HomeSlider />
 					<HomeMedia />
+					
 				</main>
 			)}
 		</>

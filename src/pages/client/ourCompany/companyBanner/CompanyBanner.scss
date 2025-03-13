@@ -1,5 +1,6 @@
 #companyBanner{
     width: 100%;
+  
 // overflow: hidden;
     .backgroundImage{
         overflow: hidden;
@@ -17,13 +18,18 @@
                   }
         h1{
             animation: animationLeft 18s infinite;
-            width: 1000px;
-            font-size: 66px;
+            width: 1200px;
+            font-size: 4.2rem;
             line-height: 150px;
             font-weight: 600;
+            text-align: center;
             color: #fff;
+            @media (max-width:1024px) {
+            font-size: 3.5rem;
+            line-height: 80px;
+                  }
             @media (max-width:768px) {
-            font-size: 35px;
+            font-size: 2rem;
             line-height: 80px;
                   }
         }

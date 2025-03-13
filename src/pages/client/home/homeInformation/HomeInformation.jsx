@@ -5,98 +5,74 @@ import './HomeInformation.scss';
 import { useTranslation } from 'react-i18next';
 
 const HomeInformation = ({ sectionData, className }) => {
-       const {t} = useTranslation()
-  const homequestion = t(sectionData.info)
-  const homeanswer = t(sectionData.title)
+  const { t } = useTranslation();
+  const homequestion = t(sectionData.info);
+  const homeanswer = t(sectionData.title);
   
-  const words = homequestion.split(' ');
-  const title = homeanswer.split(' ');
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
+  // const words = homequestion.split(' ');
+  // const title = homeanswer.split(' ');
 
-  useEffect(() => {
-    console.log("inView:", inView);
-  }, [inView]);
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  // useEffect(() => {
+  //   console.log("inView:", inView);
+  // }, [inView]);
 
   const childVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: (i) => ({
+      opacity: 1,
       y: 0,
       transition: {
+        delay: i * 0.05, 
         duration: 0.7,
         ease: 'easeOut',
       },
-    },
+    }),
   };
 
   return (
     <section className={className} ref={ref} id="homeInformation">
-      <div className="container-lg">
-        <div className="row ">
-          <div className="informationBox col-lg-4 col-sm-4">
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={inView ? 'visible' : 'hidden'}
-              style={{
-                display: 'flex',
-                gap: '5px',
-                justifyContent: 'start',
-                flexWrap: 'wrap',
-              }}
-            >
-              {title.map((word, index) => (
-                <motion.span 
-                  key={index} 
-                  variants={childVariants} 
-                  className="motionHeader"
+      <div className="container-fluid container-lg">
+        <div className="row">
+          <div className="informationBox col-lg-4 col-sm-4 col-10">
+            <motion.h4 className='motionHeader'>
+              {homeanswer.split(' ').map((word, i) => (
+                <motion.span
+                  key={i}
+                  variants={childVariants}
+                  custom={i}
+                  initial="hidden"
+                  animate={inView ? 'visible' : 'hidden'}
+                  style={{ display: 'inline-block', marginRight: '.8rem' }}
                 >
                   {word}
                 </motion.span>
               ))}
-            </motion.div>
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate={inView ? 'visible' : 'hidden'}
-              style={{
-                display: 'flex',
-                gap: '4px',
-                justifyContent: 'start',
-                flexWrap: 'wrap',
-              }}
-            >
-              {words.map((word, index) => (
-                <motion.span 
-                  key={index} 
-                  variants={childVariants} 
-                  className="motionSpan"
+            </motion.h4>
+            <motion.p className="motionSpan">
+              {homequestion.split(' ').map((word, i) => (
+                <motion.span
+                  key={i}
+                  variants={childVariants}
+                  custom={i}
+                  initial="hidden"
+                  animate={inView ? 'visible' : 'hidden'}
+                  style={{ display: 'inline-block', marginRight: '.4rem' }}
                 >
                   {word}
                 </motion.span>
               ))}
-            </motion.div>
+            </motion.p>
           </div>
         </div>
-        <div 
-          className="bgImage" 
-          style={{ backgroundImage: `url(${sectionData.bgImg})` }}
-        ></div>
+        <div className="bgImage" style={{ backgroundImage: `url(${sectionData.bgImg})` }}></div>
       </div>
     </section>
   );
 };
 
 export default HomeInformation;
+
+
+

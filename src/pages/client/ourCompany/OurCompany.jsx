@@ -6,16 +6,16 @@ import { ourCompanyDatas } from '../../../MyDatas/MyDatas'
 import LeavePattern from '../../../assets/pattern/leaves2Pattern.png'
 import MorugPattern from '../../../assets/pattern/qirmiziMorug2.png'
 import FlowerPattern from '../../../assets/pattern/saffronFlower2.png'
-
+import "./OurCompany.scss"
 const OurCompany = () => {
   const leaves = [
-    { id: 1, top: "20%", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
-    { id: 2, top: "25%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
-    { id: 3, top: "125%", left: "auto",right:"1%", size: "80px",src:LeavePattern },
-   { id: 4, top: "245%", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
-     { id: 5, top: "320%", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
-    { id: 6, top: "370%", left: "-1%",right:"auto", size: "80px",src:LeavePattern },
-  //  { id: 7, top: "490%", left: "auto",right:"0%", size: "90px",src:LeavePattern },
+    { id: 1, top: "20vh", left: "-3%",right:"auto", size: "100px",src:LeavePattern },
+    { id: 2, top: "25vh", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
+    { id: 3, top: "125vh", left: "auto",right:"1%", size: "80px",src:LeavePattern },
+   { id: 4, top: "245vh", left: "-6%",right:"auto", size: "180px",src:MorugPattern },
+     { id: 5, top: "320vh", left: "auto",right:"0%", size: "100px",src:FlowerPattern },
+    { id: 6, top: "360vh", left: "-1%",right:"auto", size: "80px",src:LeavePattern },
+  
     
   ];
   return (
@@ -25,6 +25,7 @@ const OurCompany = () => {
           key={leaf.id}
           src={leaf.src}
           alt="Yaprak"
+          className={`ourCompanyPattern${leaf.id}`}
           style={{
             position: "absolute",
             top: leaf.top,

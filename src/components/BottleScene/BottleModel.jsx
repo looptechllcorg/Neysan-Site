@@ -7,6 +7,7 @@ const BottleModel = ({ setIsBottleLoaded }) => {
 	const { nodes, materials } = useGLTF('cem.glb', undefined, undefined, (l) => {
 		l.manager.onLoad = () => {
 			setIsBottleLoaded(true);
+			window.scrollTo(0,0)
 		};
 	});
 

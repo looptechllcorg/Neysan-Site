@@ -166,25 +166,35 @@ const openActiveList = ()=>{
           transform: isScrolled && !isScrolledFar ? "translateY(-200px)" : "translateY(0px)",
         }}
   >
-    <div className="container d-flex align-items-center justify-content-around">
-      <div className="searchIcon">
-        <SearchIcon/>
-      </div>
-      <div className="mobileLogo">
-        <NavLink
-        to="/"
-        onClick={()=>{setnavActive(false);}}>
+    <div className="container">
+      <div className="row align-items-center justify-content-around">
+        <div className="col-2"><div className="searchIcon">
+          <SearchIcon/>
+        </div></div>
+        <div className="col-6">
+        <div className="mobileLogo">
+          <NavLink  
+          to="/"
+          onClick={()=>{setnavActive(false);}}>
 
-        <img src={neysanLogo} alt="" />
-        </NavLink>
-      </div>
-     
+          <img src={neysanLogo} alt="Logo" />
+          </NavLink>
+        </div>
+        </div>
+        <div className="col-3">
         {navActive == true ?  <span 
-        onClick={()=>{setnavActive(false);}}
-         className="openNavbar"><CloseIcon/></span >: <span onClick={()=>{
-        setnavActive(true)
-        console.log(navActive);
-      }} className="openNavbar"><MenuIcon/></span >}
+          onClick={()=>{setnavActive(false);}}
+          className="openNavbar"><CloseIcon/></span >: <span onClick={()=>{
+          setnavActive(true)
+          console.log(navActive);
+        }} className="openNavbar"><MenuIcon/></span >}
+        </div>
+
+        
+     
+      
+          
+      </div>
      
       
     </div>
@@ -193,7 +203,10 @@ const openActiveList = ()=>{
     {["az", "en", "ru"].map((lang,idx) => (
         <button
           key={idx}
-          onClick={() => onClickChangeLang(lang)} 
+          onClick={() =>{
+            onClickChangeLang(lang)
+            setnavActive(false)}
+           } 
           className={`${
             siteLang === lang ? "activebtn" : "deactivebtn"
           }`}

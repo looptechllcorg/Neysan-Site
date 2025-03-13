@@ -1,14 +1,15 @@
 import React from 'react'
 import "./OurService.scss"
 import { ServiceImages } from '../../../../MyDatas/MyDatas';
+import { useTranslation } from 'react-i18next';
 const OurServices = () => {
-    
+    const {t} = useTranslation()
   return (
     <section id='ourServices'>
         <div className="container py-5">
             <div className="row">
                 <div className="sectionHeader">
-                    <h2>OUR SERVICES</h2>
+                    <h2>{t("ourServices")}</h2>
                 </div>
             </div>
             <div className="row">
@@ -32,7 +33,7 @@ const OurServices = () => {
             </div>
             <div className="row py-5 justify-content-center">
                 <div className="sectionText">
-                    <p>Neysan, təbii və ləzzətli mürəbbə istehsal edən keyfiyyətə önəm verən bir şirkətdir. Seçilmiş təzə meyvələr və ənənəvi reseptlər əsasında hazırlanan məhsullarımız süfrənizə saf dad və sağlamlıq gətirir. Müştərilərimizə hər zaman yüksək keyfiyyət və orqanik ləzzət təqdim etməyi hədəfləyirik.</p>
+                    <p>{t("ourCompanyServicestext")}</p>
                 </div>
             </div>
         </div>
