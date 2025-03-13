@@ -1,21 +1,21 @@
 /* eslint-disable react/no-unknown-property */
 import { useGLTF } from '@react-three/drei';
 import { useEffect, useRef } from 'react';
-import { getRotation, getScaleRotation } from './bottleHelper';
+import { getRotation } from './bottleHelper';
 
-const BottleModel = ({ modelFilePath, position, rotation }) => {
-	const { nodes, materials } = useGLTF('cem.glb');
+const BottleModel = ({ setIsBottleLoaded }) => {
+	const { nodes, materials } = useGLTF('cem.glb', undefined, undefined, (l) => {
+		l.manager.onLoad = () => {
+			setIsBottleLoaded(true);
+		};
+	});
 
 	const groupRef = useRef(null);
-	//   console.log(gltf);
 	useEffect(() => {
 		if (groupRef.current) {
 			console.log('start');
 			const handleScroll = () => {
 				groupRef.current.rotation.y = getRotation();
-				// groupRef.current.scale.x = 0.8 + 0.031830989 * getScaleRotation();
-				// groupRef.current.scale.y = 0.8 + 0.031830989 * getScaleRotation();
-				// groupRef.current.scale.z = 0.8 + 0.031830989 * getScaleRotation();
 			};
 			window.addEventListener('scroll', handleScroll);
 			return () => window.removeEventListener('scroll', handleScroll);

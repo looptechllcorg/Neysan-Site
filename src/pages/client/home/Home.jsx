@@ -1,8 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import Banner from './banner/Banner';
-// import JamBottle from './jamBottle/JamBottle';
 import HomeTwotoFour from './hometwoToFour/HomeTwotoFour';
-import MarketLogo from './marketLogos/MarketLogo';
 import HomeSlider from './homeSlider/HomeSlider';
 import HomeMedia from './media/HomeMedia';
 import LeavePattern from '../../../assets/pattern/leaves2Pattern.png';
@@ -11,6 +10,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import ScrollToPlugin from 'gsap/dist/ScrollToPlugin';
 import { hometwoToFourDatas } from '../../../MyDatas/MyDatas';
+import Bar from '../../../assets/Gif/Bar';
 
 const leaves = [
 	{ id: 1, top: '4%', left: '-1%', right: 'auto', size: '80px' },
@@ -27,13 +27,12 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Home = () => {
 	const sectionsClassNames = Array.from({ length: 6 }, (_, index) => `a${index}`);
 	const [showHiddenBottle, setShowHiddenBottle] = useState(true);
+	const [isBottleLoaded, setIsBottleLoaded] = useState(false);
 
 	useEffect(() => {
 		let inBottom = false;
 		let isRunned = false;
-		const handleScroll = (e) => {
-			// console.log('outer -- ', window.outerWidth, window.outerHeight);
-			// console.log('inner -- ', window.innerWidth, window.innerHeight);
+		const handleScroll = () => {
 			if (window.scrollY >= 4 * window.spesificHeight - 2) {
 				inBottom = true;
 				isRunned = false;
@@ -43,9 +42,7 @@ const Home = () => {
 				if (!inBottom && !isRunned) {
 					window.disableScroll();
 					window.scrollTo(0, 4 * window.spesificHeight - 6);
-					// setTimeout(() => {
 					isRunned = true;
-					// }, 1000);
 				}
 				inBottom = false;
 			}
@@ -137,30 +134,50 @@ const Home = () => {
 	}, []);
 
 	return (
-		<main id="noPadding" className="a0" style={{ position: 'relative' }}>
-			{leaves.map((leaf) => (
-				<img
-					key={leaf.id}
-					src={LeavePattern}
-					alt="Yaprak"
+		<>
+			<BottleScene showHiddenBottle={showHiddenBottle} setIsBottleLoaded={setIsBottleLoaded} />
+			{!isBottleLoaded ? (
+				<div
+					className="loadingContainer"
 					style={{
 						position: 'absolute',
-						top: leaf.top,
-						left: leaf.left,
-						right: leaf.right,
-						width: leaf.size,
-						height: leaf.size,
-						zIndex: '9',
+						display: 'flex',
+						justifyContent: 'center',
+						alignItems: 'center',
+						height: '100vh',
+						width: '100vw',
+						fontSize: '24px',
+						zIndex: '9999',
+						background: 'white',
 					}}
-				/>
-			))}
-			<BottleScene showHiddenBottle={showHiddenBottle} />
-			<Banner />
-			<HomeTwotoFour data={hometwoToFourDatas} />
-			<HomeSlider />
-			<HomeMedia />
-			{/* <MarketLogo /> */}
-		</main>
+				>
+					<Bar />
+				</div>
+			) : (
+				<main id="noPadding" className="a0" style={{ position: 'relative' }}>
+					{leaves.map((leaf) => (
+						<img
+							key={leaf.id}
+							src={LeavePattern}
+							alt="Yaprak"
+							style={{
+								position: 'absolute',
+								top: leaf.top,
+								left: leaf.left,
+								right: leaf.right,
+								width: leaf.size,
+								height: leaf.size,
+								zIndex: '9',
+							}}
+						/>
+					))}
+					<Banner />
+					<HomeTwotoFour data={hometwoToFourDatas} />
+					<HomeSlider />
+					<HomeMedia />
+				</main>
+			)}
+		</>
 	);
 };
 
