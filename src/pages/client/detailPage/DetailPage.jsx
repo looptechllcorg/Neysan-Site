@@ -18,17 +18,24 @@ const DetailPage = () => {
 	const { t } = useTranslation();
 	const { slug } = useParams();
 
-	const productData = productsData.find((item) => item.id === parseInt(slug));
-	console.log(productData);
+	const [similarAndParametrsBtn, setsimilarAndParametrsBtn] = useState(true);
 
+	const handleState = () => {
+		setsimilarAndParametrsBtn(!similarAndParametrsBtn);
+	};
+
+	// Products find one products
+	const productData = productsData.find((item) => item.id === parseInt(slug));
+
+	// Oxsar mehsullar tapilmasi
 	const featuredProducts = productsData.filter(
-		(item) => item.category === productData.category && item.id !== productData.id
-	  );
+		(item) => item.category === productData.category && item.id !== productData.id,
+	);
 	console.log(featuredProducts);
 
 	const [activeIndex, setActiveIndex] = useState(0);
-	const [name, setName] = useState("");
-	const [phone, setPhone] = useState("");
+	const [name, setName] = useState('');
+	const [phone, setPhone] = useState('');
 	const handleSlideChange = (swiper) => {
 		setActiveIndex(swiper.realIndex);
 	};
@@ -63,7 +70,13 @@ const DetailPage = () => {
 									</ul>
 								</div>
 								<div className="border"></div>
-								<button className="detailButton" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">{t("placeOrder")}</button>
+								<button
+									className="detailButton"
+									data-bs-target="#exampleModalToggle"
+									data-bs-toggle="modal"
+								>
+									{t('placeOrder')}
+								</button>
 								{/* <ul className="qualityList">
                       <li><CheckIcon/> Very good skin compatibility</li>
                       <li><CheckIcon/> Deeply hydrating</li>
@@ -77,99 +90,136 @@ const DetailPage = () => {
 			<section id="featuredproducts">
 				<div className="container">
 					<div className="row py-5">
-						<div className="sectionHeader">
-							<h2>OXŞAR MƏHSULLAR</h2>
+						<div className="sectionHeaderBtns">
+							<button
+								onClick={() => handleState()}
+								className={`${'similarBtn'} ${similarAndParametrsBtn ? 'activeBtn' : ''}`}
+							>
+								{t('sameProduct')}
+							</button>
+							<button
+								onClick={() => handleState()}
+								className={`${'prParametrsBtn'} ${similarAndParametrsBtn ? '' : 'activeBtn'}`}
+							>
+								{t('productAtribute')}
+							</button>
 						</div>
 					</div>
 					<div className="row justify-content-center">
 						<div className="col-lg-12">
-							<div className="sliderBox" style={{ width: '100%' }}>
-								<Swiper
-									centeredSlides={true}
-									loop={true}
-									speed={3000}
-									autoplay={{
-										delay: 3000,
-										disableOnInteraction: false,
-									}}
-									breakpoints={{
-										769: {
-											slidesPerView: 1,
-											spaceBetween: 20,
-										},
+							{similarAndParametrsBtn ? (
+								<div className="sliderBox">
+									<Swiper
+										centeredSlides={true}
+										loop={true}
+										speed={3000}
+										autoplay={{
+											delay: 3000,
+											disableOnInteraction: false,
+										}}
+										breakpoints={{
+											769: {
+												slidesPerView: 1,
+												spaceBetween: 20,
+											},
 
-										1024: {
-											slidesPerView: 3,
-											spaceBetween: 30,
-										},
+											1024: {
+												slidesPerView: 3,
+												spaceBetween: 30,
+											},
+										}}
+										modules={[Autoplay]}
+										pagination={{ clickable: true }}
+										onSlideChange={handleSlideChange}
+									>
+										{featuredProducts.map((item, index) => (
+											<SwiperSlide
+												key={item.id}
+												style={{
+													'--text-color': activeIndex === index ? `#fff` : `#000`,
+													backgroundColor: activeIndex === index ? item.bgColor : '',
+												}}
+											>
+												<Link to={`/product/${item.id}`}>
+													<div className="slide_card">
+														<img
+															className="slideImage"
+															src={item.image}
+															alt={item.productName}
+														/>
+														<h3>{t(item.productName)}</h3>
+														<p>{t(item.productWeight)}</p>
+													</div>
+												</Link>
+											</SwiperSlide>
+										))}
+									</Swiper>
+								</div>
+							) : (
+								<div className="productAtribute">
+									
+									<div className="calorie">
+										<h6 className="title">Enerji dəyəri 100q üçün</h6>
+										<table>
+											<tbody>
+												{productData?.productAtribute?.map((item ,idx) => (
+													<tr className="thtdWarapper" key={idx}>
+														<th>{t(item?.title)}</th>
+														<td>{item?.title == "enerjiDeyeri" ? `${t(item?.value)} ${t("kkal")}`:`${t(item?.value)} ${t("qr")}`}</td>
+													</tr>
+												))}
+											</tbody>
+										</table>
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="checoutModal">
+				<div
+					class="modal fade"
+					id="exampleModalToggle"
+					aria-hidden="true"
+					aria-labelledby="exampleModalToggleLabel"
+					tabindex="-1"
+				>
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+									Modal 1
+								</h1>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="modal-body">
+								<form action="">
+									<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+									<input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} />
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button
+									class="btn btn-primary"
+									onClick={() => {
+										const message = encodeURIComponent(`Müşteri bilgileri:${name} phone: ${phone}`);
+										const whatsappURL = `https://wa.me/994508697723?text=${message}`;
+										window.open(whatsappURL, '_blank');
 									}}
-									modules={[Autoplay]}
-									pagination={{ clickable: true }}
-									onSlideChange={handleSlideChange}
 								>
-									{featuredProducts.map((item, index) => (
-										<SwiperSlide
-											key={item.id}
-											style={{
-												'--text-color': activeIndex === index ? `#fff` : `#000`,
-												backgroundColor: activeIndex === index ? item.bgColor : '',
-											}}
-										>
-											<Link to={`/product/${item.id}`}>
-												<div className="slide_card">
-													<img
-														className="slideImage"
-														src={item.image}
-														alt={item.productName}
-													/>
-													<h3>{t(item.productName)}</h3>
-													<p>{t(item.productWeight)}</p>
-												</div>
-											</Link>
-										</SwiperSlide>
-									))}
-								</Swiper>
+									send
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-      <section id='checoutModal'> 
-      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-       <form action="">
-       <input 
-    type="text" 
-    value={name} 
-    onChange={(e) => setName(e.target.value)} 
-  />
-    <input 
-    type="text" 
-    value={phone} 
-    onChange={(e) => setPhone(e.target.value)} 
-  />
-
-       </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary"
-        onClick={()=>{
-          const message = encodeURIComponent(`Müşteri bilgileri:${name} phone: ${phone}`);
-const whatsappURL = `https://wa.me/994508697723?text=${message}`;
-window.open(whatsappURL, "_blank"); }}>send</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      </section>
 		</main>
 	);
 };

@@ -120,17 +120,33 @@ main{
     }
     #featuredproducts{
         padding: 60px 0  ;
-        .sectionHeader{
-            h2{
+        .sectionHeaderBtns{
+            .similarBtn,
+            .prParametrsBtn {
+                border: none;
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding: 1rem 2rem;
+                background: transparent;
+                border-radius: 11px;
+                margin-right: 20px;
                 color: #983D1B;
-                font-size: 60px;
-                text-align: center;
+                cursor: pointer;
+                transition: 0.5s ease;
             }
+            .activeBtn {
+                background-color: rgba(128, 159, 56, 0.26);
+                pointer-events: none;
+            }
+
         }
         .sliderBox{
+            width: 100%;
             .swiper-slide{
                 border-radius: 15px;
                 padding: 15px;
+                // width: 400px;
+                // max-width: 300px;
                 // height: 380px;
                 a{
                     text-decoration: none;
@@ -167,6 +183,42 @@ main{
                     }
                 }
             }
+        }
+        .productAtribute{
+            .description {
+				width: 90%;
+				text-align: center;
+				color: rgba(48, 69, 35, 1);
+				font-size: 1.2rem;
+				margin: 2rem auto;
+			}
+			.calorie {
+				width: 70%;
+				margin: 0 auto;
+				.title {
+					background-color:#55941A;
+					font-size: 1.2rem;
+					padding: 10px 0px;
+					color: white;
+					text-align: center;
+					font-weight: 400;
+                    margin: 0;
+				}
+				table {
+					border-collapse: collapse;
+					width: 100%;
+				}
+				.thtdWarapper {
+					 display: table-row;
+				}
+				td,
+				th {
+					width: 50%;
+					border: 1px solid rgba(128, 159, 56, 1);
+					text-align: left;
+					padding: 8px 14px;
+				}
+			}
         }
     }
 }

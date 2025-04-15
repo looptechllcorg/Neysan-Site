@@ -132,6 +132,12 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590905' },
 		],
+		productAtribute:[
+			{title:"terkib",value:"tomatTerkib"},
+			{title:"enerjiDeyeri",value:"78.71"},
+			{title:"karbohidrat",value:"18.5"},
+			{title:"zulal",value:"12.4"},
+		]
 	},
 	{
 		id: 2,
@@ -151,6 +157,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590974' },
 		],
+		productAtribute:[
+			{title:"terkib",value:"aggilaslimonTerkib"},
+			{title:"enerjiDeyeri",value:"154.5"},
+			{title:"karbohidrat",value:"40.6"},
+		]
 	},
 	{
 		id: 3,
@@ -170,6 +181,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591094' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"qaragatTerkib"},
+			{title:"enerjiDeyeri",value:""},
+			{title:"karbohidrat",value:""},
+		]
 	},
 	{
 		id: 4,
@@ -189,6 +205,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591063' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"gavaliTerkib"},
+			{title:"enerjiDeyeri",value:"173.81"},
+			{title:"karbohidrat",value:"45.7"},
+		]
 	},
 	{
 		id: 5,
@@ -208,6 +229,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591018' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"boyurtkenTerkib"},
+			{title:"enerjiDeyeri",value:"188.075"},
+			{title:"karbohidrat",value:"49.14"},
+		]
 	},
 	{
 		id: 6,
@@ -227,6 +253,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591049' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"encirTerkib"},
+			{title:"enerjiDeyeri",value:"152.57"},
+			{title:"karbohidrat",value:"40.1"},
+		]
 	},
 	{
 		id: 8,
@@ -246,6 +277,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591117' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"saftaliTerkib"},
+			{title:"enerjiDeyeri",value:"169.3"},
+			{title:"karbohidrat",value:"44.6"},
+		]
 	},
 
 	{
@@ -266,6 +302,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591025' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"cennetTerkib"},
+			{title:"enerjiDeyeri",value:"175.48"},
+			{title:"karbohidrat",value:"46.3"},
+		]
 	},
 	{
 		id: 11,
@@ -285,6 +326,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591032' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"ciyelekTerkib"},
+			{title:"enerjiDeyeri",value:"170"},
+			{title:"karbohidrat",value:"44.8"},
+		]
 	},
 	{
 		id: 12,
@@ -304,6 +350,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591056' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"erikTerkib"},
+			{title:"enerjiDeyeri",value:"187.45"},
+			{title:"karbohidrat",value:"49.45"},
+		]
 	},
 	{
 		id: 14,
@@ -323,6 +374,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591070' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"heyvaTerkib"},
+			{title:"enerjiDeyeri",value:"158.57"},
+			{title:"karbohidrat",value:"41.6"},
+		]
 	},
 	{
 		id: 15,
@@ -342,6 +398,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591155' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"erikmoruqTerkib"},
+			{title:"enerjiDeyeri",value:"182"},
+			{title:"karbohidrat",value:"47.6"},
+		]
 	},
 	{
 		id: 16,
@@ -361,6 +422,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590981' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"aggilasqozTerkib"},
+			{title:"enerjiDeyeri",value:"196.9"},
+			{title:"karbohidrat",value:"50.54"},
+		]
 	},
 	{
 		id: 17,
@@ -380,6 +446,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591087' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"moruqTerkib"},
+			{title:"enerjiDeyeri",value:"152.89"},
+			{title:"karbohidrat",value:"40.32"},
+		]
 	},
 	{
 		id: 18,
@@ -399,6 +470,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591001' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"armudTerkib"},
+			{title:"enerjiDeyeri",value:"156.68"},
+			{title:"karbohidrat",value:"41.26"},
+		]
 	},
 	{
 		id: 19,
@@ -418,6 +494,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591124' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"zogalTerkib"},
+			{title:"enerjiDeyeri",value:"170.7"},
+			{title:"karbohidrat",value:"44.9"},
+		]
 	},
 	{
 		id: 20,
@@ -437,6 +518,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591100' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"redqaragatTerkib"},
+			{title:"enerjiDeyeri",value:"195.6"},
+			{title:"karbohidrat",value:"50.7"},
+		]
 	},
 	//   #c32c3f
 	{
@@ -457,6 +543,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591131' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"goyemTerkib"},
+			{title:"enerjiDeyeri",value:"175.43"},
+			{title:"karbohidrat",value:"46.1"},
+		]
 	},
 	{
 		id: 22,
@@ -476,6 +567,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590998' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"albaliTerkib"},
+			{title:"enerjiDeyeri",value:"201.1"},
+			{title:"karbohidrat",value:"53"},
+		]
 	},
 	{
 		id: 23,
@@ -495,6 +591,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591162' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"aggilasqaragatTerkib"},	
+			{title:"enerjiDeyeri",value:"158"},
+			{title:"karbohidrat",value:"40.4"},
+		]
 	},
 	{
 		id: 24,
@@ -514,6 +615,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590967' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"gilasTerkib"},
+			{title:"enerjiDeyeri",value:"193.7"},
+			{title:"karbohidrat",value:"51"},
+		]
 	},
 	{
 		id: 25,
@@ -533,6 +639,11 @@ export const productsData = [
 			{ title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155590912' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"zogalezmeTerkib"},
+			{title:"enerjiDeyeri",value:"4.1"},
+			{title:"zulal",value:"0.6"},
+		]
 	},
 	{
 		id: 26,
@@ -552,6 +663,11 @@ export const productsData = [
 			{ title: 'palet', value: '130' },
 			{ title: 'barkod', value: '4760155590950' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"encircemTerkib"},
+			{title:"enerjiDeyeri",value:"162.75"},
+			{title:"karbohidrat",value:"42.6"},
+		]
 	},
 	{
 		id: 27,
@@ -571,6 +687,11 @@ export const productsData = [
 			{ title: 'palet', value: '130' },
 			{ title: 'barkod', value: '4760155590943' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"gavalicemTerkib"},
+			{title:"enerjiDeyeri",value:"158.11"},
+			{title:"karbohidrat",value:"41.4"},
+		]
 	},
 	{
 		id: 28,
@@ -590,6 +711,11 @@ export const productsData = [
 			{ title: 'palet', value: '130' },
 			{ title: 'barkod', value: '4760155590936' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"erikcemTerkib"},
+			{title:"enerjiDeyeri",value:"156.16"},
+			{title:"karbohidrat",value:"40.8"},
+		]
 	},
 
 	{
@@ -610,6 +736,11 @@ export const productsData = [
 			{ title: 'palet', value: '130' },
 			{ title: 'barkod', value: '4760155590929' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"ciyelekcemTerkib"},
+			{title:"enerjiDeyeri",value:"153.71"},
+			{title:"karbohidrat",value:"40.2"},
+		]
 	},
 	{
 		id: 31,
@@ -629,6 +760,11 @@ export const productsData = [
 			// { title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591223' },
 		],
+			productAtribute:[
+			{title:"terkib",value:"zeferanminiTerkib"},
+			{title:"enerjiDeyeri",value:"150.03"},
+			{title:"karbohidrat",value:"39.8"},
+		]
 	},
 	{
 		id: 32,
@@ -648,6 +784,11 @@ export const productsData = [
 			// { title: 'palet', value: '144' },
 			{ title: 'barkod', value: '4760155591223' },
 		],
+			productAtribute:[
+				{title:"terkib",value:"zeferanTerkib"},
+				{title:"enerjiDeyeri",value:"150.03"},
+				{title:"karbohidrat",value:"39.8"},
+		]
 	},
 ];
 
