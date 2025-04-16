@@ -157,15 +157,20 @@ const DetailPage = () => {
 								</div>
 							) : (
 								<div className="productAtribute">
-									
 									<div className="calorie">
-										<h6 className="title">Enerji dəyəri 100q üçün</h6>
+										<h6 className="title">{t("productTableTitle")}</h6>
 										<table>
 											<tbody>
-												{productData?.productAtribute?.map((item ,idx) => (
+												{productData?.productAtribute?.map((item, idx) => (
 													<tr className="thtdWarapper" key={idx}>
 														<th>{t(item?.title)}</th>
-														<td>{item?.title == "enerjiDeyeri" ? `${t(item?.value)} ${t("kkal")}`:`${t(item?.value)} ${t("qr")}`}</td>
+														<td>
+															{item?.title === 'terkib'
+																? t(item?.value)
+																: item?.title === 'enerjiDeyeri'
+																? `${t(item?.value)} ${t('kkal')}`
+																: `${t(item?.value)} ${t('qr')}`}
+														</td>
 													</tr>
 												))}
 											</tbody>
