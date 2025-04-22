@@ -16,10 +16,10 @@ jobs:
                   known_hosts: "just-a-placeholder-so-we-dont-get-errors"
             - name: Adding Known Hosts
               run: ssh-keyscan -t ecdsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-            - name: Use Node.js 20
-              uses: actions/setup-node@v2
+            - name: Use Node.js 22
+              uses: actions/setup-node@v4
               with:
-                  node-version: 20
+                  node-version: 22
                   cache: "npm"
             - run: npm install
             - run: CI='' npm run build
