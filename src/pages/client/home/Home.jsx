@@ -45,9 +45,6 @@ const Home = () => {
 	useEffect(() => {
 		const hundredVhElement = document.getElementById('hundredVHElement');
 		setInnerHeight(hundredVhElement.clientHeight);
-		alert(
-			`hundredVhElement.clientHeight: ${hundredVhElement.clientHeight}\n window.innerHeight: ${window.innerHeight}`,
-		);
 	}, []);
 
 	useEffect(() => {

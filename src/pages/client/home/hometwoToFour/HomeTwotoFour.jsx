@@ -9,16 +9,14 @@ import homePattern5 from '../../../../assets/pattern/homePattern5.png';
 import { style } from 'framer-motion/client';
 
 const HomeTwotoFour = ({ data }) => {
-	console.log(data);
-	
 	return (
 		<section id="HomeToFour">
 			{/* Pattern */}
-				<img className="homePatternOne" src={homePattern1} alt="" />
-				<img className="homePatternTwo" src={homePattern2} alt="" />
-				<img className="homePatternThree" src={homePattern3} alt="" />
-				<img className="homePatternFour" src={homePattern4} alt="" />
-				<img className="homePatternFive" src={homePattern5} alt="" />
+			<img className="homePatternOne" src={homePattern1} alt="" />
+			<img className="homePatternTwo" src={homePattern2} alt="" />
+			<img className="homePatternThree" src={homePattern3} alt="" />
+			<img className="homePatternFour" src={homePattern4} alt="" />
+			<img className="homePatternFive" src={homePattern5} alt="" />
 
 			<div className="home2Between4SectionWrapper">
 				{data?.map((item) => (
