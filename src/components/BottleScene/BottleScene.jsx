@@ -5,7 +5,7 @@ import style from './BottleScene.module.scss';
 import BottleModel from './BottleModel';
 import { Environment } from '@react-three/drei';
 
-const BottleScene = ({ showHiddenBottle, setIsBottleLoaded }) => {
+const BottleScene = ({ showHiddenBottle, setIsBottleLoaded, innerHeight }) => {
 	const directionLight = new DirectionalLight();
 	directionLight.intensity = 2;
 	return (
@@ -28,7 +28,7 @@ const BottleScene = ({ showHiddenBottle, setIsBottleLoaded }) => {
 				}}
 			>
 				<ambientLight intensity={Math.PI / 2} />
-				<BottleModel setIsBottleLoaded={setIsBottleLoaded} />
+				<BottleModel innerHeight={innerHeight} setIsBottleLoaded={setIsBottleLoaded} />
 				<Environment preset="city" />
 			</Canvas>
 		</div>

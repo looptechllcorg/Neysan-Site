@@ -31,7 +31,6 @@ const DetailPage = () => {
 	const featuredProducts = productsData.filter(
 		(item) => item.category === productData.category && item.id !== productData.id,
 	);
-	console.log(featuredProducts);
 
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [name, setName] = useState('');
@@ -158,7 +157,7 @@ const DetailPage = () => {
 							) : (
 								<div className="productAtribute">
 									<div className="calorie">
-										<h6 className="title">{t("productTableTitle")}</h6>
+										<h6 className="title">{t('productTableTitle')}</h6>
 										<table>
 											<tbody>
 												{productData?.productAtribute?.map((item, idx) => (

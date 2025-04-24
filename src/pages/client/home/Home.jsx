@@ -29,12 +29,29 @@ const Home = () => {
 	const sectionsClassNames = Array.from({ length: 6 }, (_, index) => `a${index}`);
 	const [showHiddenBottle, setShowHiddenBottle] = useState(true);
 	const [isBottleLoaded, setIsBottleLoaded] = useState(false);
+	const [innerHeight, setInnerHeight] = useState(window.innerHeight);
+
+	const handleResize = () => {
+		setInnerHeight(window.innerHeight);
+	};
+
+	useEffect(() => {
+		window.addEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
+		const hundredVhElement = document.getElementById('hundredVHElement');
+		setInnerHeight(hundredVhElement.clientHeight);
+	}, []);
 
 	useEffect(() => {
 		let inBottom = false;
 		let isRunned = false;
 		const handleScroll = () => {
-			if (window.scrollY >= 4 * window.spesificHeight - 2) {
+			if (window.scrollY >= 4 * innerHeight - 2) {
 				inBottom = true;
 				isRunned = false;
 				setShowHiddenBottle(false);
@@ -42,7 +59,7 @@ const Home = () => {
 			} else {
 				if (!inBottom && !isRunned) {
 					window.disableScroll();
-					window.scrollTo(0, 4 * window.spesificHeight - 6);
+					window.scrollTo(0, 4 * innerHeight - 6);
 					isRunned = true;
 				}
 				inBottom = false;
@@ -52,7 +69,7 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [innerHeight]);
 
 	// Desktop
 	useEffect(() => {
@@ -61,11 +78,10 @@ const Home = () => {
 		let sectionIndex = 0;
 		window.sectionIndex = 0;
 		const onComplete = () => {
-			// console.log('completed');
 			isRunned = false;
 		};
 		const handleWheel = (e) => {
-			if (window.scrollY < 4 * window.spesificHeight - 2) {
+			if (window.scrollY < 4 * innerHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned) {
 					if (e.deltaY > 0 && sectionsClassNames.length > sectionIndex + 1) {
@@ -92,7 +108,7 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('wheel', handleWheel);
 		};
-	}, []);
+	}, [innerHeight]);
 
 	useEffect(() => {
 		let lastTouchScreenY;
@@ -105,7 +121,7 @@ const Home = () => {
 			lastTouchScreenY = null;
 		};
 		const handleTouchMove = (e) => {
-			if (window.scrollY <= 4 * window.spesificHeight - 2) {
+			if (window.scrollY <= 4 * innerHeight - 2) {
 				setShowHiddenBottle(true);
 				if (!isRunned && lastTouchScreenY) {
 					if (e.targetTouches[0].screenY < lastTouchScreenY && sectionsClassNames.length > sectionIndex + 1) {
@@ -114,7 +130,6 @@ const Home = () => {
 						sectionIndex--;
 					}
 					window.sectionIndex = sectionIndex;
-					console.log(sectionsClassNames[sectionIndex], sectionIndex);
 					gsap.to(window, {
 						duration: 1.2,
 						scrollTo: `.${sectionsClassNames[sectionIndex]}`,
@@ -132,15 +147,22 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('touchmove', handleTouchMove);
 		};
+	}, [innerHeight]);
+	useEffect(() => {
+		<ScrollToTop />;
 	}, []);
-	useEffect(()=>{
-    <ScrollToTop />
-	},[])
 
 	return (
 		<>
-		
-			<BottleScene showHiddenBottle={showHiddenBottle} setIsBottleLoaded={setIsBottleLoaded} />
+			<BottleScene
+				innerHeight={innerHeight}
+				showHiddenBottle={showHiddenBottle}
+				setIsBottleLoaded={setIsBottleLoaded}
+			/>
+			<div
+				id={'hundredVHElement'}
+				style={{ height: '100vh', position: 'fixed', top: 0, left: 0, width: '100%' }}
+			></div>
 			{!isBottleLoaded ? (
 				<div
 					className="loadingContainer"
@@ -180,7 +202,6 @@ const Home = () => {
 					<HomeTwotoFour data={hometwoToFourDatas} />
 					<HomeSlider />
 					<HomeMedia />
-					
 				</main>
 			)}
 		</>
