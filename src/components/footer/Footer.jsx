@@ -40,12 +40,13 @@ const Footer = () => {
               <div className="footerAboutUs">
                 <h4>{t("aboutUs")}</h4>
                 <ul>
-                  <li> {t("ourCompany")}</li>
-                  <li>{t("products")}</li>
-                  <li>History</li>
-                  <li>{t("media")}</li>
-                  <li>{t("PointSales")}</li>
-                  <li>Useful</li>
+                  <li><NavLink to="/our-company">{t("ourCompany")}</NavLink> </li>
+                  <li><NavLink to="/product">{t("products")}</NavLink></li>
+                  {/* <li>History</li> */}
+                  <li> <NavLink to="/photos">{t("photos")}</NavLink></li>
+                  <li> <NavLink to="/point-of-sale">{t("PointSales")}</NavLink></li>
+                  <li> <NavLink to="/contact">{t("contact")}</NavLink></li>
+                  {/*<li>Useful</li>*/}
                 </ul>
               </div>
             </div>
