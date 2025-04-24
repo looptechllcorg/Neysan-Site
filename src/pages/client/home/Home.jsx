@@ -26,7 +26,7 @@ const leaves = [
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Home = () => {
-	const sectionsClassNames = Array.from({ length: 6 }, (_, index) => `a${index}`);
+	const sectionsClassNames = Array.from({ length: 5 }, (_, index) => `a${index}`);
 	const [showHiddenBottle, setShowHiddenBottle] = useState(true);
 	const [isBottleLoaded, setIsBottleLoaded] = useState(false);
 	const [innerHeight, setInnerHeight] = useState(window.innerHeight);
@@ -58,6 +58,7 @@ const Home = () => {
 				window.enableScroll();
 			} else {
 				if (!inBottom && !isRunned) {
+					setShowHiddenBottle(true);
 					window.disableScroll();
 					window.scrollTo(0, 4 * innerHeight - 6);
 					isRunned = true;

@@ -18,6 +18,9 @@ const BottleModel = ({ setIsBottleLoaded, innerHeight }) => {
 		return rotations[window.scrollY];
 	};
 
+	useEffect(() => {
+		rotations = {};
+	}, [innerHeight]);
 	const groupRef = useRef(null);
 	useEffect(() => {
 		if (groupRef.current) {
