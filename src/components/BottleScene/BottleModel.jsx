@@ -2,7 +2,7 @@
 import { useGLTF } from '@react-three/drei';
 import { useEffect, useRef } from 'react';
 
-const BottleModel = ({ setIsBottleLoaded }) => {
+const BottleModel = ({ setIsBottleLoaded, innerHeight }) => {
 	const { nodes, materials } = useGLTF('cem.glb', undefined, undefined, (l) => {
 		l.manager.onLoad = () => {
 			setIsBottleLoaded(true);
@@ -21,7 +21,6 @@ const BottleModel = ({ setIsBottleLoaded }) => {
 	const groupRef = useRef(null);
 	useEffect(() => {
 		if (groupRef.current) {
-			console.log('start');
 			const handleScroll = () => {
 				groupRef.current.rotation.y = getRotation();
 			};

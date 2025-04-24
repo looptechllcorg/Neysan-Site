@@ -45,6 +45,9 @@ const Home = () => {
 	useEffect(() => {
 		const hundredVhElement = document.getElementById('hundredVHElement');
 		setInnerHeight(hundredVhElement.clientHeight);
+		alert(
+			`hundredVhElement.clientHeight: ${hundredVhElement.clientHeight}\n window.innerHeight: ${window.innerHeight}`,
+		);
 	}, []);
 
 	useEffect(() => {
@@ -69,7 +72,7 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [innerHeight]);
 
 	// Desktop
 	useEffect(() => {
@@ -108,7 +111,7 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('wheel', handleWheel);
 		};
-	}, []);
+	}, [innerHeight]);
 
 	useEffect(() => {
 		let lastTouchScreenY;
@@ -130,7 +133,6 @@ const Home = () => {
 						sectionIndex--;
 					}
 					window.sectionIndex = sectionIndex;
-					console.log(sectionsClassNames[sectionIndex], sectionIndex);
 					gsap.to(window, {
 						duration: 1.2,
 						scrollTo: `.${sectionsClassNames[sectionIndex]}`,
@@ -148,7 +150,7 @@ const Home = () => {
 		return () => {
 			window.removeEventListener('touchmove', handleTouchMove);
 		};
-	}, []);
+	}, [innerHeight]);
 	useEffect(() => {
 		<ScrollToTop />;
 	}, []);
