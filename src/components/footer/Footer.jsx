@@ -1,10 +1,11 @@
 import React from "react";
 import "./Footer.scss";
 import { NavLink } from "react-router-dom";
-import neysanLogo from "../../assets/image/Neysanlogo.png";
+import leavesPattern from "../../assets/pattern/leaves2Pattern.png";
+import leavesPattern2 from "../../assets/pattern/leavesPattern.png";
+// import neysanLogo from "../../assets/image/Neysanlogo.png";
+import neysanLogo from "../../assets/Logos/NeysanLogo2.png";
 import FaceIcons from "../../assets/icons/FaceIcons";
-import XIcon from "../../assets/icons/XIcon";
-import YoutubeIcon from "../../assets/icons/YoutubeIcon";
 import InstaIcon from "../../assets/icons/InstaIcon";
 import LocationIcon from "../../assets/icons/LocationIcon";
 import TelephoneIcon from "../../assets/icons/TelephoneIcon";
@@ -16,15 +17,18 @@ const Footer = () => {
     const {t} = useTranslation()
   return (
     <footer style={{ backgroundImage: `url(${FooterBG})` }}>
+      <img src={leavesPattern} alt="" className="leavesPatternLeft" />
+      <img src={leavesPattern2} alt="" className="leavesPatternRight" />
+     
       <div className="footerHead">
         <div className="container ">
-          <div className="row py-5 justify-content-center align-items-center ">
-            <div className="col-lg-3 col-sm-12 g-3">
+          <div className="row pt-5 pb-2 justify-content-between ">
+            <div className="col-xl-2 col-lg-3 col-sm-12 g-3">
             <NavLink to="/" className="logo">
                 <img src={neysanLogo} alt="" />
               </NavLink>
             </div>
-            <div className="col-lg-4 col-md-5 col-sm-6 g-3 footerText">
+            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-6 g-3 footerText">
              
              <p>{t("footerText")}</p>
               <div className="socialLogos">
@@ -32,7 +36,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/" target="_blank"><InstaIcon /></a>
               </div>
             </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 g-3">
+            <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 g-3">
               <div className="footerAboutUs">
                 <h4>{t("aboutUs")}</h4>
                 <ul>
@@ -45,9 +49,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-12 g-3">
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 g-3">
               <div className="footerContactUs">
-                <h4>{t("contactUs")}</h4>
+                <h4>{t("contactUs2")}</h4>
                 <ul>
                   <li></li>
                   <li>
