@@ -61,10 +61,10 @@ const Footer = () => {
                   </li>
                 
                   <li>
-                    <TelephoneIcon /> +994 50 339 13 93
+                    <TelephoneIcon /> +994 12 404 25 40
                   </li>
                   <li>
-                    <MessageIcon /> Neysan@example.com
+                    <MessageIcon /> İnfoziraolives.az
                   </li>
                 </ul>
               </div>
