@@ -13,6 +13,7 @@ import MessageIcon from "../../assets/icons/MessageIcon";
 import FooterBG from "../../assets/image/GroupFooter.png";
 import Looptech from "../../assets/Logos/new-looptech2.png"
 import { useTranslation } from "react-i18next";
+import LooptechLogo from "../../assets/icons/LooptechLogo";
 const Footer = () => {
     const {t} = useTranslation()
   return (
@@ -74,8 +75,13 @@ const Footer = () => {
       <div className="footerBottom">
         <div className="container">
           <div className="row">
-            <div className="col-12">
-            <a  href="https://looptech.az/" target="_blank" className="copyright">{t("footerCopyright")} :  <img src={Looptech} alt="" /></a>
+            <div className="col-12 d-flex justify-content-between">
+               <a href="#" className="copyright">{t("2025copyright")}</a>
+               <a  href="https://looptech.az/" target="_blank" className="copyright">
+               {t("footerCopyright")} :  
+               <img src={Looptech} alt="Looptech Logo" />
+               {/* <LooptechLogo/> */}
+               </a>
             </div>
           </div>
         </div>
