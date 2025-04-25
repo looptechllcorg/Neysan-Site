@@ -122,6 +122,14 @@ footer {
 	.footerBottom {
 		border-top: 1px solid #262626;
 		padding: 15px 0;
+		.footerBottomDiv{
+
+			display: flex;
+			justify-content: space-between;
+			@media (max-width:768px) {
+				flex-direction: column;
+			}
+		}
 		.copyright {
 			display: flex;
 			align-items: center;
@@ -132,6 +140,9 @@ footer {
 			margin: 0;
 			text-decoration: none;
 			padding: 0;
+			@media (max-width:426px) {
+				font-size: 13px;
+			}
 			img {
 				margin-left: 10px;
 				width: 100px;

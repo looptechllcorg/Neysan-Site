@@ -75,13 +75,15 @@ const Footer = () => {
       <div className="footerBottom">
         <div className="container">
           <div className="row">
-            <div className="col-12 d-flex justify-content-between">
+            <div className="col-12">
+              <div className="footerBottomDiv">
+
                <a href="#" className="copyright">{t("2025copyright")}</a>
                <a  href="https://looptech.az/" target="_blank" className="copyright">
                {t("footerCopyright")} :  
                <img src={Looptech} alt="Looptech Logo" />
-               {/* <LooptechLogo/> */}
                </a>
+              </div>
             </div>
           </div>
         </div>
