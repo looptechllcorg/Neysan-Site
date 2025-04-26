@@ -62,7 +62,7 @@ export const homeVideoSliderSection = [
 	{
 		id: 1,
 		bgImg: videoSliderImgOne,
-		videoUrl: 'https://www.youtube.com/watch?v=zblxJ1fZCdY',
+		videoUrl: 'https://www.youtube.com/watch?v=wopPRfeeCeQ',
 	},
 	// {
 	//     id: 2,
@@ -798,9 +798,9 @@ export const categories = ['All', 'Jam', 'Jelly', 'Other'];
 import Photo1 from '../assets/image/Photos/Photo1.jpg';
 import Photo2 from '../assets/image/Photos/Photo2.jpg';
 import Photo3 from '../assets/image/Photos/Photo3.jpg';
-import Photo4 from '../assets/image/Photos/Photo1.jpg';
+import Photo4 from '../assets/image/Photos/Photo5.jpg';
 import Photo5 from '../assets/image/Photos/Photo4.jpg';
-import Photo6 from '../assets/image/Photos/Photo3.jpg';
+import Photo6 from '../assets/image/Photos/Photo6.jpg';
 export const PhotoGallery = [
 	{
 		id: 1,

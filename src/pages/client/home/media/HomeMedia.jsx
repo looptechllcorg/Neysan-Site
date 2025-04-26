@@ -44,7 +44,7 @@ const HomeMedia = () => {
 										style={{ backgroundImage: `url(${video.bgImg})` }}
 										className="videoWrapper"
 									>
-										{/* <VideoPlayIcon /> */}
+										<VideoPlayIcon />
 									</a>
 								</Fancybox>
 							</SwiperSlide>
