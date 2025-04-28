@@ -59,7 +59,7 @@ const Header = () => {
 				}}
 			>
 				<div className="container">
-					<div className="row justify-content-around">
+					<div className="row justify-content-around align-items-center">
 						<div className="col-3">
 							<NavLink to="/">
 								<div className="logo">

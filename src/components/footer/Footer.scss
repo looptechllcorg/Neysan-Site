@@ -143,11 +143,17 @@ footer {
 			@media (max-width:426px) {
 				font-size: 13px;
 			}
-			img {
+			object{
+				width: 100px;
+				height: 12px;
+				fill: #fff;
+			}
+			svg {
 				margin-left: 10px;
 				width: 100px;
 				height: 12px;
 				object-fit: cover;
+				fill: #fff;
 			}
 		}
 	}

@@ -5,6 +5,7 @@ import leavesPattern from "../../assets/pattern/leaves2Pattern.png";
 import leavesPattern2 from "../../assets/pattern/leavesPattern.png";
 // import neysanLogo from "../../assets/image/Neysanlogo.png";
 import neysanLogo from "../../assets/Logos/NeysanLogo2.png";
+import looptechLogos from "../../assets/Logos/looptech-logo-animated.svg";
 import FaceIcons from "../../assets/icons/FaceIcons";
 import InstaIcon from "../../assets/icons/InstaIcon";
 import LocationIcon from "../../assets/icons/LocationIcon";
@@ -79,10 +80,16 @@ const Footer = () => {
               <div className="footerBottomDiv">
 
                <a href="#" className="copyright">{t("2025copyright")}</a>
-               <a  href="https://looptech.az/" target="_blank" className="copyright">
+               {/* <a  href="https://looptech.az/" target="_blank" className="copyright">
                {t("footerCopyright")} :  
                <img src={Looptech} alt="Looptech Logo" />
-               </a>
+               </a> */}
+
+		  <a className='copyright' target="_blank" rel="noreferrer" href="https://www.looptech.az/">
+					{t("footerCopyright")} :  <object className='looptechLogo' data={looptechLogos}/>
+	      </a>
+			
+
               </div>
             </div>
           </div>

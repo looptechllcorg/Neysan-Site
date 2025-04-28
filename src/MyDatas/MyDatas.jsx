@@ -62,7 +62,7 @@ export const homeVideoSliderSection = [
 	{
 		id: 1,
 		bgImg: videoSliderImgOne,
-		videoUrl: 'https://www.youtube.com/watch?v=wopPRfeeCeQ',
+		videoUrl: 'https://www.youtube.com/watch?v=wopPRfeeCeQ&start=10',
 	},
 	// {
 	//     id: 2,

@@ -37,16 +37,24 @@ const HomeMedia = () => {
 					{homeVideoSliderSection.map((video) => {
 						return (
 							<SwiperSlide key={video.id}>
-								<Fancybox>
-									<a
-										href={video?.videoUrl}
-										data-fancybox="gallery"
-										style={{ backgroundImage: `url(${video.bgImg})` }}
-										className="videoWrapper"
-									>
-										<VideoPlayIcon />
-									</a>
-								</Fancybox>
+								<Fancybox
+  options={{
+    Youtube: {
+      autoplay: 1,
+      start: 10, // 10-cu saniyədən başlasın
+    },
+  }}
+>
+  <a
+    href={video.videoUrl}
+    data-fancybox="gallery"
+    style={{ backgroundImage: `url(${video.bgImg})` }}
+    className="videoWrapper"
+  >
+    <VideoPlayIcon />
+  </a>
+</Fancybox>
+
 							</SwiperSlide>
 						);
 					})}
