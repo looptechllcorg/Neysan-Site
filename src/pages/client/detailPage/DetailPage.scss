@@ -28,7 +28,7 @@ main{
                 bottom: 2%;
                 width: 100%;
                 height: 330px;
-                object-fit: cover;
+                object-fit: contain;
                 transition: .5s ease-in-out;
                 animation:Fly 5s ease-in-out infinite;
                 @media (max-width:768px) {
@@ -57,9 +57,10 @@ main{
         .detailProductInfo{
             .productName{
                 color:#55941A ;
-                font-size: 60px;
+                font-size: 40px;
                 text-align: center;
-                font-family: "Amatic SC", sans-serif;
+                // text-transform: uppercase;
+                font-family: "Shantell Sans", cursive;
             }
             .productWeight{
                 font-size: 30px;
@@ -127,15 +128,16 @@ main{
             .similarBtn,
             .prParametrsBtn {
                 border: none;
-                font-size: 1.4rem;
-                font-weight: 500;
-                padding: 0.8rem 2rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding: 0.5rem 1.5rem;
                 background: transparent;
                 border-radius: 11px;
                 margin-right: 20px;
                 color: #983D1B;
                 cursor: pointer;
                 transition: 0.5s ease;
+                font-family: "Shantell Sans", cursive;
                 
             } 
             .activeBtn {
@@ -165,7 +167,7 @@ main{
                     .slideImage{
                         width: 100%;
                         height: 280px;
-                        object-fit: cover;
+                        object-fit: contain;
                         object-position: bottom;
                         @media (max-width:768px) {
                             object-fit: contain;

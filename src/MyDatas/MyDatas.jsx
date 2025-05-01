@@ -483,7 +483,7 @@ export const productsData = [
 		productName: 'productZogal',
 		description: '',
 		productWeight: '320qr',
-		category: 'Jam',
+		category: 'Other',
 		productDetail: [
 			{ title: 'type', value: 'glass' },
 			{ title: 'net', value: '320qr' },
