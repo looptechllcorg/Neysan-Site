@@ -57,14 +57,5 @@ export const ROUTES = [
   {
     path: "*",
     element: <Error />,
-  },
-  {
-    future: {
-      v7_relativeSplatPath: true,
-    },
-  },
-  // {
-  //     path: "*",
-  //     element: <ErrorPage />
-  // },
+  }
 ];

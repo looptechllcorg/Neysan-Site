@@ -11,10 +11,10 @@ const routes = createBrowserRouter(ROUTES);
 function App() {
 	return (
 		<>
-		   <LanguageProvider>
-			<DataContextProvider>
-				<RouterProvider router={routes} />
-			</DataContextProvider>
+			<LanguageProvider>
+				<DataContextProvider>
+					<RouterProvider router={routes} />
+				</DataContextProvider>
 			</LanguageProvider>
 		</>
 	);
