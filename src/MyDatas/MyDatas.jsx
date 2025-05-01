@@ -57,12 +57,13 @@ export const marketLogoList = [
 // HomeMedia PlayVideo
 import videoSliderImgOne from '../assets/image/BgMedia1.png';
 import videoSliderImgTwo from '../assets/image/homeVideoSliderBgImg.png';
+import homeMediaVideo from '../assets/Videos/HomeVideo2.mp4';
 
 export const homeVideoSliderSection = [
 	{
 		id: 1,
 		bgImg: videoSliderImgOne,
-		videoUrl: 'https://www.youtube.com/watch?v=wopPRfeeCeQ&start=10',
+		videoUrl: homeMediaVideo,
 	},
 	// {
 	//     id: 2,

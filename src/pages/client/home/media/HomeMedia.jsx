@@ -20,55 +20,11 @@ const HomeMedia = () => {
 	return (
 		<section>
 			<div className="homeVideoSlider">
-				<Swiper
-					spaceBetween={30}
-					effect={'fade'}
-					// loop={true}
-					pagination={{
-						clickable: true,
-					}}
-					navigation={{
-						prevEl: '.swiper-Button-prev',
-						nextEl: '.swiper-Button-next',
-					}}
-					modules={[EffectFade, Navigation, Autoplay]}
-					className="videoSlider"
-				>
-					{homeVideoSliderSection.map((video) => {
+			{homeVideoSliderSection.map((video) => {
 						return (
-							<SwiperSlide key={video.id}>
-								 <Fancybox
-									options={{
-										Youtube: {
-											autoplay: 1,
-											start: 10, // 10-cu saniyədən başlasın
-										},
-									}}
-								>
-									<a
-										href={video.videoUrl}
-										data-fancybox="gallery"
-										style={{ backgroundImage: `url(${video.bgImg})` }}
-										className="videoWrapper"
-									>
-										<VideoPlayIcon />
-									</a>
-								</Fancybox> 
-								{/* <iframe src={video.videoUrl} frameborder="0"></iframe> */}
-								{/* <video className='mediaVideo' muted loop autoPlay src={video.videoUrl}></video> */}
-							</SwiperSlide>
+							<video className='mediaVideo' muted loop autoPlay src={video.videoUrl}></video>
 						);
 					})}
-
-					{homeVideoSliderSection.length > 1 ? (
-						<>
-							<div className="swiper-Button-next"></div>
-							<div className="swiper-Button-prev"></div>
-						</>
-					) : (
-						<></>
-					)}
-				</Swiper>
 			</div>
 		</section>
 	);

@@ -134,14 +134,14 @@ main{
                 background: transparent;
                 border-radius: 11px;
                 margin-right: 20px;
-                color: #983D1B;
+                color: #55941A;
                 cursor: pointer;
                 transition: 0.5s ease;
                 font-family: "Shantell Sans", cursive;
-                
             } 
             .activeBtn {
-                background-color: rgba(128, 159, 56, 0.26);
+                background-color: #55941A;
+                color: #FFF;
                 pointer-events: none;
             }
 
