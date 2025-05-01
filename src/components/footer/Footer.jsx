@@ -65,7 +65,7 @@ const Footer = () => {
                     <TelephoneIcon /> +994 12 404 25 40
                   </li>
                   <li>
-                    <MessageIcon /> İnfoziraolives.az
+                    <MessageIcon /> info@ziraolives.az
                   </li>
                 </ul>
               </div>

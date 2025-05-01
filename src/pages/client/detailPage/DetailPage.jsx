@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { productsData } from '../../../MyDatas/MyDatas';
@@ -7,18 +7,31 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/swiper-bundle.css';
 import { Autoplay } from 'swiper/modules';
-import ArrowLeft from '../../../assets/icons/ArrowLeft';
-import ArrowRight from '../../../assets/icons/ArrowRight';
 import productCloud from '../../../assets/image/productImage/productCloud.png';
-import CheckIcon from '../../../assets/icons/CheckIcon';
 import './DetailPage.scss';
 import { useTranslation } from 'react-i18next';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
 import SectionHeader from '../../../components/SectionsHeader/SectionHeader';
 const DetailPage = () => {
 	const { t } = useTranslation();
 	const { slug } = useParams();
 
 	const [similarAndParametrsBtn, setsimilarAndParametrsBtn] = useState(true);
+
+	const validationSchema = Yup.object({
+		firstName: Yup.string().required(t('name-error')).min(2, t('minimun')),
+		lastName: Yup.string().required(t('lastname-error')).min(2, t('minimun')),
+		email: Yup.string().email(t('Invalid-email-address')).required(t('email-error')),
+		phoneNumber: Yup.string()
+			.matches(/^[0-9]+$/, t('Invalid-number-address'))
+			.min(9, t('Invalid-number-address'))
+			.required(t('number-error')),
+	});
+
+	
 
 	const handleState = () => {
 		setsimilarAndParametrsBtn(!similarAndParametrsBtn);
@@ -38,6 +51,48 @@ const DetailPage = () => {
 	const handleSlideChange = (swiper) => {
 		setActiveIndex(swiper.realIndex);
 	};
+
+	const formik = useFormik({
+		initialValues: {
+			firstName: '',
+			lastName: '',
+			email: '',
+			phoneNumber: '',
+			message: productData ? t(productData.productName) : '',
+		},
+		validationSchema: validationSchema,
+		onSubmit: (values, { resetForm }) => {
+			emailjs
+				.send(
+					'service_oe7rrp7', // EmailJS servis ID
+					'template_8z0emg2', // EmailJS şablon ID
+					values,
+					'4lXz7K1642U9oFoat', // EmailJS public key
+				)
+				.then(
+					() => {
+						Swal.fire({
+							position: 'top-end',
+							icon: 'success',
+							title: t('swalAlertTitle'),
+							showConfirmButton: false,
+							timer: 1500,
+						});
+						resetForm();
+					},
+					(error) => {
+						console.error('Email gönderme hatası:', error);
+						Swal.fire({
+							position: 'top-end',
+							icon: 'error',
+							title: t('emailError'),
+							showConfirmButton: false,
+							timer: 1500,
+						});
+					},
+				);
+		},
+	});
 	return (
 		<main>
 			<section id="productDetail">
@@ -183,43 +238,101 @@ const DetailPage = () => {
 			</section>
 			<section id="checoutModal">
 				<div
-					class="modal fade"
+					className="modal fade"
 					id="exampleModalToggle"
 					aria-hidden="true"
 					aria-labelledby="exampleModalToggleLabel"
-					tabindex="-1"
+					tabIndex="-1"
 				>
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h1 class="modal-title fs-5" id="exampleModalToggleLabel">
-									Modal 1
-								</h1>
+					<div className="modal-dialog modal-dialog-centered">
+						<div className="modal-content">
+							<div className="modal-header">
 								<button
 									type="button"
-									class="btn-close"
+									className="btn-close"
 									data-bs-dismiss="modal"
 									aria-label="Close"
 								></button>
 							</div>
-							<div class="modal-body">
-								<form action="">
-									<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-									<input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} />
+							<div className="modal-body">
+								<form onSubmit={formik.handleSubmit}>
+									<div className="formInputs">
+										<div className="formInputDiv">
+											<label htmlFor="firstName">{t('firstName')}</label>
+											<input
+												type="text"
+												id="firstName"
+												name="firstName"
+												placeholder={t('firstName')}
+												onChange={formik.handleChange}
+												value={formik.values.firstName}
+											/>
+											{formik.errors.firstName && (
+												<div style={{ color: 'red' }}>{formik.errors.firstName}</div>
+											)}
+										</div>
+										<div className="formInputDiv">
+											<label htmlFor="lastName">{t('lastName')}</label>
+											<input
+												type="text"
+												id="lastName"
+												name="lastName"
+												placeholder={t('lastName')}
+												onChange={formik.handleChange}
+												value={formik.values.lastName}
+											/>
+											{formik.errors.lastName && (
+												<div style={{ color: 'red' }}>{formik.errors.lastName}</div>
+											)}
+										</div>
+										<div className="formInputDiv">
+											<label htmlFor="phoneNumber">{t('number')}</label>
+											<input
+												type="tel"
+												id="phoneNumber"
+												name="phoneNumber"
+												placeholder={t('number')}
+												onChange={formik.handleChange}
+												value={formik.values.phoneNumber}
+											/>
+											{formik.errors.phoneNumber && (
+												<div style={{ color: 'red' }}>{formik.errors.phoneNumber}</div>
+											)}
+										</div>
+										<div className="formInputDiv">
+											<label htmlFor="email">{t('email')}</label>
+											<input
+												type="text"
+												id="email"
+												name="email"
+												placeholder={t('email')}
+												onChange={formik.handleChange}
+												value={formik.values.email}
+											/>
+											{formik.errors.email && (
+												<div style={{ color: 'red' }}>{formik.errors.email}</div>
+											)}
+										</div>
+										{/* <div className="formTextAreaDiv">
+											<label htmlFor="message">{t('message')}</label>
+											<textarea
+												name="message"
+												id="message"
+												placeholder={t('message2')}
+												onChange={formik.handleChange}
+												value={formik.values.message}
+											></textarea>
+											{formik.errors.message && (
+												<div style={{ color: 'red' }}>{formik.errors.message}</div>
+											)}
+										</div> */}
+									</div>
+									<div className="formButton">
+										<button type="submit">{t('send')}</button>
+									</div>
 								</form>
 							</div>
-							<div class="modal-footer">
-								<button
-									class="btn btn-primary"
-									onClick={() => {
-										const message = encodeURIComponent(`Müşteri bilgileri:${name} phone: ${phone}`);
-										const whatsappURL = `https://wa.me/994508697723?text=${message}`;
-										window.open(whatsappURL, '_blank');
-									}}
-								>
-									send
-								</button>
-							</div>
+
 						</div>
 					</div>
 				</div>
