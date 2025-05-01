@@ -57,7 +57,7 @@ export const marketLogoList = [
 // HomeMedia PlayVideo
 import videoSliderImgOne from '../assets/image/BgMedia1.png';
 import videoSliderImgTwo from '../assets/image/homeVideoSliderBgImg.png';
-import homeMediaVideo from '../assets/Videos/HomeVideo2.mp4';
+import homeMediaVideo from '../assets/Videos/HomeVideo.mp4';
 
 export const homeVideoSliderSection = [
 	{
@@ -65,16 +65,6 @@ export const homeVideoSliderSection = [
 		bgImg: videoSliderImgOne,
 		videoUrl: homeMediaVideo,
 	},
-	// {
-	//     id: 2,
-	//     bgImg: videoSliderImgTwo,
-	//     videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
-	// },
-	// {
-	//     id: 3,
-	//     bgImg: videoSliderImgOne,
-	//     videoUrl: "https://www.youtube.com/watch?v=zblxJ1fZCdY",
-	// },
 ];
 
 // Products
