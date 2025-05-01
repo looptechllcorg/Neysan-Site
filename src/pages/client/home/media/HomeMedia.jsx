@@ -9,13 +9,6 @@ import Fancybox from '../../../../components/fancybox/Fancybox';
 import VideoPlayIcon from '../../../../assets/icons/PlayIcon';
 import './HomeMedia.scss';
 const HomeMedia = () => {
-	// const [videoNumber , setVideoNumber] = useState()
-	// useEffect(() => {
-
-	//     const videoCount = homeVideoSliderSection.length;
-	//     setVideoNumber(Number(videoCount));
-	//     console.log("Video Sayısı:", videoNumber);
-	//   }, []);
 
 	return (
 		<section>

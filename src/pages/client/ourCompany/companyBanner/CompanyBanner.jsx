@@ -11,7 +11,12 @@ const CompanyBanner = () => {
        <SectionHeader sectionHeaderh2="ourCompany"/>
       </div>
         <div className="container backgroundImage" style={{backgroundImage:`url(${BannerBg})`,overflow:"hidden"}}>
-                <h1>{t("ourCompanyBanner")}</h1>
+          <div className="overlay"></div>
+          <div className="textSlide">
+          <h1>{t("ourCompanyBanner")}</h1>
+                {/* <h1>{t("ourCompanyBanner")}</h1> */}
+                {/* <h1>{t("ourCompanyBanner")}</h1> */}
+          </div>
         </div>
     </section>
   )
