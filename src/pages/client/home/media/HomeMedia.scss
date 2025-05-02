@@ -1,6 +1,6 @@
 .homeVideoSlider {
     position: relative;
-height: 100vh;
+height: 90vh;
 margin: 100px 0 0;
 padding: 0 0 50px;
 
@@ -8,7 +8,6 @@ padding: 0 0 50px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 @media (max-width:1024px) {
   .mediaVideo{
@@ -25,47 +24,4 @@ padding: 0 0 50px;
         object-fit: contain;
     }
 }
-    // .videoSlider {
-    //     position: relative;
-
-    //     img {
-    //         height: 70vh;
-    //         width: 100%;
-    //         object-fit: cover;
-    //         object-position: center;
-    //     }
-
-    //     svg {
-    //         width: 65px;
-    //     }
-
-    //     .videoWrapper {
-    //         height: 90vh;   
-    //         width: 100%;
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //         background-position: center;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-
-    //     .swiper-Button-prev {
-    //         &::after {
-    //             color: black;
-    //         }
-
-    //         z-index: 99;
-    //         left: 2% !important;
-    //     }
-
-    //     .swiper-Button-next {
-    //         &::after {
-    //             color: black;
-    //         }
-
-    //         z-index: 99;
-    //         right: 2%;
-    //     }
-    // }
 }
