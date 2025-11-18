@@ -29,7 +29,7 @@ const BottleScene = ({ showHiddenBottle, setIsBottleLoaded, innerHeight }) => {
 			>
 				<ambientLight intensity={Math.PI / 2} />
 				<BottleModel innerHeight={innerHeight} setIsBottleLoaded={setIsBottleLoaded} />
-				<Environment preset="city" />
+				{/* <Environment preset="city" /> */}
 			</Canvas>
 		</div>
 	);
